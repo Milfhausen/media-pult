@@ -1,0 +1,75 @@
+# ИСТОЧНИКИ НОВОСТЕЙ
+# Любой источник можно выключить: enabled: false
+
+user_agent: "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36 media-pult/1.0"
+timeout_seconds: 20          # сколько секунд ждём ответа на один запрос
+source_timeout_seconds: 240  # сколько максимум даём одному источнику целиком
+history_days: 7              # сколько дней хранить историю
+
+# 1. Google News (Британия, английский)
+google_news:
+  enabled: true
+  top: true                  # главная лента Google News UK
+  # Поиск по темам. Можно добавлять свои строки.
+  queries:
+    - "UK knife crime"
+    - "small boats Channel migrants"
+    - "NHS waiting"
+    - "UK cost of living prices"
+    - "UK housing mould rent"
+    - "UK pensioners tax"
+    - "UK benefits cuts"
+    - "council fines UK"
+    - "prisoners released early UK"
+    - "Ukrainians UK visa"
+    - "Homes for Ukraine"
+    - "MI5 Russia"
+    - "UK army chief war"
+    - "UK conscription poll"
+    - "UK defence spending"
+    - "Farage Ukraine"
+    - "Russia sabotage Europe"
+    - "EU sanctions Russia"
+    - "Belarus OR Kazakhstan OR Georgia OR Moldova Europe"
+
+# 5. RSS крупных изданий. fallback_site — если RSS не ответил, берём из Google News по сайту.
+rss:
+  enabled: true
+  feeds:
+    - {name: BBC News, url: "https://feeds.bbci.co.uk/news/uk/rss.xml", fallback_site: bbc.co.uk}
+    - {name: BBC News, url: "https://feeds.bbci.co.uk/news/world/europe/rss.xml"}
+    - {name: The Guardian, url: "https://www.theguardian.com/uk-news/rss", fallback_site: theguardian.com}
+    - {name: The Guardian, url: "https://www.theguardian.com/world/europe-news/rss"}
+    - {name: Sky News, url: "https://feeds.skynews.com/feeds/rss/uk.xml", fallback_site: news.sky.com}
+    - {name: Daily Mail, url: "https://www.dailymail.co.uk/news/index.rss", fallback_site: dailymail.co.uk}
+    - {name: The Telegraph, url: "https://www.telegraph.co.uk/news/rss.xml", fallback_site: telegraph.co.uk}
+    - {name: GB News, url: "https://www.gbnews.com/feeds/news.rss", fallback_site: gbnews.com}
+    - {name: The Independent, url: "https://www.independent.co.uk/news/uk/rss", fallback_site: independent.co.uk}
+    - {name: Politico Europe, url: "https://www.politico.eu/feed/", fallback_site: politico.eu}
+    - {name: Reuters, url: "", fallback_site: reuters.com}   # у Reuters нет открытого RSS — только через Google News
+
+# 3. Reddit — сколько людей лайкают и спорят
+reddit:
+  enabled: true
+  limit: 25
+  subreddits: [unitedkingdom, ukpolitics, london, europe, CasualUK, ukraine, europeanunion]
+
+# 4. Google Trends — что британцы ищут прямо сейчас
+trends:
+  enabled: true
+  url: "https://trends.google.com/trending/rss?geo=GB"
+
+# 6. Telegram — каналы в config/telegram_channels.yaml
+telegram:
+  enabled: true
+
+# 2. GDELT — считает, сколько изданий в мире написали про сюжет за 24 ч
+gdelt:
+  enabled: true
+  top_n: 12             # проверяем только самые горячие сюжеты (GDELT не любит частых запросов)
+  pause_seconds: 6
+
+# Перевод заголовков на русский (бесплатный Google Translate)
+translate:
+  enabled: true
+  max_new_per_run: 80

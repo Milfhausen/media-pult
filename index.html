@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>Пульт медийки</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <h1>Пульт управления медийкой</h1>
+    <div class="sub">«Выживаю в Лондоне» · быть первым среди русскоязычных</div>
+  </div>
+  <div class="upd">
+    <div id="updated">Загружаю…</div>
+    <details class="howto">
+      <summary>Как обновить вручную?</summary>
+      <ol>
+        <li>Открой репозиторий на GitHub → вкладка <b>Actions</b>.</li>
+        <li>Слева выбери <b>«Сбор новостей»</b> → справа кнопка <b>Run workflow</b> → зелёная <b>Run workflow</b>.</li>
+        <li>Подожди 3–5 минут и обнови эту страницу.</li>
+      </ol>
+      <p>Само обновляется раз в час.</p>
+    </details>
+  </div>
+</header>
+
+<div id="banners"></div>
+
+<nav class="tabs" id="tabs" role="tablist"></nav>
+
+<section class="filters" id="filters">
+  <label class="f-tag">Тег
+    <select id="f-tag"><option value="">Все</option></select>
+  </label>
+  <label class="chk"><input type="checkbox" id="f-rising"> 🚀 только растущие</label>
+  <label class="chk"><input type="checkbox" id="f-first"> 🥇 только «ещё никто»</label>
+  <div class="seg" id="f-win" role="group" aria-label="Период">
+    <button data-win="3">3 ч</button><button data-win="24" class="on">24 ч</button><button data-win="168">7 дней</button>
+  </div>
+</section>
+
+<main id="view"></main>
+
+<footer class="foot">
+  <p><b>Как считается оценка 0–100.</b> <span id="formula"></span></p>
+  <p>🚀 РАСТЁТ — за последние 3 ч изданий заметно больше обычного.
+     🥇 ЕЩЁ НИКТО НЕ НАПИСАЛ — набирает в UK/EU СМИ, а в отслеживаемых ру-Телеграм каналах пусто.
+     📢 УЖЕ В РУ-ТЕЛЕГЕ — кто-то из конкурентов уже написал.</p>
+  <p class="muted">Веса и ключевые слова — в папке <code>config/</code> репозитория.</p>
+</footer>
+
+<div id="toast" class="toast" hidden></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+# СЛОВАРЬ РУС ↔ АНГЛ
+# Нужен, чтобы понять: русский пост в Телеге — про тот же сюжет, что английская статья.
+# Формат:  английское_слово: [варианты, начала русских слов, ...]
+# Русские варианты — это НАЧАЛО слова: "фарадж" найдёт "Фараджа", "Фараджем".
+# Варианты с дефисом/пробелом/цифрами ищутся целиком: "ми-5".
+
+terms:
+  farage: [фарадж]
+  starmer: [стармер]
+  reeves: [ривз]
+  badenoch: [баденок]
+  mi5: [mi-5, ми-5, ми5, мi5]
+  mi6: [mi-6, ми-6, ми6]
+  putin: [путин]
+  zelensky: [zelensk, zelenskyy, зеленск]
+  trump: [трамп]
+  macron: [макрон]
+  merz: [мерц]
+  lukashenko: [лукашенк]
+  russia: [russia, russian, росси, русск, рф, kremlin, кремл]
+  ukraine: [ukrain, украин, kyiv, kiev, киев]
+  britain: [britain, british, briton, uk, британ, англи, великобритан]
+  london: [london, лондон]
+  europe: [europ, европ, eu, ес, евросоюз]
+  ipsos: [ipsos, ипсос]
+  yougov: [yougov]
+  nato: [нато]
+  army: [army, armies, арми, армей]
+  military: [military, военн, военны]
+  war: [wartime, войн]
+  fight: [fight, fought, воева, сражат]
+  casualty: [casualt, жертв, потер]
+  conscription: [conscript, призыв, national service]
+  mobilisation: [mobilis, mobiliz, мобилиз]
+  defence: [defence, defense, оборон]
+  spending: [spending, spend, трат, расход]
+  sanction: [sanction, санкц]
+  spy: [spy, spies, espionage, шпион]
+  sabotage: [sabotag, saboteur, диверс]
+  hybrid: [hybrid, гибридн]
+  corruption: [corrupt, коррупц, коррумпир]
+  refugee: [refugee, беженц]
+  migrant: [migrant, migrat, мигрант, миграц]
+  asylum: [asylum, убежищ]
+  visa: [visa, visas, виза, визы, визу, визов, визам]
+  deport: [deport, депорт]
+  belarus: [belarus, беларус, белорус]
+  kazakhstan: [kazakh, казах]
+  georgia: [georgia, грузи]
+  moldova: [moldov, молдов, молдав]
+  armenia: [armeni, армян, армени]
+  azerbaijan: [azerbaij, азербайдж]
+  baltic: [baltic, балти, прибалт]
+  estonia: [estonia, эстони]
+  latvia: [latvia, латви]
+  lithuania: [lithuania, литв]
+  poland: [poland, polish, польш, польск]
+  germany: [german, герман, немец, немецк]
+  france: [france, french, франц]
+  knife: [knife, knives, нож, ножа, ножом, ножи, ножев]
+  stabbing: [stabbing, stabbed, зарез, поножовщ]
+  terror: [terror, террор]
+  boat: [boat, лодк]
+  channel: [ла-манш, ламанш]
+  record: [record, рекорд]
+  teenager: [teen, подрост]
+  school: [school, школ]
+  police: [police, полиц]
+  prison: [prison, тюрьм, тюрем, заключенн]
+  tax: [taxes, налог]
+  pension: [pension, пенси]
+  benefit: [benefit, пособи]
+  fine: [fines, fined, штраф]
+  nhs: [нхс]
+  price: [price, цены, цена, цен, ценам, подорож]
+  energy: [energy, энерг]
+  strike: [strike, забастов]
+  drone: [drone, дрон, беспилот]
+  nuclear: [nuclear, ядерн]
+  king: [король, корол]
+  billion: [billion, bn, млрд, миллиард]
+  million: [million, млн, миллион]
+  half: [half, половин]
+  poll: [polls, pollster, опрос]
+  chief: [chief, head of, глава, начальник]
+
+# КТО СКАЗАЛ — для СНГ-радара. match: как это пишут в заголовках; label: как показать.
+speakers:
+  - {match: ["army chief", "head of the army", "chief of the general staff", "chief of the defence staff", "глава армии"], label: "Глава британской армии"}
+  - {match: ["mi5 chief", "head of mi5", "mi5 boss", "mi5 director", "ken mccallum", "глава ми-5"], label: "Глава MI5"}
+  - {match: ["mi6 chief", "head of mi6", "mi6 boss", "blaise metreweli", "глава ми-6"], label: "Глава MI6"}
+  - {match: ["farage", "фарадж"], label: "Найджел Фарадж, лидер Reform UK"}
+  - {match: ["starmer", "стармер"], label: "Кир Стармер, премьер-министр"}
+  - {match: ["defence secretary", "министр обороны"], label: "Министр обороны Британии"}
+  - {match: ["home secretary"], label: "Министр внутренних дел Британии"}
+  - {match: ["chancellor", "rachel reeves"], label: "Министр финансов Британии"}
+  - {match: ["ipsos"], label: "Опрос Ipsos"}
+  - {match: ["yougov"], label: "Опрос YouGov"}
+  - {match: ["nato chief", "rutte"], label: "Генсек НАТО"}
+  - {match: ["von der leyen"], label: "Глава Еврокомиссии"}
+  - {match: ["zelensky", "зеленск"], label: "Владимир Зеленский"}
+  - {match: ["putin", "путин"], label: "Владимир Путин"}
+  - {match: ["macron"], label: "Эммануэль Макрон"}

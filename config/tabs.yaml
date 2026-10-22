@@ -1,0 +1,11 @@
+# ВКЛАДКИ ПУЛЬТА
+# Одна строка = одна вкладка.
+#   id       — короткое латинское имя (без пробелов)
+#   title    — как вкладка называется на странице
+#   module   — файл с логикой вкладки в папке modules/
+#   keywords — файл с ключевыми словами (подтемы/теги этой вкладки)
+# Чтобы добавить вкладку: скопируй строку, поменяй id/title/файлы. Подробно — в README.
+
+tabs:
+  - {id: hype, title: "🔥 Хайп-радар: Британия и Европа", module: modules/hype.js, keywords: config/segments.yaml}
+  - {id: cis, title: "🇺🇦🇷🇺 СНГ-радар", module: modules/cis.js, keywords: config/cis_keywords.yaml}

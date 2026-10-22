@@ -1,0 +1,10 @@
+# TELEGRAM-КАНАЛЫ КОНКУРЕНТОВ
+# Это НЕ источник новостей, а проверка: писали ли уже русскоязычные про сюжет.
+# username — то, что идёт после t.me/  (например, для https://t.me/toporlive это toporlive)
+# Канал должен быть публичным. Пустой username пропускается.
+
+channels:
+  - {username: svtvnews, title: "SVTV NEWS"}
+  - {username: toporlive, title: "Топор Live"}
+  - {username: ASupersharij, title: "Ateo Breaking"}
+  - {username: "", title: "RT на русском"}   # впиши юзернейм

@@ -1,0 +1,115 @@
+:root {
+  --bg: #0e1116;
+  --panel: #161b22;
+  --panel2: #1c232d;
+  --line: #2a323d;
+  --text: #e6edf3;
+  --muted: #8b96a3;
+  --accent: #ff7a3d;
+  --green: #3fb950;
+  --gold: #e3b341;
+  --blue: #58a6ff;
+  --grey: #6e7681;
+  --radius: 12px;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--bg); color: var(--text);
+  font: 15px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  padding: 0 16px 40px; max-width: 980px; margin-inline: auto;
+}
+a { color: var(--blue); text-decoration: none; }
+a:hover { text-decoration: underline; }
+code { background: var(--panel2); padding: 1px 5px; border-radius: 4px; }
+.muted { color: var(--muted); }
+
+.top { display: flex; flex-wrap: wrap; gap: 8px 16px; justify-content: space-between; align-items: flex-start; padding: 16px 0 8px; }
+.top h1 { font-size: 20px; margin: 0; }
+.top .sub { color: var(--muted); font-size: 13px; }
+.upd { text-align: right; font-size: 13px; color: var(--muted); }
+.upd #updated b { color: var(--text); }
+.howto summary { cursor: pointer; color: var(--blue); }
+.howto { text-align: left; max-width: 340px; margin-left: auto; }
+.howto ol { padding-left: 18px; margin: 6px 0; color: var(--text); }
+
+.banner { border-radius: var(--radius); padding: 10px 12px; margin: 8px 0; font-size: 14px; background: var(--panel); border: 1px solid var(--line); }
+.banner.warn { border-color: #9e6a03; background: #2a2109; }
+.banner.demo { border-color: #1f6feb; background: #0c1d36; }
+.banner details summary { cursor: pointer; }
+.banner ul { margin: 6px 0 0; padding-left: 18px; color: var(--muted); }
+
+.tabs { display: flex; gap: 6px; overflow-x: auto; padding: 8px 0; scrollbar-width: none; }
+.tabs button {
+  flex: 0 0 auto; background: var(--panel); color: var(--text); border: 1px solid var(--line);
+  border-radius: 999px; padding: 8px 14px; font: inherit; font-weight: 600; cursor: pointer;
+}
+.tabs button.on { background: var(--accent); border-color: var(--accent); color: #111; }
+
+.filters { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; padding: 8px 0 4px; font-size: 14px; }
+.filters select { background: var(--panel); color: var(--text); border: 1px solid var(--line); border-radius: 8px; padding: 6px 8px; font: inherit; margin-left: 6px; max-width: 220px; }
+.chk { display: inline-flex; gap: 6px; align-items: center; cursor: pointer; }
+.chk input { width: 18px; height: 18px; accent-color: var(--accent); }
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+.seg button { background: var(--panel); color: var(--text); border: 0; padding: 7px 12px; font: inherit; cursor: pointer; }
+.seg button + button { border-left: 1px solid var(--line); }
+.seg button.on { background: var(--panel2); color: var(--accent); font-weight: 700; }
+
+h2.sec { font-size: 17px; margin: 22px 0 10px; }
+h2.sec small { color: var(--muted); font-weight: 400; }
+.empty { color: var(--muted); padding: 16px; background: var(--panel); border-radius: var(--radius); }
+
+.card {
+  display: grid; grid-template-columns: 54px 1fr; gap: 6px 12px;
+  background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 12px; margin-bottom: 10px;
+}
+.card .rank { color: var(--muted); font-size: 12px; text-align: center; }
+.score {
+  width: 54px; height: 54px; border-radius: 12px; display: grid; place-items: center;
+  font-size: 22px; font-weight: 800; background: var(--panel2); border: 2px solid var(--line);
+}
+.score.hot { border-color: var(--accent); color: var(--accent); }
+.score.warm { border-color: var(--gold); color: var(--gold); }
+.body { min-width: 0; }
+.badges { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 4px; }
+.b { font-size: 12px; padding: 2px 8px; border-radius: 999px; background: var(--panel2); border: 1px solid var(--line); white-space: nowrap; }
+.b.rise { border-color: var(--green); color: var(--green); }
+.b.first { border-color: var(--gold); color: var(--gold); }
+.b.tg { border-color: var(--blue); color: var(--blue); }
+.b.tag { color: var(--muted); }
+.ttl { font-size: 16px; font-weight: 700; margin: 2px 0; overflow-wrap: anywhere; }
+.orig { color: var(--muted); font-size: 13px; overflow-wrap: anywhere; }
+.meta { font-size: 13px; color: var(--muted); margin-top: 6px; display: flex; flex-wrap: wrap; gap: 4px 12px; }
+.meta b { color: var(--text); }
+.speaker { font-size: 13px; margin-top: 4px; }
+.links { margin: 8px 0 0; padding: 0; list-style: none; font-size: 13px; }
+.links li { margin: 3px 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.links .src { color: var(--muted); }
+.tgbox { margin-top: 8px; font-size: 13px; background: #0c1d36; border: 1px solid #1f3b66; border-radius: 8px; padding: 6px 8px; }
+.tgbox li { margin: 2px 0; }
+.tgbox ul { margin: 4px 0 0; padding-left: 16px; }
+.actions { margin-top: 8px; }
+.copy {
+  background: var(--accent); color: #111; border: 0; border-radius: 8px; padding: 8px 12px;
+  font: inherit; font-weight: 700; cursor: pointer;
+}
+.copy:active { transform: scale(.98); }
+.more summary, .fold summary { cursor: pointer; padding: 10px 0; color: var(--blue); }
+.fold { margin-top: 18px; background: #12161c; border: 1px dashed var(--grey); border-radius: var(--radius); padding: 4px 12px 10px; }
+.fold summary { color: var(--muted); }
+.fold .card { opacity: .75; }
+.linkbtn { background: none; border: 0; color: var(--blue); font: inherit; cursor: pointer; padding: 0; text-decoration: underline; }
+
+.foot { margin-top: 32px; padding-top: 12px; border-top: 1px solid var(--line); font-size: 13px; color: var(--muted); }
+.foot b { color: var(--text); }
+.toast { position: fixed; left: 50%; bottom: 20px; transform: translateX(-50%); background: var(--green); color: #111; padding: 10px 16px; border-radius: 999px; font-weight: 700; z-index: 10; }
+
+@media (max-width: 560px) {
+  body { font-size: 14px; }
+  .upd { text-align: left; }
+  .howto { margin-left: 0; }
+  .card { grid-template-columns: 44px 1fr; padding: 10px; }
+  .score { width: 44px; height: 44px; font-size: 18px; }
+  .ttl { font-size: 15px; }
+}

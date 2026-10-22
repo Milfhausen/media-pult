@@ -1,0 +1,128 @@
+# ТЕГИ ВКЛАДКИ «🔥 Хайп-радар»
+# Слово срабатывает, если с него НАЧИНАЕТСЯ слово в заголовке:
+#   "mould" найдёт "mould" и "mouldy"; "плесен" найдёт "плесень", "плесени".
+# Можно писать по-английски и по-русски.
+
+categories:
+  "Быт третьего мира":
+    - hygiene
+    - dirty
+    - filth
+    - rubbish
+    - litter
+    - sewage
+    - rats
+    - mould
+    - damp
+    - food
+    - supermarket
+    - dentist
+    - teeth
+    - NHS dental
+    - housing
+    - rent
+    - landlord
+    - homeless
+    - heatwave
+    - extreme heat
+    - hosepipe
+    - prices
+    - cost of living
+    - energy bills
+    - inflation
+    - trains
+    - train fares
+    - rail
+    - tube
+    - buses
+    - bus fares
+    - potholes
+    - strike
+    - гигиен
+    - еда
+    - зуб
+    - жиль
+    - плесен
+    - жар
+    - цен
+    - транспорт
+    - грязь
+    - мусор
+    - крыс
+
+  "Безопасность":
+    - knife
+    - stabbing
+    - stabbed
+    - attack
+    - assault
+    - terror
+    - murder
+    - shooting
+    - riot
+    - grooming
+    - rape
+    - small boats
+    - Channel crossing
+    - asylum
+    - migrant
+    - released early
+    - early release
+    - prisoner
+    - violence against women
+    - child abuse
+    - police
+    - нож
+    - нападен
+    - террор
+    - мигрант
+    - лодк
+    - преступник
+
+  "Система бросает своих":
+    - tax
+    - pension
+    - pensioner
+    - winter fuel
+    - NHS
+    - waiting list
+    - A&E
+    - benefit
+    - universal credit
+    - fines
+    - fined
+    - penalty
+    - council
+    - bureaucracy
+    - red tape
+    - taxpayer
+    - expenses
+    - spending
+    - налог
+    - пенси
+    - пособи
+    - штраф
+    - бюрократ
+    - чиновник
+
+# Сюжеты про войну и Россию–Украину сворачиваются в серый блок внизу
+fold:
+  label: "Война и Россия–Украина"
+  link_tab: cis
+  keywords:
+    - war
+    - Ukraine
+    - Ukrainian
+    - Russia
+    - Russian
+    - Putin
+    - Zelensky
+    - Kremlin
+    - Kyiv
+    - Moscow
+    - NATO
+    - войн
+    - Украин
+    - Росси
+    - Путин
+    - Зеленск

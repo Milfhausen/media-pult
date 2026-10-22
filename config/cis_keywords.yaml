@@ -1,0 +1,115 @@
+# ПОДТЕМЫ ВКЛАДКИ «🇺🇦🇷🇺 СНГ-радар»
+# Сюжет попадает во вкладку, если совпала хотя бы одна подтема.
+# Слово срабатывает по НАЧАЛУ слова (Ukrain → Ukraine, Ukrainian).
+
+categories:
+  "Касается нас напрямую":
+    - Homes for Ukraine
+    - Ukraine Permission Extension
+    - Ukrainian refugees
+    - Ukrainians in
+    - Ukrainian visa
+    - visa
+    - deport
+    - asylum
+    - eastern European
+    - Russian citizens
+    - Russians in
+    - Belarusian citizens
+    - bank accounts
+    - frozen accounts
+    - беженц
+    - виз
+    - депорт
+    - статус
+    - пособи
+
+  "Подготовка к войне":
+    - conscription
+    - national service
+    - mobilisation
+    - mobilization
+    - draft
+    - defence spending
+    - defense spending
+    - army chief
+    - head of the army
+    - armed forces
+    - casualties
+    - ready for war
+    - prepare for war
+    - would fight
+    - refuse to fight
+    - Ipsos
+    - YouGov
+    - polls
+    - poll finds
+    - poll shows
+    - призыв
+    - мобилиз
+    - оборон
+    - армия
+    - жертв
+
+  "Россия глазами Запада":
+    - Russia
+    - Russian
+    - Kremlin
+    - Putin
+    - MI5
+    - MI6
+    - hybrid
+    - sabotage
+    - spy
+    - spies
+    - espionage
+    - sanction
+    - shadow fleet
+    - drone
+    - Росси
+    - Путин
+    - МИ-5
+    - МИ-6
+    - шпион
+    - диверс
+    - санкц
+
+  "Украина глазами Запада":
+    - Ukraine
+    - Ukrainian
+    - Zelensky
+    - Kyiv
+    - aid to Ukraine
+    - corruption
+    - Farage
+    - Reform UK
+    - Украин
+    - Зеленск
+    - Фарадж
+    - коррупц
+
+  "Остальное СНГ":
+    - Belarus
+    - Lukashenko
+    - Kazakhstan
+    - Georgia
+    - Georgian
+    - Tbilisi
+    - Moldova
+    - Armenia
+    - Azerbaijan
+    - Baltic
+    - Estonia
+    - Latvia
+    - Lithuania
+    - Белорус
+    - Беларус
+    - Казахстан
+    - Грузи
+    - Молдов
+    - Армени
+    - Азербайджан
+    - Прибалти
+    - Эстони
+    - Латви
+    - Литв
