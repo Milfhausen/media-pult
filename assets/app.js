@@ -5,7 +5,16 @@
   "use strict";
 
   const modules = {};
-  const state = { data: null, status: null, tabs: [], tabId: null, tag: "", rising: false, first: false, win: 24 };
+  const state = { data: null, status: null, tabs: [], tabId: null, tag: "", rising: false, first: false, win: 24, mine: true, showDone: false };
+  const DONE_KEY = "pult-taken";
+  let taken = {};
+  try { taken = JSON.parse(localStorage.getItem(DONE_KEY) || "{}") || {}; } catch (e) { taken = {}; }
+  function setTaken(id, on) {
+    if (on) taken[id] = Date.now(); else delete taken[id];
+    const weekAgo = Date.now() - 8 * 864e5;
+    Object.keys(taken).forEach((k) => taken[k] < weekAgo && delete taken[k]);
+    try { localStorage.setItem(DONE_KEY, JSON.stringify(taken)); } catch (e) { /* без памяти — не страшно */ }
+  }
   const $ = (s) => document.querySelector(s);
 
   // ---------- помощники ----------
@@ -88,6 +97,19 @@
     return L.join("\n");
   }
 
+  // ---------- просьба для Claude ----------
+  function claudeText(s) {
+    return [
+      "Напиши сценарий Reels/TikTok для моего сериала «Выживаю в Лондоне» по этому сюжету.",
+      "Аудитория — русскоязычные из СНГ. Тон: разоблачаю систему Британии и Европы, от первого лица, живо и без воды.",
+      "Нужно: 3 варианта хука на первые 2–3 секунды, сценарий на 30–45 секунд, главные цифры и факты из сюжета, призыв в конце.",
+      "Разбери по фреймворку Illusion of Novelty и дай финальную версию.",
+      "",
+      "СЮЖЕТ:",
+      scriptText(s),
+    ].join("\n");
+  }
+
   // ---------- карточка сюжета ----------
   function card(s, opts) {
     opts = opts || {};
@@ -127,9 +149,20 @@
         <div class="meta">${meta.map((m) => `<span>${m}</span>`).join("")}</div>
         <ul class="links">${links.join("")}</ul>
         ${tg}
-        <div class="actions"><button class="copy" type="button">📋 Скопировать для сценария</button></div>
+        <div class="actions">
+          <button class="copy" type="button">📋 Скопировать для сценария</button>
+          <button class="copy alt ai" type="button" title="Скопировать с готовой просьбой и вставить в чат с Claude">🤖 Сценарий с Claude</button>
+          <button class="copy alt take${taken[s.id] ? " done-on" : ""}" type="button">${taken[s.id] ? "✅ Взят в работу" : "☐ Взял в работу"}</button>
+        </div>
       </div>`;
+    if (taken[s.id]) el.classList.add("taken");
     el.querySelector(".copy").addEventListener("click", () => copyText(scriptText(s)));
+    el.querySelector(".ai").addEventListener("click", () => copyText(claudeText(s)).then(() => toast("Скопировано — вставь в чат с Claude")));
+    el.querySelector(".take").addEventListener("click", () => {
+      setTaken(s.id, !taken[s.id]);
+      toast(taken[s.id] ? "✅ Взят в работу — скрыт из списка" : "Вернул в список");
+      render();
+    });
     return el;
   }
 
@@ -164,6 +197,8 @@
   function filtered(tabId) {
     const d = state.data;
     let list = d.stories.filter((s) => state.win >= 168 || hoursBefore(s.last_published, d.generated_at) <= state.win);
+    if (!state.showDone) list = list.filter((s) => !taken[s.id]);
+    if (state.mine) list = list.filter((s) => ((s.tags && s.tags[tabId]) || []).length || (s.fold && s.fold[tabId]));
     if (state.rising) list = list.filter((s) => s.rising);
     if (state.first) list = list.filter((s) => s.first);
     if (state.tag) list = list.filter((s) => ((s.tags && s.tags[tabId]) || []).includes(state.tag));
@@ -237,6 +272,8 @@
 
   function bindFilters() {
     $("#f-tag").addEventListener("change", (e) => { state.tag = e.target.value; render(); });
+    $("#f-mine").addEventListener("change", (e) => { state.mine = e.target.checked; render(); });
+    $("#f-done").addEventListener("change", (e) => { state.showDone = e.target.checked; render(); });
     $("#f-rising").addEventListener("change", (e) => { state.rising = e.target.checked; render(); });
     $("#f-first").addEventListener("change", (e) => { state.first = e.target.checked; render(); });
     document.querySelectorAll("#f-win button").forEach((b) =>

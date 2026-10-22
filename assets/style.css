@@ -94,6 +94,10 @@ h2.sec small { color: var(--muted); font-weight: 400; }
   background: var(--accent); color: #111; border: 0; border-radius: 8px; padding: 8px 12px;
   font: inherit; font-weight: 700; cursor: pointer;
 }
+.actions { display: flex; flex-wrap: wrap; gap: 6px; }
+.copy.alt { background: var(--panel2); color: var(--text); border: 1px solid var(--line); }
+.copy.done-on { background: var(--green); color: #111; }
+.card.taken { opacity: .55; }
 .copy:active { transform: scale(.98); }
 .more summary, .fold summary { cursor: pointer; padding: 10px 0; color: var(--blue); }
 .fold { margin-top: 18px; background: #12161c; border: 1px dashed var(--grey); border-radius: var(--radius); padding: 4px 12px 10px; }
