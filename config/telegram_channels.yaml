@@ -1,10 +1,262 @@
 # TELEGRAM-КАНАЛЫ КОНКУРЕНТОВ
 # Это НЕ источник новостей, а проверка: писали ли уже русскоязычные про сюжет.
-# username — то, что идёт после t.me/  (например, для https://t.me/toporlive это toporlive)
+# username — то, что идёт после t.me/  (для https://t.me/toporlive это toporlive)
 # Канал должен быть публичным. Пустой username пропускается.
+# Чтобы добавить канал — скопируй любую строку и поменяй username и title.
+#
+# Не проверяются (закрытые ссылки-приглашения или нет юзернейма):
+#   мировая хуита
+#   https://t.me/+k_Z9AGYLs7g5ZGUy
+#   https://t.me/+LMLTNddi8xg5Nzhk
 
 channels:
-  - {username: svtvnews, title: "SVTV NEWS"}
-  - {username: toporlive, title: "Топор Live"}
-  - {username: ASupersharij, title: "Ateo Breaking"}
-  - {username: "", title: "RT на русском"}   # впиши юзернейм
+  - {username: ASupersharij, title: "Ateo Breaking", group: "Мировые новости"}
+
+  # --- Мировые новости ---
+  - {username: tass_world, title: "@tass_world", group: "Мировые новости"}
+  - {username: ostorozhno_novosti, title: "@ostorozhno_novosti", group: "Мировые новости"}
+  - {username: svtvnews, title: "SVTV NEWS", group: "Мировые новости"}
+  - {username: meduza_news, title: "@meduza_news", group: "Мировые новости"}
+  - {username: rbc_news, title: "@rbc_news", group: "Мировые новости"}
+  - {username: MID_Russia, title: "@MID_Russia", group: "Мировые новости"}
+  - {username: tassovkaru, title: "@tassovkaru", group: "Мировые новости"}
+  - {username: radiosvoboda, title: "@radiosvoboda", group: "Мировые новости"}
+  - {username: bbbreaking, title: "@bbbreaking", group: "Мировые новости"}
+  - {username: svidkultobmen, title: "@svidkultobmen", group: "Мировые новости"}
+  - {username: bazabazon, title: "@bazabazon", group: "Мировые новости"}
+  - {username: topor, title: "@topor", group: "Мировые новости"}
+  - {username: MariaVladimirovnaZakharova, title: "@MariaVladimirovnaZakharova", group: "Мировые новости"}
+  - {username: shot_shot, title: "@shot_shot", group: "Мировые новости"}
+  - {username: mod_russia_en, title: "@mod_russia_en", group: "Мировые новости"}
+  - {username: toporlive, title: "Топор Live", group: "Мировые новости"}
+  - {username: bbcrussian, title: "@bbcrussian", group: "Мировые новости"}
+  - {username: dwglavnoe, title: "@dwglavnoe", group: "Мировые новости"}
+  - {username: kommersant, title: "@kommersant", group: "Мировые новости"}
+  - {username: theinsider, title: "@theinsider", group: "Мировые новости"}
+  - {username: ntvnews, title: "@ntvnews", group: "Мировые новости"}
+  - {username: chtddd, title: "@chtddd", group: "Мировые новости"}
+  - {username: rt_russian, title: "RT на русском", group: "Мировые новости"}
+  - {username: readovkanews, title: "@readovkanews", group: "Мировые новости"}
+  - {username: ru4chan, title: "@ru4chan", group: "Мировые новости"}
+  - {username: MFARussia, title: "@MFARussia", group: "Мировые новости"}
+  - {username: ArkHelps, title: "@ArkHelps", group: "Мировые новости"}
+  - {username: mash, title: "@mash", group: "Мировые новости"}
+  - {username: emigriceps, title: "@emigriceps", group: "Мировые новости"}
+  - {username: special_authors, title: "@special_authors", group: "Мировые новости"}
+
+  # --- Италия ---
+  - {username: ViaItaliana, title: "@ViaItaliana", group: "Италия"}
+  - {username: italiano365telegram, title: "@italiano365telegram", group: "Италия"}
+
+  # --- Франция ---
+  - {username: node_of_time_fr, title: "@node_of_time_fr", group: "Франция"}
+  - {username: francediplomatie, title: "@francediplomatie", group: "Франция"}
+  - {username: philologovo, title: "@philologovo", group: "Франция"}
+  - {username: fifthrepublic, title: "@fifthrepublic", group: "Франция"}
+  - {username: fr_dispatch, title: "@fr_dispatch", group: "Франция"}
+  - {username: procampusfrance, title: "@procampusfrance", group: "Франция"}
+
+  # --- Исландия ---
+  - {username: yanastea, title: "@yanastea", group: "Исландия"}
+
+  # --- Япония ---
+  - {username: wrenjapan, title: "@wrenjapan", group: "Япония"}
+  - {username: yaponskoe, title: "@yaponskoe", group: "Япония"}
+
+  # --- Прибалтика ---
+  - {username: antifalivland, title: "@antifalivland", group: "Прибалтика"}
+  - {username: tenipribaltiki, title: "@tenipribaltiki", group: "Прибалтика"}
+
+  # --- Польша ---
+  - {username: pl_syrenka, title: "@pl_syrenka", group: "Польша"}
+
+  # --- США ---
+  - {username: USEmbRussia, title: "@USEmbRussia", group: "США"}
+  - {username: EmbUSA, title: "@EmbUSA", group: "США"}
+  - {username: rianovostiAmerica, title: "@rianovostiAmerica", group: "США"}
+
+  # --- Украина ---
+  - {username: insiderUKR, title: "@insiderUKR", group: "Украина"}
+  - {username: pgo_gov_ua, title: "@pgo_gov_ua", group: "Украина"}
+  - {username: uniannet, title: "@uniannet", group: "Украина"}
+  - {username: truexanewsua, title: "@truexanewsua", group: "Украина"}
+
+  # --- Балканы ---
+  - {username: balkanossiper, title: "@balkanossiper", group: "Балканы"}
+  - {username: balkanar, title: "@balkanar", group: "Балканы"}
+  - {username: kochka_lv, title: "@kochka_lv", group: "Балканы"}
+
+  # --- Норвегия ---
+  - {username: norgerussisk, title: "@norgerussisk", group: "Норвегия"}
+
+  # --- Беларусь ---
+  - {username: Belarust, title: "@Belarust", group: "Беларусь"}
+  - {username: mediazona_by, title: "@mediazona_by", group: "Беларусь"}
+  - {username: minsk3, title: "@minsk3", group: "Беларусь"}
+  - {username: minskinter, title: "@minskinter", group: "Беларусь"}
+
+  # --- Россия: города и регионы ---
+  - {username: moscow360new, title: "@moscow360new (мск)", group: "Россия: города и регионы"}
+  - {username: msk_live, title: "@msk_live (мск)", group: "Россия: города и регионы"}
+  - {username: live_piter, title: "@live_piter (спб)", group: "Россия: города и регионы"}
+  - {username: government_rus, title: "@government_rus", group: "Россия: города и регионы"}
+  - {username: belgorod_life, title: "@belgorod_life (белгород)", group: "Россия: города и регионы"}
+  - {username: Kursk_tut, title: "@Kursk_tut (курск)", group: "Россия: города и регионы"}
+  - {username: mash_batash, title: "@mash_batash (уфа)", group: "Россия: города и регионы"}
+  - {username: granica046, title: "@granica046 (курск)", group: "Россия: города и регионы"}
+  - {username: belgorod01, title: "@belgorod01 (белгород)", group: "Россия: города и регионы"}
+  - {username: poidem_moscow, title: "@poidem_moscow (мск)", group: "Россия: города и регионы"}
+  - {username: russicaRU, title: "@russicaRU", group: "Россия: города и регионы"}
+  - {username: theEKBcity, title: "@theEKBcity (екб)", group: "Россия: города и регионы"}
+  - {username: zhest_moscoww, title: "@zhest_moscoww (мск)", group: "Россия: города и регионы"}
+  - {username: kurskpressa, title: "@kurskpressa (курск)", group: "Россия: города и регионы"}
+  - {username: TheVoronezhCity, title: "@TheVoronezhCity (воронеж)", group: "Россия: города и регионы"}
+  - {username: rostov0, title: "@rostov0 (ростов)", group: "Россия: города и регионы"}
+  - {username: idemmsk, title: "@idemmsk (мск)", group: "Россия: города и регионы"}
+  - {username: ostorozhno_moskva, title: "@ostorozhno_moskva", group: "Россия: города и регионы"}
+  - {username: infocentrskrf, title: "@infocentrskrf", group: "Россия: города и регионы"}
+  - {username: mscculture, title: "@mscculture (мск)", group: "Россия: города и регионы"}
+  - {username: fontankaspb, title: "@fontankaspb (спб)", group: "Россия: города и регионы"}
+  - {username: zhest_rostov_161, title: "@zhest_rostov_161 (ростов)", group: "Россия: города и регионы"}
+  - {username: mos_daily, title: "@mos_daily (мск)", group: "Россия: города и регионы"}
+  - {username: szao_news24, title: "@szao_news24 (мск)", group: "Россия: города и регионы"}
+  - {username: KurskAnomalia, title: "@KurskAnomalia (курск)", group: "Россия: города и регионы"}
+
+  # --- Германия ---
+  - {username: ausnews_de, title: "@ausnews_de", group: "Германия"}
+  - {username: neuesausrussland, title: "@neuesausrussland", group: "Германия"}
+
+  # --- Новости, политика, война, силовики, ЧП ---
+  - {username: CITeam, title: "@CITeam", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: rhymestg, title: "@rhymestg", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: tass_agency, title: "@tass_agency", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: ejdailyru, title: "@ejdailyru", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: holodmedia, title: "@holodmedia", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: meduzalive, title: "@meduzalive", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: povorotnapravo, title: "@povorotnapravo", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: Lepragram, title: "@Lepragram", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: LIVfashionmag, title: "@LIVfashionmag", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: dvachannel, title: "@dvachannel", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: sledcom_press, title: "@sledcom_press", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: opersvodki, title: "@opersvodki", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: chvk_wagnerr, title: "@chvk_wagnerr", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: DONETSK_ZOV, title: "@DONETSK_ZOV", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: rybar, title: "@rybar", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: mod_russia, title: "@mod_russia", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: mediazzzona, title: "@mediazzzona", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: ilyaraevskiyalive, title: "@ilyaraevskiyalive", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: thebell_io, title: "@thebell_io", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: mediazona_exclusive, title: "@mediazona_exclusive", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: sotaproject, title: "@sotaproject", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: deptone, title: "@deptone", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: novosti_russia360, title: "@novosti_russia360", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: swodki, title: "@swodki", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: yoba_m, title: "@yoba_m", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: rusledcom, title: "@rusledcom", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: kompr, title: "@kompr", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: WarDonbass, title: "@WarDonbass", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: atesh_ua, title: "@atesh_ua", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: operobzoor, title: "@operobzoor", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: staraya, title: "@staraya", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: PlushevChannel, title: "@PlushevChannel", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: SIL0VIKI, title: "@SIL0VIKI", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: infantmilitario, title: "@infantmilitario", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: ovdinfolive, title: "@ovdinfolive", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: ru2ch, title: "@ru2ch", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: tv360, title: "@tv360", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: Ateobreaking, title: "Ateo Breaking", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: Sladkov_plus, title: "@Sladkov_plus", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: rybar_africa, title: "@rybar_africa", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: vottaktv, title: "@vottaktv", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: ekaterina_mizulina, title: "@ekaterina_mizulina", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: pikabu, title: "@pikabu", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: chvkmedia, title: "@chvkmedia", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: currenttime, title: "@currenttime", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: glavpolit, title: "@glavpolit", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: bobrovighor, title: "@bobrovighor", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: horizontal_russia, title: "@horizontal_russia", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: iron_feliks, title: "@iron_feliks", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: infomoscow24, title: "@infomoscow24", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: rlz_the_kraken, title: "@rlz_the_kraken", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: mig41, title: "@mig41", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: activatica, title: "@activatica", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: Hinshtein, title: "@Hinshtein", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: yurydud, title: "@yurydud", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: newsmoscow, title: "@newsmoscow", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: itsreallynot, title: "@itsreallynot", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: RVvoenkor, title: "@RVvoenkor", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: vadresah, title: "@vadresah", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: informburo_sfd, title: "@informburo_sfd", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: donbassr, title: "@donbassr", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: ovdinfo, title: "@ovdinfo", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: teamnavalny, title: "@teamnavalny", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: mariabutina, title: "@mariabutina", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: generalsvr, title: "@generalsvr", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: anon_prok, title: "@anon_prok", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: ia_panorama, title: "@ia_panorama", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: mediazonalinks, title: "@mediazonalinks", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: ponomarb1, title: "@ponomarb1", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: istories_media, title: "@istories_media", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: rybar_america, title: "@rybar_america", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: operdrain, title: "@operdrain", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: exsled, title: "@exsled", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: sashakots, title: "@sashakots", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: gsuskmosobl, title: "@gsuskmosobl", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: news_kremlin, title: "@news_kremlin", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: rybar_pacific, title: "@rybar_pacific", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: AteoGo, title: "@AteoGo", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: misha_anufrienko, title: "@misha_anufrienko", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: novaya_pishet, title: "@novaya_pishet", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: gsuskrf_spb, title: "@gsuskrf_spb", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: svobodnieslova, title: "@svobodnieslova", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: kommersantvrn, title: "@kommersantvrn", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: navalnylivechannel, title: "@navalnylivechannel", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: sergeymiheev, title: "@sergeymiheev", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: polkovnikt, title: "@polkovnikt", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: faridaily24, title: "@faridaily24", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: fsbach, title: "@fsbach", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: RepublicMag, title: "@RepublicMag", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: anon_prok_press, title: "@anon_prok_press", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: pezdicide, title: "@pezdicide", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: veronikastepanova20011, title: "@veronikastepanova20011", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: news_sirena, title: "@news_sirena", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: evropar, title: "@evropar", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: nefte_baza, title: "@nefte_baza", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: Merkacheva, title: "@Merkacheva", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: skmoscowgsu, title: "@skmoscowgsu", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: kurskproc, title: "@kurskproc", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: topwar_official, title: "@topwar_official", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: boevoyprimer, title: "@boevoyprimer", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: patriot_za_granitsey, title: "@patriot_za_granitsey", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: opernn, title: "@opernn", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: skrkursk, title: "@skrkursk", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: brussinf, title: "@brussinf", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: yurasumy, title: "@yurasumy", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: levada_center, title: "@levada_center", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: DvtAdv, title: "@DvtAdv", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: Agdchan, title: "@Agdchan", group: "Новости, политика, война, силовики, ЧП"}
+  - {username: surf_noise1, title: "@surf_noise1", group: "Новости, политика, война, силовики, ЧП"}
+
+  # --- Блогеры ---
+  - {username: ttepllota, title: "@ttepllota", group: "Блогеры"}
+  - {username: ooooh_love, title: "@ooooh_love", group: "Блогеры"}
+  - {username: sablezubiiytug, title: "@sablezubiiytug", group: "Блогеры"}
+  - {username: chernyx_di, title: "@chernyx_di", group: "Блогеры"}
+  - {username: nfedkoo, title: "@nfedkoo", group: "Блогеры"}
+  - {username: alinlav, title: "@alinlav", group: "Блогеры"}
+  - {username: shushannabest, title: "@shushannabest", group: "Блогеры"}
+  - {username: stepan_alexis, title: "@stepan_alexis", group: "Блогеры"}
+  - {username: evaelfie_life, title: "@evaelfie_life", group: "Блогеры"}
+  - {username: sandrasahara, title: "@sandrasahara", group: "Блогеры"}
+  - {username: zhidkovskiy_talk, title: "@zhidkovskiy_talk", group: "Блогеры"}
+
+  # --- Экономика ---
+  - {username: MoscowExchangeOfficial, title: "@MoscowExchangeOfficial", group: "Экономика"}
+  - {username: alfa_investments, title: "@alfa_investments", group: "Экономика"}
+  - {username: commerc, title: "@commerc", group: "Экономика"}
+  - {username: tb_invest_official, title: "@tb_invest_official", group: "Экономика"}
+  - {username: Godketing, title: "@Godketing", group: "Экономика"}
+  - {username: ecotopor, title: "@ecotopor", group: "Экономика"}
+  - {username: lukoilofficial, title: "@lukoilofficial", group: "Экономика"}
+  - {username: DeCenter, title: "@DeCenter", group: "Экономика"}
+  - {username: PRO_biz_channel, title: "@PRO_biz_channel", group: "Экономика"}

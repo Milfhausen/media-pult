@@ -15,7 +15,7 @@ concurrency:
 jobs:
   collect:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 40
     steps:
       - uses: actions/checkout@v4
 
@@ -30,14 +30,32 @@ jobs:
       - name: Проверки (pytest)
         run: python -m pytest -q
 
+      - name: Достать историю за 7 дней из кэша
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            data/articles.json
+            data/translations.json
+          key: history-${{ github.run_id }}
+          restore-keys: history-
+
       - name: Собрать новости
         run: python -m collector.main
+
+      - name: Положить историю в кэш
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: |
+            data/articles.json
+            data/translations.json
+          key: history-${{ github.run_id }}
 
       - name: Сохранить данные в репозиторий
         run: |
           git config user.name "media-pult-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/
+          git add data/stories.json data/status.json data/channels.json
           if git diff --cached --quiet; then echo "Нет изменений"; exit 0; fi
           git commit -m "Данные: $(date -u +'%Y-%m-%d %H:%M') UTC"
           for i in 1 2 3; do git pull --rebase -X theirs origin main && git push && exit 0; sleep 5; done

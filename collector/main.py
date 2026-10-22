@@ -5,6 +5,8 @@ from concurrent.futures import ThreadPoolExecutor
 from concurrent.futures import TimeoutError as FutTimeout
 from datetime import timedelta
 
+import statistics
+
 from .cluster import art_time
 from .pipeline import build_stories, formula_text, load_config, tabs_meta
 from .scoring import apply_score
@@ -31,6 +33,15 @@ def run_limited(fn, args, seconds):
         pool.shutdown(wait=False, cancel_futures=True)
 
 
+def channel_stats(posts):
+    """Рейтинг Telegram-каналов: средние (медианные) просмотры на пост."""
+    by = {}
+    for p in posts:
+        by.setdefault(p["source"], []).append(p["extra"].get("views") or 0)
+    out = [{"title": t, "avg_views": int(statistics.median(v)), "posts": len(v)} for t, v in by.items()]
+    return sorted(out, key=lambda c: -c["avg_views"])
+
+
 def main():
     cfg = load_config()
     src = cfg["sources"]
@@ -42,9 +53,9 @@ def main():
         scfg = src.get(key, {})
         if not scfg.get("enabled", True):
             continue
-        arg = cfg["telegram"].get("channels", []) if key == "telegram" else scfg
+        arg = dict(scfg, channels=cfg["telegram"].get("channels", [])) if key == "telegram" else scfg
         try:
-            items = run_limited(fn, (arg, ctx), src.get("source_timeout_seconds", 240))
+            items = run_limited(fn, (arg, ctx), scfg.get("timeout_seconds", src.get("source_timeout_seconds", 240)))
             ctx.report(title, True, len(items))
         except (Exception, FutTimeout) as e:
             print(f"[!] {title}: {e!r}", file=sys.stderr)
@@ -58,9 +69,14 @@ def main():
             store[a["id"]] = a  # свежие лайки/просмотры заменяют старые
 
     keep_from = now - timedelta(days=src.get("history_days", 7))
-    articles = [a for a in store.values() if art_time(a, now) >= keep_from]
+    tg_from = now - timedelta(hours=src.get("telegram", {}).get("keep_hours", 48))
+    articles = [a for a in store.values()
+                if art_time(a, now) >= (tg_from if a["kind"] == "telegram" else keep_from)]
 
-    stories = build_stories(articles, cfg, now)
+    channels = channel_stats([a for a in articles if a["kind"] == "telegram"])
+    min_views = src.get("telegram", {}).get("min_avg_views", 0) or 0
+    popular = {c["title"] for c in channels if c["avg_views"] >= min_views}
+    stories = build_stories([a for a in articles if a["kind"] != "telegram" or a["source"] in popular], cfg, now)
 
     gcfg = src.get("gdelt", {})
     if gcfg.get("enabled", True):
@@ -88,6 +104,7 @@ def main():
         save_json(DATA / "translations.json", {k: v for k, v in cache.items() if k in titles})
 
     save_json(DATA / "articles.json", articles)
+    save_json(DATA / "channels.json", channels, indent=1)
     save_json(DATA / "status.json", {"generated_at": iso(now), "sources": ctx.status}, indent=1)
     save_json(DATA / "stories.json", {
         "generated_at": iso(now), "demo": False,

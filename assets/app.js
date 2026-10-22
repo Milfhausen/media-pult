@@ -270,6 +270,19 @@
     $("#banners").innerHTML = banners.join("");
   }
 
+  async function loadChannels() {
+    const box = $("#channels-list");
+    try {
+      const list = await getJSON("data/channels.json");
+      if (!list.length) { box.textContent = "Появится после первого сбора."; return; }
+      box.innerHTML = `<p>Средние просмотры на пост. Каналы ниже порога можно не учитывать: <code>config/sources.yaml</code> → <code>min_avg_views</code>.</p><ol>${list
+        .map((c) => `<li><b>${esc(c.title)}</b> — ${num(c.avg_views)} просм. (${c.posts} пост.)</li>`)
+        .join("")}</ol>`;
+    } catch (e) {
+      box.textContent = "Появится после первого сбора.";
+    }
+  }
+
   function bindFilters() {
     $("#f-tag").addEventListener("change", (e) => { state.tag = e.target.value; render(); });
     $("#f-mine").addEventListener("change", (e) => { state.mine = e.target.checked; render(); });
@@ -316,6 +329,7 @@
     state.tabId = state.tabs.some((t) => t.id === want) ? want : (state.tabs[0] || {}).id;
     renderHeader();
     bindFilters();
+    $("#channels").addEventListener("toggle", () => $("#channels").open && loadChannels(), { once: true });
     fillTags();
     renderTabs();
     render();
