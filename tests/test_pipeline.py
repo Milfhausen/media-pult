@@ -90,3 +90,11 @@ def test_rising_badge():
     sc = CFG["scoring"]
     assert apply_score(base_story(outlets_24h=6, outlets_3h=5, growth_ratio=5), sc)["rising"]
     assert not apply_score(base_story(outlets_24h=6, outlets_3h=1, growth_ratio=5), sc)["rising"]
+
+
+def test_same_outlet_with_different_names_counted_once():
+    arts = [news("MI5 chief: we spend more on Russian threats than during the Cold War", "BBC", 3),
+            news("MI5 chief: we spend more on Russian threats than during Cold War", "BBC News", 2),
+            news("MI5 chief says Russian threats cost more than Cold War", "The Guardian", 1)]
+    st = build_stories(arts, CFG, NOW)[0]
+    assert st["outlets_24h"] == 2

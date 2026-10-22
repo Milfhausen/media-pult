@@ -1,4 +1,6 @@
 """Из списка статей делаем сюжеты: склейка -> цифры -> оценка -> теги."""
+import re
+
 from .cluster import art_time, attach_overlap, attach_trends, cluster_articles
 from .scoring import FORMULA, apply_score, growth_ratio
 from .text import Normalizer, keyword_regex
@@ -72,22 +74,29 @@ def build_stories(articles, cfg, now):
     return stories
 
 
+def outlet_key(name):
+    """«BBC» из Google News и «BBC News» из RSS — одно издание, считаем один раз."""
+    k = re.sub(r"[^a-z0-9а-я ]", "", (name or "").lower()).strip()
+    k = re.sub(r"^the ", "", k)
+    return re.sub(r" (news|online|uk)$", "", k) or k
+
+
 def make_story(c, now, tab_rx, speakers):
     news = [a for a in c.members if a["kind"] == "news"]
     reddit = list({a["id"]: a for a in c.members if a["kind"] == "reddit"}.values())
     if not news and not reddit:
         return None
     ago = {a["id"]: hours_ago(art_time(a, now), now) for a in c.members}
-    o24 = {a["source"] for a in news if ago[a["id"]] <= 24}
-    o3 = {a["source"] for a in news if ago[a["id"]] <= 3}
-    oprev = {a["source"] for a in news if 3 < ago[a["id"]] <= 24}
+    o24 = {outlet_key(a["source"]) for a in news if ago[a["id"]] <= 24}
+    o3 = {outlet_key(a["source"]) for a in news if ago[a["id"]] <= 3}
+    oprev = {outlet_key(a["source"]) for a in news if 3 < ago[a["id"]] <= 24}
 
     news_sorted = sorted(news, key=lambda a: art_time(a, now))
     rep = news_sorted[0] if news_sorted else max(reddit, key=lambda a: a["extra"].get("score", 0))
     links, seen = [], set()
     for a in news_sorted:
-        if a["source"] not in seen and a["url"]:
-            seen.add(a["source"])
+        if outlet_key(a["source"]) not in seen and a["url"]:
+            seen.add(outlet_key(a["source"]))
             links.append({"source": a["source"], "title": a["title"], "url": a["url"],
                           "published": iso(art_time(a, now))})
 
@@ -120,8 +129,8 @@ def make_story(c, now, tab_rx, speakers):
         "last_published": iso(max(times)),
         "outlets_24h": len(o24),
         "outlets_3h": len(o3),
-        "outlets_total": len({a["source"] for a in news}),
-        "outlets": sorted({a["source"] for a in news}),
+        "outlets_total": len({outlet_key(a["source"]) for a in news}),
+        "outlets": sorted({outlet_key(a["source"]): a["source"] for a in news}.values()),
         "growth_ratio": growth_ratio(len(o3), len(oprev)),
         "gdelt_outlets": None,
         "links": links[:5],
