@@ -23,9 +23,9 @@
     return r.ok ? r.json() : { groups: [] };
   }
 
-  function buildUrl(q, lang, sort) {
+  function buildUrl(q, lang, sort, cap) {
     const m = MODES[opts.mode] || MODES.day;
-    const likes = +opts.likes || m.likes;
+    const likes = +opts.likes || (cap ? Math.min(m.likes, cap) : m.likes);
     // только простые операторы, которые X точно понимает: since:ГГГГ-ММ-ДД, min_faves, -filter:replies
     const since = new Date(Date.now() - m.hours * 3600 * 1000).toISOString().slice(0, 10);
     let full = `${q} min_faves:${likes} since:${since} -filter:replies`;
@@ -34,13 +34,13 @@
     return `https://x.com/search?q=${encodeURIComponent(full)}&src=typed_query&f=${sort}`;
   }
 
-  function item(esc, title, q, lang) {
+  function item(esc, title, q, lang, capLikes) {
     return `<div class="xs-item">
       <div class="t">${esc(title)}</div>
       <div class="q">${esc(q)}</div>
       <div class="xs-btns">
-        <a class="top" href="#" data-q="${esc(q)}" data-lang="${esc(lang || "")}" data-sort="top" target="_blank" rel="noopener">🔥 Топ</a>
-        <a href="#" data-q="${esc(q)}" data-lang="${esc(lang || "")}" data-sort="live" target="_blank" rel="noopener">⚡ Свежие</a>
+        <a class="top" href="#" data-q="${esc(q)}" data-lang="${esc(lang || "")}" data-cap="${+capLikes || ""}" data-sort="top" target="_blank" rel="noopener">🔥 Топ</a>
+        <a href="#" data-q="${esc(q)}" data-lang="${esc(lang || "")}" data-cap="${+capLikes || ""}" data-sort="live" target="_blank" rel="noopener">⚡ Свежие</a>
       </div></div>`;
   }
 
@@ -74,7 +74,7 @@
         .join("")}</div></section>` : ""}
       ${groups
         .map((g) => `<section class="xs-group"><h2>${esc(g.name)} <small>${g.items.length}</small></h2><div class="xs-grid">${g.items
-          .map((it) => item(esc, it.title, it.q, g.lang))
+          .map((it) => item(esc, it.title, it.q, g.lang, it.likes))
           .join("")}</div></section>`)
         .join("")}
       <p class="xs-intro">Поиски меняются в файле <code>config/x_searches.yaml</code>. Совет: заведи в X <b>Списки</b> из авторов с хорошими углами и добавь их туда же — лента будет без мусора.</p>`;
@@ -88,7 +88,7 @@
         q = el.querySelector("#xs-own").value.trim();
         if (!q) { e.preventDefault(); ctx.toast("Сначала впиши, что искать"); return; }
       }
-      a.href = buildUrl(q, a.dataset.lang || "", a.dataset.sort);
+      a.href = buildUrl(q, a.dataset.lang || "", a.dataset.sort, +a.dataset.cap || 0);
     };
     const bind = (id, key, val) => el.querySelector(id).addEventListener("change", (e) => { opts[key] = val(e.target); save(); });
     bind("#xs-mode", "mode", (t) => t.value);

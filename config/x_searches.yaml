@@ -6,6 +6,8 @@
 #             A OR B             — одно из слов
 #             -слово             — исключить
 #             from:имя           — твиты конкретного аккаунта
+#   likes — (не обязательно) свой потолок лайков для узких тем: больше этого числа не требуем,
+#           иначе по редкой теме за сутки может не найтись ничего
 # lang у группы: en — только английские твиты, ru — только русские, пусто — любые.
 # Чтобы добавить поиск — скопируй строку и поменяй title и q.
 
@@ -14,30 +16,30 @@ groups:
     lang: en
     items:
       - {title: "Шабана Махмуд и нелегалы", q: '"Shabana Mahmood" (migrants OR asylum OR "small boats" OR refugees)'}
-      - {title: "Террористов отпустили под залог", q: '(terror OR terrorist OR terrorism) ("released on bail" OR bailed)'}
-      - {title: "Кражи часов и Rolex в Лондоне", q: '(Rolex OR "watch theft" OR "watch thieves" OR "watch robbery") London'}
-      - {title: "Кражи телефонов в Лондоне", q: '("phone theft" OR "phone snatching" OR "phone thieves" OR "stolen phones") London'}
-      - {title: "Дом Абу Хамзы за счёт налогоплательщиков", q: '"Abu Hamza"'}
+      - {title: "Террористов отпустили под залог", q: '(terror OR terrorist OR terrorism) ("released on bail" OR bailed)', likes: 50}
+      - {title: "Кражи часов и Rolex в Лондоне", q: '(Rolex OR "watch theft" OR "watch thieves" OR "watch robbery") London', likes: 50}
+      - {title: "Кражи телефонов в Лондоне", q: '("phone theft" OR "phone snatching" OR "phone thieves" OR "stolen phones") London', likes: 50}
+      - {title: "Дом Абу Хамзы за счёт налогоплательщиков", q: '"Abu Hamza"', likes: 50}
       - {title: "Лодки через Ла-Манш", q: '"small boats" OR "Channel crossings" OR "Channel migrants"'}
       - {title: "Груминг-банды", q: '"grooming gangs" OR "rape gangs" OR "grooming gang"'}
       - {title: "Погромы во Франции", q: '(France OR Paris OR French) (riots OR rioters OR looting OR unrest)'}
       - {title: "«Это всё русские боты»", q: '("Russian bots" OR "pro-Russian" OR disinformation OR Matryoshka) (France OR riots OR UK)'}
-      - {title: "Люси Коннолли и посадки за посты", q: '"Lucy Connolly" OR ("jailed" "social media post") OR "arrested for tweets"'}
-      - {title: "Биг Бен и ремонт Вестминстера", q: '"Big Ben" OR ("Palace of Westminster" restoration) OR "Westminster repairs"'}
-      - {title: "ОАЭ и радикализация в британских вузах", q: '(UAE OR Emirates) (students OR universities) (radicalisation OR radicalization OR Islamist) Britain'}
-      - {title: "Германия: бригада в Литве", q: '(German OR Bundeswehr) brigade Lithuania'}
-      - {title: "Калининград и НАТО", q: 'Kaliningrad (NATO OR Suwalki OR nuclear)'}
+      - {title: "Люси Коннолли и посадки за посты", q: '"Lucy Connolly" OR ("jailed" "social media post") OR "arrested for tweets"', likes: 50}
+      - {title: "Биг Бен и ремонт Вестминстера", q: '"Big Ben" OR ("Palace of Westminster" restoration) OR "Westminster repairs"', likes: 50}
+      - {title: "ОАЭ и радикализация в британских вузах", q: '(UAE OR Emirates) (students OR universities) (radicalisation OR radicalization OR Islamist) Britain', likes: 50}
+      - {title: "Германия: бригада в Литве", q: '(German OR Bundeswehr) brigade Lithuania', likes: 50}
+      - {title: "Калининград и НАТО", q: 'Kaliningrad (NATO OR Suwalki OR nuclear)', likes: 50}
       - {title: "Европа готовится к войне", q: '("prepare for war" OR "ready for war" OR conscription OR "national service") (UK OR Europe OR Britain)'}
-      - {title: "Подростки-киллеры в Швеции", q: 'Sweden (gang OR gangs) (teenagers OR "child soldiers" OR hitmen)'}
-      - {title: "Мародёры в Милане / Италии", q: '(Milan OR Italy) (looters OR looting OR riot)'}
-      - {title: "Ковид снова в Лондоне", q: '(covid OR coronavirus) (London OR England) (rise OR hospital OR surge)'}
-      - {title: "Олешки, Мелания Трамп", q: 'Oleshky OR ("Melania" ceasefire)'}
-      - {title: "Деколонизация Шекспира", q: 'Shakespeare (decolonise OR decolonize OR woke OR racist)'}
-      - {title: "Хиджабы и одежда от МВД мигрантам", q: '"Home Office" (hijabs OR clothing OR "clothes") migrants'}
-      - {title: "Clearsprings и жильё для мигрантов", q: 'Clearsprings OR ("asylum seekers" landlords "twice the rent")'}
-      - {title: "Oxfam / BBC платят белым меньше", q: '("pay gap" OR "pay white staff less") (Oxfam OR BBC OR charity)'}
+      - {title: "Подростки-киллеры в Швеции", q: 'Sweden (gang OR gangs) (teenagers OR "child soldiers" OR hitmen)', likes: 50}
+      - {title: "Мародёры в Милане / Италии", q: '(Milan OR Italy) (looters OR looting OR riot)', likes: 50}
+      - {title: "Ковид снова в Лондоне", q: '(covid OR coronavirus) (London OR England) (rise OR hospital OR surge)', likes: 50}
+      - {title: "Олешки, Мелания Трамп", q: 'Oleshky OR ("Melania" ceasefire)', likes: 50}
+      - {title: "Деколонизация Шекспира", q: 'Shakespeare (decolonise OR decolonize OR woke OR racist)', likes: 50}
+      - {title: "Хиджабы и одежда от МВД мигрантам", q: '"Home Office" (hijabs OR clothing OR "clothes") migrants', likes: 50}
+      - {title: "Clearsprings и жильё для мигрантов", q: 'Clearsprings OR ("asylum seekers" landlords "twice the rent")', likes: 50}
+      - {title: "Oxfam / BBC платят белым меньше", q: '("pay gap" OR "pay white staff less") (Oxfam OR BBC OR charity)', likes: 50}
       - {title: "Садик Хан", q: '"Sadiq Khan"'}
-      - {title: "Клопы в поездах", q: '(bedbugs OR "bed bugs") (train OR trains OR London OR UK)'}
+      - {title: "Клопы в поездах", q: '(bedbugs OR "bed bugs") (train OR trains OR London OR UK)', likes: 50}
 
   - name: "🚤 Миграция и нелегалы"
     lang: en
@@ -48,8 +50,8 @@ groups:
       - {title: "Мигранты получают жильё раньше местных", q: '(migrants OR refugees) (housing OR homes) (locals OR veterans OR "British families")'}
       - {title: "Ремиграция", q: 'remigration'}
       - {title: "Нидерланды / Швеция / Германия — миграция", q: '(Netherlands OR Dutch OR Sweden OR Germany) (migrants OR asylum OR migration)'}
-      - {title: "Сеута, Лампедуза, Канары", q: 'Ceuta OR Lampedusa OR ("Canary Islands" migrants)'}
-      - {title: "Туннели и мигранты из Беларуси", q: '(Belarus OR Lithuania OR Latvia OR Poland) (migrants OR tunnel OR border)'}
+      - {title: "Сеута, Лампедуза, Канары", q: 'Ceuta OR Lampedusa OR ("Canary Islands" migrants)', likes: 50}
+      - {title: "Туннели и мигранты из Беларуси", q: '(Belarus OR Lithuania OR Latvia OR Poland) (migrants OR tunnel OR border)', likes: 50}
       - {title: "Чистая миграция, цифры", q: '"net migration" OR "mass migration" OR "migration figures"'}
 
   - name: "🔪 Преступность, банды, безопасность"
@@ -71,7 +73,7 @@ groups:
       - {title: "Свобода слова в Британии", q: '"free speech" (UK OR Britain OR Starmer)'}
       - {title: "DEI, «разнообразие», квоты", q: '(DEI OR diversity OR quotas OR "positive discrimination") (UK OR BBC OR NHS OR police)'}
       - {title: "Деколонизация и снос памятников", q: '(decolonise OR decolonize OR "statue removed" OR "statue toppled")'}
-      - {title: "Программа Prevent", q: '"Prevent programme" OR "Prevent scheme" OR "Prevent referral"'}
+      - {title: "Программа Prevent", q: '"Prevent programme" OR "Prevent scheme" OR "Prevent referral"', likes: 50}
       - {title: "BBC: предвзятость", q: 'BBC (bias OR biased OR apology OR scandal)'}
 
   - name: "💷 Система бросает своих: налоги, NHS, пенсии, траты"
@@ -83,7 +85,7 @@ groups:
       - {title: "Деньги налогоплательщиков на ветер", q: '"taxpayers money" OR "taxpayer funded" OR "taxpayers'' money" OR "cost the taxpayer"'}
       - {title: "Пособия", q: '(benefits OR "universal credit") (scroungers OR fraud OR cuts OR billion)'}
       - {title: "Штрафы, ULEZ, камеры", q: 'ULEZ OR "parking fines" OR "council fines" OR "speed cameras"'}
-      - {title: "Ветераны против мигрантов", q: 'veterans (homeless OR housing) (migrants OR asylum)'}
+      - {title: "Ветераны против мигрантов", q: 'veterans (homeless OR housing) (migrants OR asylum)', likes: 50}
 
   - name: "🏚 Быт третьего мира: жизнь в Британии"
     lang: en
@@ -92,16 +94,16 @@ groups:
       - {title: "Плесень и ужасное жильё", q: '(mould OR damp OR "housing crisis") (UK OR council OR flat)'}
       - {title: "Аренда и цены", q: '(rent OR "cost of living" OR prices) (London OR UK) (insane OR crazy OR "can''t afford")'}
       - {title: "Поезда, метро, забастовки", q: '(trains OR tube OR "rail strike" OR Southern OR Avanti) (cancelled OR delays OR strike)'}
-      - {title: "Ямы на дорогах", q: 'potholes (UK OR council OR road)'}
-      - {title: "Стоматологи и вырванные зубы", q: '(dentist OR "NHS dentist" OR "pulled out" teeth)'}
-      - {title: "Британская еда — позор", q: '("British food" OR "UK supermarket" OR "meal deal") (disgusting OR shrinkflation OR prices)'}
+      - {title: "Ямы на дорогах", q: 'potholes (UK OR council OR road)', likes: 50}
+      - {title: "Стоматологи и вырванные зубы", q: '(dentist OR "NHS dentist" OR "pulled out" teeth)', likes: 50}
+      - {title: "Британская еда — позор", q: '("British food" OR "UK supermarket" OR "meal deal") (disgusting OR shrinkflation OR prices)', likes: 50}
 
   - name: "🔥 Беспорядки и бардак в Европе"
     lang: en
     items:
       - {title: "Протесты и беспорядки в Европе", q: '(riots OR rioting OR unrest OR looting) (Europe OR France OR Germany OR Belgium OR Netherlands OR Sweden OR Spain OR Italy)'}
       - {title: "Германия: преступность и мигранты", q: 'Germany (stabbing OR attack OR "knife attack" OR migrants)'}
-      - {title: "Бельгия / Брюссель", q: '(Brussels OR Belgium) (shooting OR gangs OR riots OR migrants)'}
+      - {title: "Бельгия / Брюссель", q: '(Brussels OR Belgium) (shooting OR gangs OR riots OR migrants)', likes: 50}
       - {title: "Евросоюз и бюрократы", q: '("von der Leyen" OR "EU Commission" OR Brussels) (ban OR censorship OR "Digital Services Act")'}
       - {title: "Протесты по всему миру (видео)", q: '(protest OR protests OR riot) filter:videos'}
 
@@ -113,7 +115,7 @@ groups:
       - {title: "MI5 / MI6 и шпионы", q: '(MI5 OR MI6) (Russia OR spies OR spy OR sabotage)'}
       - {title: "Фарадж и Украина", q: 'Farage (Ukraine OR Russia OR Putin OR war)'}
       - {title: "Санкции и нефть", q: '(sanctions OR diesel OR oil) Russia (US OR Trump OR EU)'}
-      - {title: "Опросы: кто готов воевать", q: '(poll OR survey OR YouGov OR Ipsos) (fight OR "would fight" OR war OR conscription)'}
+      - {title: "Опросы: кто готов воевать", q: '(poll OR survey OR YouGov OR Ipsos) (fight OR "would fight" OR war OR conscription)', likes: 50}
 
   - name: "🗣 Политики"
     lang: en
@@ -129,16 +131,16 @@ groups:
     items:
       - {title: "Только в Британии", q: '"only in Britain" OR "only in the UK" OR "broken Britain" OR "Britain is finished"'}
       - {title: "Принцы, принцессы, королевская семья", q: '(princess OR prince OR royal) (arrested OR scandal OR court OR drugs)'}
-      - {title: "Странные законы и запреты", q: '(UK OR council) (banned OR ban) (bizarre OR ridiculous OR absurd)'}
-      - {title: "Рейтинги «лучший город мира»", q: '("best city" OR ranking OR "most liveable") London'}
+      - {title: "Странные законы и запреты", q: '(UK OR council) (banned OR ban) (bizarre OR ridiculous OR absurd)', likes: 50}
+      - {title: "Рейтинги «лучший город мира»", q: '("best city" OR ranking OR "most liveable") London', likes: 50}
 
   - name: "🇷🇺 Русскоязычный X"
     lang: ru
     items:
       - {title: "Лондон / Британия — что пишут", q: 'Лондон OR Британия OR Англия OR британцы'}
-      - {title: "Мигранты в Европе", q: '(мигранты OR беженцы OR нелегалы) (Европа OR Франция OR Германия OR Британия)'}
-      - {title: "Европа и война с Россией", q: '(Европа OR НАТО OR Британия) (война OR мобилизация OR призыв)'}
-      - {title: "Эмиграция: как живётся", q: '(эмиграция OR переехал OR релокант) (Лондон OR Европа OR Британия)'}
+      - {title: "Мигранты в Европе", q: '(мигранты OR беженцы OR нелегалы) (Европа OR Франция OR Германия OR Британия)', likes: 50}
+      - {title: "Европа и война с Россией", q: '(Европа OR НАТО OR Британия) (война OR мобилизация OR призыв)', likes: 50}
+      - {title: "Эмиграция: как живётся", q: '(эмиграция OR переехал OR релокант) (Лондон OR Европа OR Британия)', likes: 50}
 
 # СПИСКИ X — самый удобный способ держать ленту без мусора.
 # Создай список в X (Lists), добавь туда аккаунты с хорошими углами и вставь ссылку сюда.
