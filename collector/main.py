@@ -8,7 +8,7 @@ from datetime import timedelta
 import statistics
 
 from .cluster import art_time
-from .pipeline import build_stories, formula_text, load_config, tabs_meta
+from .pipeline import build_stories, formula_text, load_config, mechanics_meta, tabs_meta
 from .scoring import apply_score
 from .sources import Ctx, gdelt, google_news, reddit, rss, telegram, trends
 from .text import Normalizer
@@ -109,7 +109,7 @@ def main():
     save_json(DATA / "status.json", {"generated_at": iso(now), "sources": ctx.status}, indent=1)
     save_json(DATA / "stories.json", {
         "generated_at": iso(now), "demo": False,
-        "weights": cfg["scoring"].get("weights", {}), "formula": formula_text(cfg["scoring"]),
+        "weights": cfg["scoring"].get("weights", {}), "formula": formula_text(cfg["scoring"]), "mechanics": mechanics_meta(cfg),
         "tabs": tabs_meta(cfg), "stories": out,
     })
     bad = [s["name"] for s in ctx.status if not s["ok"]]

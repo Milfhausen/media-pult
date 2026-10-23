@@ -24,6 +24,7 @@ def load_config():
         "dictionary": load_yaml("config/dictionary.yaml"),
         "sources": load_yaml("config/sources.yaml"),
         "telegram": load_yaml("config/telegram_channels.yaml"),
+        "mechanics": load_yaml("config/mechanics.yaml").get("mechanics", []),
         "tabs": tabs,
     }
 
@@ -64,10 +65,12 @@ def build_stories(articles, cfg, now):
         fold_rx = keyword_regex(t["fold"].get("keywords") or []) if t["fold"] else None
         tab_rx.append((t["id"], cats, fold_rx))
     speakers = [(s["label"], [m.lower() for m in s.get("match", [])]) for s in cfg["dictionary"].get("speakers", [])]
+    mechs = [(m["id"], keyword_regex(m.get("any") or []), keyword_regex(m.get("also_any") or []))
+             for m in cfg.get("mechanics", [])]
 
     stories = []
     for c in clusters:
-        st = make_story(c, now, tab_rx, speakers)
+        st = make_story(c, now, tab_rx, speakers, mechs)
         if st:
             stories.append(apply_score(st, sc))
     stories.sort(key=lambda s: (-s["score"], -s["outlets_total"]))
@@ -81,7 +84,7 @@ def outlet_key(name):
     return re.sub(r" (news|online|uk)$", "", k) or k
 
 
-def make_story(c, now, tab_rx, speakers):
+def make_story(c, now, tab_rx, speakers, mechs=()):
     news = [a for a in c.members if a["kind"] == "news"]
     reddit = list({a["id"]: a for a in c.members if a["kind"] == "reddit"}.values())
     if not news and not reddit:
@@ -117,6 +120,8 @@ def make_story(c, now, tab_rx, speakers):
     for tab_id, cats, fold_rx in tab_rx:
         tags[tab_id] = [name for name, rx in cats if rx and rx.search(text)]
         fold[tab_id] = bool(fold_rx and fold_rx.search(text))
+    mechanics = [mid for mid, rx_any, rx_also in mechs
+                 if rx_any and rx_any.search(text) and (rx_also is None or rx_also.search(text))]
     speaker = next((label for label, ms in speakers if any(m in text for m in ms)), None)
 
     times = [art_time(a, now) for a in c.members]
@@ -143,4 +148,10 @@ def make_story(c, now, tab_rx, speakers):
         "tags": tags,
         "fold": fold,
         "speaker": speaker,
+        "mechanics": mechanics,
     }
+
+
+def mechanics_meta(cfg):
+    """Названия и подсказки механик для страницы."""
+    return {m["id"]: {"label": m.get("label", m["id"]), "hint": m.get("hint", "")} for m in cfg.get("mechanics", [])}

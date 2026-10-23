@@ -114,3 +114,12 @@ def test_translation_falls_back_to_second_translator():
     stories = [{"title": "A"}, {"title": "B"}]
     new, err = translate_stories(stories, {}, translators=[Broken(), Ok()])
     assert new == 2 and err is None and stories[1]["title_ru"] == "перевод: B"
+
+
+def test_mechanics_hints():
+    arts = [news("Judge frees terror suspect on bail over mental health fears", o, i + 1)
+            for i, o in enumerate(["BBC", "Sky", "Guardian"])]
+    st = build_stories(arts, CFG, NOW)[0]
+    assert "aswat" in st["mechanics"]
+    arts = [news("Tank barrel production returns to Telford", "BBC", 1)]
+    assert "grooming" not in build_stories(arts, CFG, NOW)[0]["mechanics"]

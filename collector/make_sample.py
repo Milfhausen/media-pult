@@ -3,7 +3,7 @@
 Все заголовки ниже — ВЫДУМАННЫЕ примеры для проверки интерфейса."""
 from datetime import timedelta
 
-from .pipeline import build_stories, formula_text, load_config, tabs_meta
+from .pipeline import build_stories, formula_text, load_config, mechanics_meta, tabs_meta
 from .util import DATA, article, iso, now_utc, save_json
 
 N, R, T, G = "news", "reddit", "telegram", "trend"
@@ -98,7 +98,7 @@ def main():
         st["title_ru"] = st["title_ru"] or RU.get(st["title"])
     save_json(DATA / "sample_stories.json", {
         "generated_at": iso(now), "demo": True,
-        "weights": cfg["scoring"].get("weights", {}), "formula": formula_text(cfg["scoring"]),
+        "weights": cfg["scoring"].get("weights", {}), "formula": formula_text(cfg["scoring"]), "mechanics": mechanics_meta(cfg),
         "tabs": tabs_meta(cfg), "stories": stories,
     }, indent=1)
     save_json(DATA / "sample_status.json", {"generated_at": iso(now), "sources": [

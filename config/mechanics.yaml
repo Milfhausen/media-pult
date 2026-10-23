@@ -1,0 +1,55 @@
+# ПОДСКАЗКИ МЕХАНИКИ — метка на карточке новости, какая твоя рабочая схема тут подходит.
+# Взято из библии и атласа сериала. Ставится автоматически, вводить ничего не нужно.
+#   any      — хотя бы одно из этих слов должно быть в заголовках сюжета
+#   also_any — (не обязательно) И ещё хотя бы одно из этих
+# Слово срабатывает по НАЧАЛУ слова: "sentenc" найдёт sentenced, sentence.
+
+mechanics:
+  - id: aswat
+    label: "🎯 Механика Асвата"
+    hint: "Конкретный персонаж + 3 абсурдные детали суда/решения + цитата про систему, которая его защищает. Эталоны: Асват 632к (шеры 42.6/1k), Полицейский лишён гражданства 165к."
+    any: [judge, court, sentenc, bail, bailed, released, freed, walked free, spared jail, suspended sentence, mental health, tribunal, appeal, compensation, payout]
+    also_any: [terror, jihad, extremist, rapist, rape, paedophile, pedophile, murder, killer, grooming, asylum seeker, migrant, illegal, deport, Abu Hamza, Begum]
+
+  - id: quiz
+    label: "🎲 Материал для квиза"
+    hint: "«Давайте сыграем в игру»: три приговора в нарастающем абсурде, самый страшный получил меньше всех. Эталон: Британское правосудие 342к. Раз в 7–10 серий."
+    any: [jailed, sentenc, prison, years, months, fined, community order]
+    also_any: [tweet, post, posts, meme, Facebook, social media, online, speech, protest, prayer, silent, comment, offensive, banner, flag]
+
+  - id: women
+    label: "👩‍👧 Защита женщин и детей"
+    hint: "Самый мощный сегмент. Эталоны: Страшно рожать детей 157к (3.05 подп/1k), Деревня 133 женщины 162к. Найди личную привязку: жена, знакомые, свой район."
+    any: [girl, girls, women, woman, schoolgirl, children, child, mother, mothers, pregnant, maternity, baby, babies, daughter]
+    also_any: [rape, raped, sexual, assault, abuse, grooming, harass, murdered, stabbed, kidnap, migrant, asylum]
+
+  - id: betrayal
+    label: "💷 «Платишь всю жизнь — тебя бросают»"
+    hint: "Двойной контраст «свои vs чужие». Эталоны: Пенсионеры 321к (цитата «отменили 200 фунтов пенсионерам, выделяя миллиарды мигрантам»), Пособия 336к."
+    any: [pensioner, pension, veteran, veterans, homeless, taxpayer, British families, working families, carers, nurses, winter fuel]
+    also_any: [migrant, migrants, asylum, refugee, hotel, hotels, benefits, foreign, overseas aid, billion]
+
+  - id: grooming
+    label: "🔁 Трилогия: груминг-банды"
+    hint: "Главная НЕ снятая тема по атласу. Трилогия Rotherham → Rochdale → Telford: общий тезис, в каждой части свой случай, 3–5 дней между частями."
+    any: [grooming gang, grooming gangs, rape gang, rape gangs, grooming inquiry, Casey report]
+
+  - id: control
+    label: "👁 Контроль: «тюрьма для своих»"
+    hint: "Линия контроля. Эталоны: Камеры 300 раз в день, 62к арестов за посты, фургоны BBC 140к. Нужна личная привязка — что это значит для тебя и твоих детей."
+    any: [arrested for, digital ID, facial recognition, Online Safety Act, VPN, censorship, surveillance, CCTV, CBDC, digital pound, debank, debanked, two-tier, free speech, hate speech]
+
+  - id: replacement
+    label: "🗺 Замещение / демография"
+    hint: "Новый сегмент с дня 72 (Демография Лондона 98% → 37%). Цифры — плашками, голосом — эмоция и вывод. Цитата-кольцо: «Я живу в Лондоне чтобы ты понял, что жить тут не стоит»."
+    any: [census, white British, demograph, population, ethnic, second language, birth rate, majority, minority, net migration]
+
+  - id: character
+    label: "🎭 Персонаж из списка «не раскрыт»"
+    hint: "По библии эти персонажи ещё не раскрыты: механика «конкретный персонаж-абсурд» — имя, должность, 2–3 абсурдных решения, цитата."
+    any: [Shabana Mahmood, Sadiq Khan, Humza Yousaf, Abu Hamza, Shamima Begum, Lucy Connolly, Lucy Letby]
+
+  - id: cooled
+    label: "❄️ Тема остыла"
+    hint: "По атласу эту тему недавно снимали и она затухла (война 91к → 71к → 34к; жара 377к → 55к; BBC-лицензия дважды; украинцы 3 раза подряд). Брать только с совсем новым углом и личной привязкой."
+    any: [conscription, prepare for war, ready for war, war with Russia, national service, heatwave, TV licence, licence fee, Ukrainian refugees, Homes for Ukraine]

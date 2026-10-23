@@ -75,6 +75,12 @@
     toast("Скопировано ✓");
   }
 
+  // ---------- подсказки механики (config/mechanics.yaml) ----------
+  function mechList(s) {
+    const meta = (state.data && state.data.mechanics) || {};
+    return (s.mechanics || []).map((id) => meta[id]).filter(Boolean);
+  }
+
   // ---------- текст «для сценария» ----------
   function scriptText(s) {
     const L = [];
@@ -85,6 +91,7 @@
     L.push(`Изданий за 24 ч: ${s.outlets_24h}` + (s.outlets_3h ? ` (за последние 3 ч: ${s.outlets_3h})` : "") + (s.rising ? " — 🚀 РАСТЁТ" : ""));
     if (s.outlets && s.outlets.length) L.push("Кто писал: " + s.outlets.slice(0, 10).join(", "));
     if (s.speaker) L.push("Кто сказал: " + s.speaker);
+    mechList(s).forEach((m) => L.push(`Механика: ${m.label} — ${m.hint}`));
     if (s.reddit && s.reddit.posts) L.push(`Reddit: ▲${s.reddit.score} лайков, ${s.reddit.comments} комментариев (${s.reddit.sub || ""})`);
     if (s.trends && s.trends.length) L.push("В Google Trends Британии: " + s.trends.join(", "));
     if (s.first) L.push("🥇 В ру-Телеге ещё никто не написал");
@@ -145,6 +152,9 @@
         <div class="badges">${badges.join("")}</div>
         <div class="ttl">${esc(s.title_ru || s.title)}</div>
         ${s.title_ru && s.title_ru !== s.title ? `<div class="orig">${esc(s.title)}</div>` : ""}
+        ${mechList(s).length ? `<details class="mech"><summary>${mechList(s).map((m) => esc(m.label)).join(" · ")}</summary>${mechList(s)
+          .map((m) => `<p><b>${esc(m.label)}</b> — ${esc(m.hint)}</p>`)
+          .join("")}</details>` : ""}
         ${opts.speaker && s.speaker ? `<div class="speaker">🎙 Кто сказал: <b>${esc(s.speaker)}</b></div>` : ""}
         <div class="meta">${meta.map((m) => `<span>${m}</span>`).join("")}</div>
         <ul class="links">${links.join("")}</ul>
