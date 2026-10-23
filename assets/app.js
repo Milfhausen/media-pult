@@ -161,12 +161,14 @@
         ${tg}
         <div class="actions">
           <button class="copy" type="button">📋 Скопировать для сценария</button>
+          <button class="copy alt pq" type="button">🖼 Плашка</button>
           <button class="copy alt ai" type="button" title="Скопировать с готовой просьбой и вставить в чат с Claude">🤖 Сценарий с Claude</button>
           <button class="copy alt take${taken[s.id] ? " done-on" : ""}" type="button">${taken[s.id] ? "✅ Взят в работу" : "☐ Взял в работу"}</button>
         </div>
       </div>`;
     if (taken[s.id]) el.classList.add("taken");
     el.querySelector(".copy").addEventListener("click", () => copyText(scriptText(s)));
+    el.querySelector(".pq").addEventListener("click", () => window.PultPlaque && window.PultPlaque.open(s, esc, toast));
     el.querySelector(".ai").addEventListener("click", () => copyText(claudeText(s)).then(() => toast("Скопировано — вставь в чат с Claude")));
     el.querySelector(".take").addEventListener("click", () => {
       setTaken(s.id, !taken[s.id]);
