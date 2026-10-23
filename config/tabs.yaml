@@ -7,6 +7,7 @@
 # Чтобы добавить вкладку: скопируй строку, поменяй id/title/файлы. Подробно — в README.
 
 tabs:
+  - {id: ideas, title: "💡 Банк идей", module: modules/ideas.js}
   - {id: hype, title: "🔥 Хайп-радар: Британия и Европа", module: modules/hype.js, keywords: config/segments.yaml}
   - {id: cis, title: "🇺🇦🇷🇺 СНГ-радар", module: modules/cis.js, keywords: config/cis_keywords.yaml}
   - {id: xsearch, title: "🐦 X: мнения людей", module: modules/xsearch.js}

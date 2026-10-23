@@ -1,19 +1,19 @@
 {
- "generated_at": "2026-10-23T20:24:55Z",
+ "generated_at": "2026-10-23T20:42:29Z",
  "sources": [
   {
    "name": "Google News",
    "ok": true,
    "count": 412,
    "error": null,
-   "at": "2026-10-23T20:24:55Z"
+   "at": "2026-10-23T20:42:29Z"
   },
   {
    "name": "Reddit",
    "ok": false,
    "count": 0,
    "error": "403 Forbidden (демо-пример ошибки)",
-   "at": "2026-10-23T20:24:55Z"
+   "at": "2026-10-23T20:42:29Z"
   }
  ]
 }

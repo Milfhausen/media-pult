@@ -149,3 +149,10 @@ h2.sec small { color: var(--muted); font-weight: 400; }
 .pq-l { display: block; font-size: 13px; color: var(--muted); margin-bottom: 8px; }
 .pq-l textarea { display: block; width: 100%; margin-top: 4px; background: var(--panel2); color: var(--text); border: 1px solid var(--line); border-radius: 8px; padding: 8px; font: inherit; resize: vertical; }
 .pq-canvas { width: 100%; height: auto; display: block; margin: 8px 0 12px; border-radius: 12px; }
+
+/* Банк идей */
+.card.idea.saved { border-color: var(--gold); }
+.b.mechb { border-color: #3b2d63; color: #c9b6ff; }
+.etalon { margin-top: 8px; font-size: 13px; background: #102418; border: 1px solid #1f5130; border-radius: 8px; padding: 6px 8px; }
+.etalon span { color: var(--muted); }
+.why { margin-top: 4px; font-size: 12px; color: var(--muted); }

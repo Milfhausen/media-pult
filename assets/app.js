@@ -97,6 +97,8 @@
     if (s.first) L.push("🥇 В ру-Телеге ещё никто не написал");
     if (s.in_ru_tg) L.push("📢 Уже в ру-Телеге: " + s.telegram.map((p) => `${p.channel} (${num(p.views)} просм.)`).join(", "));
     L.push("Впервые: " + fmtTime(s.first_published) + " (Лондон)");
+    if (s.idea && s.idea.etalon) L.push(`Похоже на мою серию: ${s.idea.etalon.ep} (${s.idea.etalon.views}, ${s.idea.etalon.subs} подп/1k). Угол: ${s.idea.etalon.angle}`);
+    if (s.idea && s.idea.segment) L.push(`Рубрика: ${s.idea.segment}. Потенциал для меня: ${s.idea.potential}/100`);
     L.push("");
     L.push("Ссылки:");
     (s.links || []).forEach((l) => L.push(`— ${l.source}: ${l.url}`));
@@ -107,10 +109,10 @@
   // ---------- просьба для Claude ----------
   function claudeText(s) {
     return [
-      "Напиши сценарий Reels/TikTok для моего сериала «Выживаю в Лондоне» по этому сюжету.",
-      "Аудитория — русскоязычные из СНГ. Тон: разоблачаю систему Британии и Европы, от первого лица, живо и без воды.",
-      "Нужно: 3 варианта хука на первые 2–3 секунды, сценарий на 30–45 секунд, главные цифры и факты из сюжета, призыв в конце.",
-      "Разбери по фреймворку Illusion of Novelty и дай финальную версию.",
+      "Напиши сценарий серии «Выживаю в Лондоне, день X» по этому сюжету. Работай строго по моим правилам и библии.",
+      "Прайм-формула из 6 блоков, 50–60 секунд: хук-приговор → личная виньетка (в первые 15 сек) → система с цифрами → живописная деталь из наблюдения → триггер + готовая цитата 7–15 слов → конкретный тизер завтра.",
+      "2–3 триггера из банка, минимум одна моя сигнатура, один CTA, голосом не говорить «телеграм/ютуб». Цифры и заголовки — плашками на экране.",
+      "Дай: 3 хука-приговора разных типов, сценарий, визуалку-пруфы синхронно с текстом, обложку в 2 строки, соцстатус переславшего и прогноз по моим эталонам.",
       "",
       "СЮЖЕТ:",
       scriptText(s),
@@ -260,7 +262,7 @@
     }
     document.body.classList.toggle("own-page", !!mod.ownPage); // вкладка-приложение: без фильтров новостей
     try {
-      mod.render({ el: view, tab, stories: filtered(tab.id), all: state.data.stories, data: state.data, section, collapsible, card, switchTab, esc, toast, copyText });
+      mod.render({ el: view, tab, stories: filtered(tab.id), all: state.data.stories, data: state.data, section, collapsible, card, switchTab, esc, toast, copyText, claudeText });
     } catch (e) {
       console.error(e);
       view.innerHTML = `<div class="empty">Ошибка во вкладке: ${esc(e.message)}</div>`;

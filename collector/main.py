@@ -7,6 +7,7 @@ from datetime import timedelta
 
 import statistics
 
+from . import ideas
 from .cluster import art_time
 from .pipeline import build_stories, formula_text, load_config, mechanics_meta, tabs_meta
 from .scoring import apply_score
@@ -85,8 +86,10 @@ def main():
             ctx.report("GDELT", True, n)
         except (Exception, FutTimeout) as e:
             ctx.report("GDELT", False, error=str(e) or "таймаут")
+        prep = ideas.prepare(cfg.get("ideas", {}))
         for st in stories:
             apply_score(st, cfg["scoring"])
+            ideas.annotate(st, prep)
         stories.sort(key=lambda s: (-s["score"], -s["outlets_total"]))
 
     by_total = sorted(stories, key=lambda s: -s["outlets_total"])[:100]

@@ -1,0 +1,65 @@
+# БАНК ИДЕЙ — как пульт выбирает новости ПОД ТЕБЯ.
+# Все веса и эталоны взяты из библии и атласа (117 роликов, дни 1–73).
+
+# 1. ТОЛЬКО ЖИРНОЕ: сюжет попадает в идеи, если выполнено хотя бы одно условие
+gate:
+  min_outlets_24h: 6        # пишут 6+ изданий за сутки
+  rising_min_outlets: 4     # или 4+ издания и 🚀 растёт
+  trends_min_outlets: 3     # или 3+ издания и тема в Google Trends
+  min_hype: 45              # или хайп-оценка от 45
+
+# 2. ПОТЕНЦИАЛ ДЛЯ ТЕБЯ (0–100) = хайп × hype + лучшая рубрика × segment + лучшая механика × mechanic
+#    + бонусы 🥇 и 🚀. Тема «остыла» — штраф.
+weights:
+  hype: 0.45
+  segment: 25
+  mechanic: 15
+  first: 8
+  rising: 5
+  etalon: 7
+  cooled: -30
+  war: -15          # война и Россия–Украина (по атласу тема затухла: 91к → 71к → 34к)
+
+# Сила рубрик по твоим цифрам (1.0 = больше всего миллионников)
+segments:
+  "Быт третьего мира": {weight: 1.0, why: "5 миллионников: Гигиена 2,02М, Еда 1,09М, Зубы 683к, Третий мир 452к, Жара 377к"}
+  "Безопасность": {weight: 0.9, why: "Асват 632к, Безопасность Лондона 330к, Испания 225к, Автоугоны 144к (3.85 подп/1k)"}
+  "Система бросает своих": {weight: 0.85, why: "Пособия 336к, Пенсионеры 321к, NHS 148к — сегмент недоразвит, потенциал большой"}
+  "Преступность и банды": {weight: 0.85, why: "Асват 632к, Автоугоны 144к; груминг-банды — главная НЕ снятая тема"}
+  "Миграция и нелегалы": {weight: 0.75, why: "Испания 40к лодок 225к (3.36), Полицейский лишён гражданства 165к"}
+  "Двойные стандарты и цензура": {weight: 0.6, why: "Фургоны BBC 140к, 62к арестов за посты 80к — нужна личная привязка"}
+  "Беспорядки в Европе": {weight: 0.55, why: "Испания 225к сработала, но «новость без личного» (Германия+Литва 34к) — провал"}
+  "Курьёзы и абсурд": {weight: 0.5, why: "Визуальный выброс: просмотры есть (Кока-кола 575к), подписок мало — нужна цитата-пунчлайн"}
+
+# Сила механик (id из config/mechanics.yaml)
+mechanics:
+  aswat: 1.0
+  grooming: 1.0
+  women: 0.9
+  betrayal: 0.9
+  quiz: 0.75
+  character: 0.7
+  replacement: 0.6
+  control: 0.5
+
+# 3. ПОХОЖАЯ СЕРИЯ-ЭТАЛОН: по словам в новости пульт находит твой залетевший ролик на ту же тему
+etalons:
+  - {match: [hygiene, shower, showers, soap, taps, washing up, unwashed, гигиен, мыть], ep: "День 18 · Гигиена", views: "2,02М", subs: "9.00", angle: "3 живописные детали из наблюдения (краны, корыто, спонсорша) + цитата «Мыться каждый день? Никогда»"}
+  - {match: [supermarket, Tesco, Sainsbury, food prices, British food, school meals, fish and chips, beans on toast, Greggs, tea bags, еда, супермаркет], ep: "День 5 · Еда / Tesco", views: "1,09М", subs: "6.26", angle: "Эмоция от первого лица («обосрались в этот же день») + ироничный финал"}
+  - {match: [dentist, dental, teeth, tooth, зуб, стоматолог], ep: "День 11 · Стоматология", views: "683к", subs: "7.42", angle: "Личная драма → системное разоблачение («набор юного дантиста»)"}
+  - {match: [terror, terrorist, jihadist, extremist], ep: "День 53 · Асват", views: "632к", subs: "5.07", angle: "Персонаж + 3 абсурдные детали суда + ироничный финал (рекорд шеров 42.6/1k)"}
+  - {match: [mould, damp, repairs, broken, water quality, hair loss, third world, плесен], ep: "День 7 · Третий мир", views: "452к", subs: "5.19", angle: "«ТРИ МЕСЯЦА КАРЛ» — эмоциональный повтор заглавными + своя семья"}
+  - {match: [heatwave, extreme heat, air conditioning, hot weather, жара], ep: "День 32 · Жара (тема остыла)", views: "377к", subs: "3.07", angle: "3 личные сцены + универсальная цитата; повтор через 13 дней дал 55к — только новый угол"}
+  - {match: [benefits, universal credit, welfare, handouts, пособи], ep: "День 31 · Пособия", views: "336к", subs: "4.29", angle: "Персонаж с конкретикой (лесбиянки у спонсора, 5000 фунтов) + «нахуя работать когда можно не работать»"}
+  - {match: [knife, knives, machete, sword, stabbing, stabbed, нож], ep: "День 6 · Безопасность Лондона", views: "330к", subs: "4.02", angle: "Деталь «мачете и настоящие мечи» + ироничная цитата"}
+  - {match: [pensioner, pensioners, winter fuel, heating, elderly, пенсионер], ep: "День 19 · Пенсионеры", views: "321к", subs: "5.09", angle: "Личный свидетель («+14 в доме у Англичанки») + «отменили 200 фунтов пенсионерам, выделяя миллиарды мигрантам»"}
+  - {match: [small boats, boats, Channel crossing, Ceuta, Canary, Lampedusa, лодк], ep: "31.07 · Испания 40к лодок", views: "225к", subs: "3.36", angle: "Личный контраст («пока таких как я на границе проверяют…») + визуал лодок"}
+  - {match: [citizenship, stripped of, deprived of citizenship, гражданств], ep: "08.08 · Полицейский лишён гражданства", views: "165к", subs: "3.37", angle: "Живой персонаж + цитата «министр, дочь пакистанских иммигрантов»"}
+  - {match: [maternity, midwife, midwives, giving birth, stillbirth, pregnant, baby deaths, рожать], ep: "30.08 · Страшно рожать детей", views: "157к", subs: "3.05", angle: "Защита женщин + деталь «семейный туризм»"}
+  - {match: [NHS, A&E, GP, waiting list, hospital, ambulance], ep: "День 58 · NHS + жена", views: "148к", subs: "1.36", angle: "Личный случай (жена, вена 1.5 года, доктор с ChatGPT)"}
+  - {match: [car theft, cars stolen, keyless, stolen car, автоугон], ep: "День 57 · Автоугоны", views: "144к", subs: "3.85", angle: "Деталь «устройство через стену» + «воровать шоколад опаснее, чем автомобили»"}
+  - {match: [bike theft, pickpocket, phone theft, phone snatch, Rolex, watch theft, карманник], ep: "День 29 / 33 · Велосипеды, карманники", views: "134–147к", subs: "2.7–2.8", angle: "Своя сцена кражи + цифра раскрываемости"}
+  - {match: [leasehold, landlord, rent, housing, council housing, аренд], ep: "День 39 · Leasehold", views: "144к", subs: "1.13", angle: "Абсурд системы «100 лет аренды» + личный пример"}
+  - {match: [CCTV, cameras, facial recognition, surveillance, камер], ep: "День 51 · Камеры", views: "100к", subs: "0.98", angle: "«Отпиздили под камерами — записи никто не запросил» + «улыбнись и подпишись, тебя снимает камера»"}
+  - {match: [grooming, rape gang, Rotherham, Rochdale, Telford], ep: "НЕ СНЯТО · груминг-банды", views: "—", subs: "—", angle: "Главная непокрытая тема по атласу — трилогия Rotherham → Rochdale → Telford"}
+  - {match: [Europe is finished, end of Europe, civilisation, Western civilization, Европ], ep: "День 47 · Манифест «Европы нет»", views: "134к", subs: "11.77 (рекорд)", angle: "Манифест раз в 25–30 серий: назвать оппонентов, «свои люди», миссия"}

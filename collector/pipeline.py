@@ -1,6 +1,7 @@
 """Из списка статей делаем сюжеты: склейка -> цифры -> оценка -> теги."""
 import re
 
+from . import ideas
 from .cluster import art_time, attach_overlap, attach_trends, cluster_articles
 from .scoring import FORMULA, apply_score, growth_ratio
 from .text import Normalizer, keyword_regex
@@ -25,6 +26,7 @@ def load_config():
         "sources": load_yaml("config/sources.yaml"),
         "telegram": load_yaml("config/telegram_channels.yaml"),
         "mechanics": load_yaml("config/mechanics.yaml").get("mechanics", []),
+        "ideas": load_yaml("config/ideas.yaml"),
         "tabs": tabs,
     }
 
@@ -65,6 +67,7 @@ def build_stories(articles, cfg, now):
         fold_rx = keyword_regex(t["fold"].get("keywords") or []) if t["fold"] else None
         tab_rx.append((t["id"], cats, fold_rx))
     speakers = [(s["label"], [m.lower() for m in s.get("match", [])]) for s in cfg["dictionary"].get("speakers", [])]
+    idea_prep = ideas.prepare(cfg.get("ideas", {}))
     mechs = [(m["id"], keyword_regex(m.get("any") or []), keyword_regex(m.get("also_any") or []))
              for m in cfg.get("mechanics", [])]
 
@@ -72,7 +75,9 @@ def build_stories(articles, cfg, now):
     for c in clusters:
         st = make_story(c, now, tab_rx, speakers, mechs)
         if st:
-            stories.append(apply_score(st, sc))
+            apply_score(st, sc)
+            ideas.annotate(st, idea_prep, " \n ".join(a["title"] for a in c.members).lower().replace("ё", "е"))
+            stories.append(st)
     stories.sort(key=lambda s: (-s["score"], -s["outlets_total"]))
     return stories
 

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T20:24:55Z",
+ "generated_at": "2026-10-23T20:42:29Z",
  "demo": true,
  "weights": {
   "outlets": 40,
@@ -49,6 +49,13 @@
  },
  "tabs": [
   {
+   "id": "ideas",
+   "title": "💡 Банк идей",
+   "module": "modules/ideas.js",
+   "categories": [],
+   "fold": null
+  },
+  {
    "id": "hype",
    "title": "🔥 Хайп-радар: Британия и Европа",
    "module": "modules/hype.js",
@@ -94,8 +101,8 @@
    "title": "Britain must be ready to accept casualties in a war, says army chief",
    "title_ru": "Глава армии: Британия должна быть готова к жертвам в войне",
    "lang": "en",
-   "first_published": "2026-10-23T00:24:55Z",
-   "last_published": "2026-10-23T20:00:55Z",
+   "first_published": "2026-10-23T00:42:29Z",
+   "last_published": "2026-10-23T20:18:29Z",
    "outlets_24h": 8,
    "outlets_3h": 7,
    "outlets_total": 8,
@@ -116,31 +123,31 @@
      "source": "The Times",
      "title": "Britain must be ready to accept casualties in a war, says army chief",
      "url": "https://example.org/demo/thetimes/7",
-     "published": "2026-10-23T00:24:55Z"
+     "published": "2026-10-23T00:42:29Z"
     },
     {
      "source": "The Telegraph",
      "title": "Britain must be ready to accept casualties in a war, says army chief",
      "url": "https://example.org/demo/thetelegraph/0",
-     "published": "2026-10-23T17:54:55Z"
+     "published": "2026-10-23T18:12:29Z"
     },
     {
      "source": "BBC News",
      "title": "Britain must be ready to accept casualties in a war, says army chief",
      "url": "https://example.org/demo/bbcnews/1",
-     "published": "2026-10-23T18:24:55Z"
+     "published": "2026-10-23T18:42:29Z"
     },
     {
      "source": "The Guardian",
      "title": "Britain must be ready to accept casualties in a war, says army chief",
      "url": "https://example.org/demo/theguardian/2",
-     "published": "2026-10-23T18:54:55Z"
+     "published": "2026-10-23T19:12:29Z"
     },
     {
      "source": "Sky News",
      "title": "Britain must be ready to accept casualties in a war, says army chief",
      "url": "https://example.org/demo/skynews/3",
-     "published": "2026-10-23T19:24:55Z"
+     "published": "2026-10-23T19:42:29Z"
     }
    ],
    "reddit": {
@@ -155,6 +162,7 @@
    "tg_views": 0,
    "tg_channels": [],
    "tags": {
+    "ideas": [],
     "hype": [],
     "cis": [
      "Подготовка к войне"
@@ -162,6 +170,7 @@
     "xsearch": []
    },
    "fold": {
+    "ideas": false,
     "hype": true,
     "cis": false,
     "xsearch": false
@@ -178,15 +187,23 @@
    "score": 70,
    "in_ru_tg": false,
    "rising": true,
-   "first": true
+   "first": true,
+   "idea": {
+    "fat": true,
+    "potential": 30,
+    "segment": null,
+    "segment_why": null,
+    "etalon": null,
+    "cooled": false
+   }
   },
   {
    "id": "293705ac13484006",
    "title": "Teenager stabbed to death outside London school",
    "title_ru": "Подростка зарезали у школы в Лондоне",
    "lang": "en",
-   "first_published": "2026-10-23T17:36:55Z",
-   "last_published": "2026-10-23T20:06:55Z",
+   "first_published": "2026-10-23T17:54:29Z",
+   "last_published": "2026-10-23T20:24:29Z",
    "outlets_24h": 8,
    "outlets_3h": 8,
    "outlets_total": 8,
@@ -207,31 +224,31 @@
      "source": "Sky News",
      "title": "Teenager stabbed to death outside London school",
      "url": "https://example.org/demo/skynews/38",
-     "published": "2026-10-23T17:36:55Z"
+     "published": "2026-10-23T17:54:29Z"
     },
     {
      "source": "BBC News",
      "title": "Teenager stabbed to death outside London school",
      "url": "https://example.org/demo/bbcnews/39",
-     "published": "2026-10-23T18:12:55Z"
+     "published": "2026-10-23T18:30:29Z"
     },
     {
      "source": "Daily Mail",
      "title": "Teenager stabbed to death outside London school",
      "url": "https://example.org/demo/dailymail/40",
-     "published": "2026-10-23T18:24:55Z"
+     "published": "2026-10-23T18:42:29Z"
     },
     {
      "source": "The Independent",
      "title": "Teenager stabbed to death outside London school",
      "url": "https://example.org/demo/theindependent/41",
-     "published": "2026-10-23T18:48:55Z"
+     "published": "2026-10-23T19:06:29Z"
     },
     {
      "source": "GB News",
      "title": "Teenager stabbed to death outside London school",
      "url": "https://example.org/demo/gbnews/42",
-     "published": "2026-10-23T19:12:55Z"
+     "published": "2026-10-23T19:30:29Z"
     }
    ],
    "reddit": {
@@ -246,6 +263,7 @@
    "tg_views": 0,
    "tg_channels": [],
    "tags": {
+    "ideas": [],
     "hype": [
      "Безопасность"
     ],
@@ -253,6 +271,7 @@
     "xsearch": []
    },
    "fold": {
+    "ideas": false,
     "hype": false,
     "cis": false,
     "xsearch": false
@@ -269,15 +288,28 @@
    "score": 68,
    "in_ru_tg": false,
    "rising": true,
-   "first": true
+   "first": true,
+   "idea": {
+    "fat": true,
+    "potential": 73,
+    "segment": "Безопасность",
+    "segment_why": "Асват 632к, Безопасность Лондона 330к, Испания 225к, Автоугоны 144к (3.85 подп/1k)",
+    "etalon": {
+     "ep": "День 6 · Безопасность Лондона",
+     "views": "330к",
+     "subs": "4.02",
+     "angle": "Деталь «мачете и настоящие мечи» + ироничная цитата"
+    },
+    "cooled": false
+   }
   },
   {
    "id": "a5913265963a1257",
    "title": "Record 1,200 migrants cross Channel in small boats in single day",
    "title_ru": "Рекорд: 1200 мигрантов пересекли Ла-Манш на лодках за один день",
    "lang": "en",
-   "first_published": "2026-10-23T09:24:55Z",
-   "last_published": "2026-10-23T15:24:55Z",
+   "first_published": "2026-10-23T09:42:29Z",
+   "last_published": "2026-10-23T15:42:29Z",
    "outlets_24h": 7,
    "outlets_3h": 0,
    "outlets_total": 7,
@@ -297,31 +329,31 @@
      "source": "GB News",
      "title": "Record 1,200 migrants cross Channel in small boats in single day",
      "url": "https://example.org/demo/gbnews/47",
-     "published": "2026-10-23T09:24:55Z"
+     "published": "2026-10-23T09:42:29Z"
     },
     {
      "source": "Daily Mail",
      "title": "Record 1,200 migrants cross Channel in small boats in single day",
      "url": "https://example.org/demo/dailymail/48",
-     "published": "2026-10-23T10:24:55Z"
+     "published": "2026-10-23T10:42:29Z"
     },
     {
      "source": "The Telegraph",
      "title": "Record 1,200 migrants cross Channel in small boats in single day",
      "url": "https://example.org/demo/thetelegraph/49",
-     "published": "2026-10-23T11:24:55Z"
+     "published": "2026-10-23T11:42:29Z"
     },
     {
      "source": "BBC News",
      "title": "Record 1,200 migrants cross Channel in small boats in single day",
      "url": "https://example.org/demo/bbcnews/50",
-     "published": "2026-10-23T12:24:55Z"
+     "published": "2026-10-23T12:42:29Z"
     },
     {
      "source": "Sky News",
      "title": "Record 1,200 migrants cross Channel in small boats in single day",
      "url": "https://example.org/demo/skynews/51",
-     "published": "2026-10-23T13:24:55Z"
+     "published": "2026-10-23T13:42:29Z"
     }
    ],
    "reddit": {
@@ -340,7 +372,7 @@
      "text": "Рекордные 1200 мигрантов пересекли Ла-Манш на лодках за один день",
      "views": 61000,
      "url": "https://example.org/demo/ateobreaking/54",
-     "published": "2026-10-23T15:24:55Z"
+     "published": "2026-10-23T15:42:29Z"
     }
    ],
    "tg_views": 61000,
@@ -348,6 +380,7 @@
     "Ateo Breaking"
    ],
    "tags": {
+    "ideas": [],
     "hype": [
      "Безопасность",
      "Миграция и нелегалы"
@@ -356,6 +389,7 @@
     "xsearch": []
    },
    "fold": {
+    "ideas": false,
     "hype": false,
     "cis": false,
     "xsearch": false
@@ -372,15 +406,28 @@
    "score": 40,
    "in_ru_tg": true,
    "rising": false,
-   "first": false
+   "first": false,
+   "idea": {
+    "fat": true,
+    "potential": 48,
+    "segment": "Безопасность",
+    "segment_why": "Асват 632к, Безопасность Лондона 330к, Испания 225к, Автоугоны 144к (3.85 подп/1k)",
+    "etalon": {
+     "ep": "31.07 · Испания 40к лодок",
+     "views": "225к",
+     "subs": "3.36",
+     "angle": "Личный контраст («пока таких как я на границе проверяют…») + визуал лодок"
+    },
+    "cooled": false
+   }
   },
   {
    "id": "b4351c7222854488",
    "title": "Farage calls Ukraine one of the most corrupt countries in the world",
    "title_ru": "Фарадж назвал Украину одной из самых коррумпированных стран мира",
    "lang": "en",
-   "first_published": "2026-10-23T13:24:55Z",
-   "last_published": "2026-10-23T17:24:55Z",
+   "first_published": "2026-10-23T13:42:29Z",
+   "last_published": "2026-10-23T17:42:29Z",
    "outlets_24h": 4,
    "outlets_3h": 1,
    "outlets_total": 4,
@@ -397,25 +444,25 @@
      "source": "GB News",
      "title": "Farage calls Ukraine one of the most corrupt countries in the world",
      "url": "https://example.org/demo/gbnews/23",
-     "published": "2026-10-23T13:24:55Z"
+     "published": "2026-10-23T13:42:29Z"
     },
     {
      "source": "The Guardian",
      "title": "Farage calls Ukraine one of the most corrupt countries in the world",
      "url": "https://example.org/demo/theguardian/24",
-     "published": "2026-10-23T14:24:55Z"
+     "published": "2026-10-23T14:42:29Z"
     },
     {
      "source": "The Independent",
      "title": "Farage calls Ukraine one of the most corrupt countries in the world",
      "url": "https://example.org/demo/theindependent/25",
-     "published": "2026-10-23T15:24:55Z"
+     "published": "2026-10-23T15:42:29Z"
     },
     {
      "source": "Daily Mail",
      "title": "Farage calls Ukraine one of the most corrupt countries in the world",
      "url": "https://example.org/demo/dailymail/26",
-     "published": "2026-10-23T17:24:55Z"
+     "published": "2026-10-23T17:42:29Z"
     }
    ],
    "reddit": {
@@ -430,6 +477,7 @@
    "tg_views": 0,
    "tg_channels": [],
    "tags": {
+    "ideas": [],
     "hype": [],
     "cis": [
      "Украина глазами Запада"
@@ -437,6 +485,7 @@
     "xsearch": []
    },
    "fold": {
+    "ideas": false,
     "hype": true,
     "cis": false,
     "xsearch": false
@@ -453,15 +502,23 @@
    "score": 36,
    "in_ru_tg": false,
    "rising": false,
-   "first": true
+   "first": true,
+   "idea": {
+    "fat": false,
+    "potential": 9,
+    "segment": null,
+    "segment_why": null,
+    "etalon": null,
+    "cooled": false
+   }
   },
   {
    "id": "d89f75a4d1997ca0",
    "title": "Rats overrun streets as Birmingham bin strike enters eighth week",
    "title_ru": "Крысы на улицах: забастовка мусорщиков в Бирмингеме идёт восьмую неделю",
    "lang": "en",
-   "first_published": "2026-10-23T11:24:55Z",
-   "last_published": "2026-10-23T16:24:55Z",
+   "first_published": "2026-10-23T11:42:29Z",
+   "last_published": "2026-10-23T16:42:29Z",
    "outlets_24h": 4,
    "outlets_3h": 0,
    "outlets_total": 4,
@@ -478,25 +535,25 @@
      "source": "BBC News",
      "title": "Rats overrun streets as Birmingham bin strike enters eighth week",
      "url": "https://example.org/demo/bbcnews/76",
-     "published": "2026-10-23T11:24:55Z"
+     "published": "2026-10-23T11:42:29Z"
     },
     {
      "source": "Sky News",
      "title": "Rats overrun streets as Birmingham bin strike enters eighth week",
      "url": "https://example.org/demo/skynews/77",
-     "published": "2026-10-23T12:24:55Z"
+     "published": "2026-10-23T12:42:29Z"
     },
     {
      "source": "Daily Mail",
      "title": "Rats overrun streets as Birmingham bin strike enters eighth week",
      "url": "https://example.org/demo/dailymail/78",
-     "published": "2026-10-23T14:24:55Z"
+     "published": "2026-10-23T14:42:29Z"
     },
     {
      "source": "The Guardian",
      "title": "Rats overrun streets as Birmingham bin strike enters eighth week",
      "url": "https://example.org/demo/theguardian/79",
-     "published": "2026-10-23T16:24:55Z"
+     "published": "2026-10-23T16:42:29Z"
     }
    ],
    "reddit": {
@@ -511,6 +568,7 @@
    "tg_views": 0,
    "tg_channels": [],
    "tags": {
+    "ideas": [],
     "hype": [
      "Быт третьего мира",
      "Курьёзы и абсурд"
@@ -519,6 +577,7 @@
     "xsearch": []
    },
    "fold": {
+    "ideas": false,
     "hype": false,
     "cis": false,
     "xsearch": false
@@ -535,15 +594,23 @@
    "score": 35,
    "in_ru_tg": false,
    "rising": false,
-   "first": true
+   "first": true,
+   "idea": {
+    "fat": false,
+    "potential": 49,
+    "segment": "Быт третьего мира",
+    "segment_why": "5 миллионников: Гигиена 2,02М, Еда 1,09М, Зубы 683к, Третий мир 452к, Жара 377к",
+    "etalon": null,
+    "cooled": false
+   }
   },
   {
    "id": "003ab89c1343f0e0",
    "title": "Family with newborn forced to live in mould-infested council flat",
    "title_ru": "Семья с новорождённым вынуждена жить в муниципальной квартире, заросшей плесенью",
    "lang": "en",
-   "first_published": "2026-10-23T05:24:55Z",
-   "last_published": "2026-10-23T10:24:55Z",
+   "first_published": "2026-10-23T05:42:29Z",
+   "last_published": "2026-10-23T10:42:29Z",
    "outlets_24h": 3,
    "outlets_3h": 0,
    "outlets_total": 3,
@@ -559,19 +626,19 @@
      "source": "The Independent",
      "title": "Family with newborn forced to live in mould-infested council flat",
      "url": "https://example.org/demo/theindependent/56",
-     "published": "2026-10-23T05:24:55Z"
+     "published": "2026-10-23T05:42:29Z"
     },
     {
      "source": "The Guardian",
      "title": "Family with newborn forced to live in mould-infested council flat",
      "url": "https://example.org/demo/theguardian/57",
-     "published": "2026-10-23T08:24:55Z"
+     "published": "2026-10-23T08:42:29Z"
     },
     {
      "source": "Daily Mail",
      "title": "Family with newborn forced to live in mould-infested council flat",
      "url": "https://example.org/demo/dailymail/58",
-     "published": "2026-10-23T10:24:55Z"
+     "published": "2026-10-23T10:42:29Z"
     }
    ],
    "reddit": {
@@ -586,6 +653,7 @@
    "tg_views": 0,
    "tg_channels": [],
    "tags": {
+    "ideas": [],
     "hype": [
      "Быт третьего мира",
      "Система бросает своих"
@@ -594,6 +662,7 @@
     "xsearch": []
    },
    "fold": {
+    "ideas": false,
     "hype": false,
     "cis": false,
     "xsearch": false
@@ -610,15 +679,28 @@
    "score": 34,
    "in_ru_tg": false,
    "rising": false,
-   "first": true
+   "first": true,
+   "idea": {
+    "fat": false,
+    "potential": 55,
+    "segment": "Быт третьего мира",
+    "segment_why": "5 миллионников: Гигиена 2,02М, Еда 1,09М, Зубы 683к, Третий мир 452к, Жара 377к",
+    "etalon": {
+     "ep": "День 7 · Третий мир",
+     "views": "452к",
+     "subs": "5.19",
+     "angle": "«ТРИ МЕСЯЦА КАРЛ» — эмоциональный повтор заглавными + своя семья"
+    },
+    "cooled": false
+   }
   },
   {
    "id": "6a6a0cfd6467e614",
    "title": "MI5 chief: we spend more on Russian threats than during the Cold War",
    "title_ru": "Глава MI5: на угрозы России тратим больше, чем в холодную войну",
    "lang": "en",
-   "first_published": "2026-10-23T00:24:55Z",
-   "last_published": "2026-10-23T14:24:55Z",
+   "first_published": "2026-10-23T00:42:29Z",
+   "last_published": "2026-10-23T14:42:29Z",
    "outlets_24h": 6,
    "outlets_3h": 0,
    "outlets_total": 6,
@@ -637,31 +719,31 @@
      "source": "BBC News",
      "title": "MI5 chief: we spend more on Russian threats than during the Cold War",
      "url": "https://example.org/demo/bbcnews/15",
-     "published": "2026-10-23T00:24:55Z"
+     "published": "2026-10-23T00:42:29Z"
     },
     {
      "source": "The Guardian",
      "title": "MI5 chief: we spend more on Russian threats than during the Cold War",
      "url": "https://example.org/demo/theguardian/16",
-     "published": "2026-10-23T02:24:55Z"
+     "published": "2026-10-23T02:42:29Z"
     },
     {
      "source": "Reuters",
      "title": "MI5 chief: we spend more on Russian threats than during the Cold War",
      "url": "https://example.org/demo/reuters/17",
-     "published": "2026-10-23T05:24:55Z"
+     "published": "2026-10-23T05:42:29Z"
     },
     {
      "source": "The Telegraph",
      "title": "MI5 chief: we spend more on Russian threats than during the Cold War",
      "url": "https://example.org/demo/thetelegraph/18",
-     "published": "2026-10-23T08:24:55Z"
+     "published": "2026-10-23T08:42:29Z"
     },
     {
      "source": "Politico Europe",
      "title": "MI5 chief: we spend more on Russian threats than during the Cold War",
      "url": "https://example.org/demo/politicoeurope/19",
-     "published": "2026-10-23T11:24:55Z"
+     "published": "2026-10-23T11:42:29Z"
     }
    ],
    "reddit": {
@@ -678,14 +760,14 @@
      "text": "Глава МИ-5: на угрозы со стороны России Британия тратит больше, чем во время холодной войны",
      "views": 95400,
      "url": "https://example.org/demo/svtvnews/21",
-     "published": "2026-10-23T12:24:55Z"
+     "published": "2026-10-23T12:42:29Z"
     },
     {
      "channel": "Ateo Breaking",
      "text": "МИ-5: Россия — главная угроза, расходы больше, чем в холодную войну",
      "views": 41000,
      "url": "https://example.org/demo/ateobreaking/22",
-     "published": "2026-10-23T13:24:55Z"
+     "published": "2026-10-23T13:42:29Z"
     }
    ],
    "tg_views": 136400,
@@ -694,6 +776,7 @@
     "SVTV NEWS"
    ],
    "tags": {
+    "ideas": [],
     "hype": [],
     "cis": [
      "Россия глазами Запада"
@@ -701,6 +784,7 @@
     "xsearch": []
    },
    "fold": {
+    "ideas": false,
     "hype": true,
     "cis": false,
     "xsearch": false
@@ -717,15 +801,23 @@
    "score": 28,
    "in_ru_tg": true,
    "rising": false,
-   "first": false
+   "first": false,
+   "idea": {
+    "fat": true,
+    "potential": 0,
+    "segment": null,
+    "segment_why": null,
+    "etalon": null,
+    "cooled": false
+   }
   },
   {
    "id": "9ff7b1b5c87af4d8",
    "title": "Half of Britons would refuse to fight for their country, Ipsos poll finds",
    "title_ru": "Половина британцев отказалась бы воевать за страну — опрос Ipsos",
    "lang": "en",
-   "first_published": "2026-10-23T10:24:55Z",
-   "last_published": "2026-10-23T15:24:55Z",
+   "first_published": "2026-10-23T10:42:29Z",
+   "last_published": "2026-10-23T15:42:29Z",
    "outlets_24h": 5,
    "outlets_3h": 0,
    "outlets_total": 5,
@@ -743,31 +835,31 @@
      "source": "The Independent",
      "title": "Half of Britons would refuse to fight for their country, Ipsos poll finds",
      "url": "https://example.org/demo/theindependent/9",
-     "published": "2026-10-23T10:24:55Z"
+     "published": "2026-10-23T10:42:29Z"
     },
     {
      "source": "Sky News",
      "title": "Half of Britons would refuse to fight for their country, Ipsos poll finds",
      "url": "https://example.org/demo/skynews/10",
-     "published": "2026-10-23T11:24:55Z"
+     "published": "2026-10-23T11:42:29Z"
     },
     {
      "source": "Daily Mail",
      "title": "Half of Britons would refuse to fight for their country, Ipsos poll finds",
      "url": "https://example.org/demo/dailymail/11",
-     "published": "2026-10-23T12:24:55Z"
+     "published": "2026-10-23T12:42:29Z"
     },
     {
      "source": "The Telegraph",
      "title": "Half of Britons would refuse to fight for their country, Ipsos poll finds",
      "url": "https://example.org/demo/thetelegraph/12",
-     "published": "2026-10-23T14:24:55Z"
+     "published": "2026-10-23T14:42:29Z"
     },
     {
      "source": "GB News",
      "title": "Half of Britons would refuse to fight for their country, Ipsos poll finds",
      "url": "https://example.org/demo/gbnews/13",
-     "published": "2026-10-23T15:24:55Z"
+     "published": "2026-10-23T15:42:29Z"
     }
    ],
    "reddit": {
@@ -784,7 +876,7 @@
      "text": "Половина британцев отказалась бы воевать за свою страну — опрос Ipsos",
      "views": 182000,
      "url": "https://example.org/demo/топорlive/14",
-     "published": "2026-10-23T16:24:55Z"
+     "published": "2026-10-23T16:42:29Z"
     }
    ],
    "tg_views": 182000,
@@ -792,6 +884,7 @@
     "Топор Live"
    ],
    "tags": {
+    "ideas": [],
     "hype": [],
     "cis": [
      "Подготовка к войне"
@@ -799,6 +892,7 @@
     "xsearch": []
    },
    "fold": {
+    "ideas": false,
     "hype": false,
     "cis": false,
     "xsearch": false
@@ -815,15 +909,23 @@
    "score": 27,
    "in_ru_tg": true,
    "rising": false,
-   "first": false
+   "first": false,
+   "idea": {
+    "fat": false,
+    "potential": 12,
+    "segment": null,
+    "segment_why": null,
+    "etalon": null,
+    "cooled": false
+   }
   },
   {
    "id": "bd5ef4afcee9f7ae",
    "title": "Pensioners face £300 tax raid on state pension, Treasury figures show",
    "title_ru": "Пенсионеров ждёт налог £300 на госпенсию — данные Минфина",
    "lang": "en",
-   "first_published": "2026-10-23T07:24:55Z",
-   "last_published": "2026-10-23T18:24:55Z",
+   "first_published": "2026-10-23T07:42:29Z",
+   "last_published": "2026-10-23T18:42:29Z",
    "outlets_24h": 5,
    "outlets_3h": 1,
    "outlets_total": 5,
@@ -841,31 +943,31 @@
      "source": "The Telegraph",
      "title": "Pensioners face £300 tax raid on state pension, Treasury figures show",
      "url": "https://example.org/demo/thetelegraph/64",
-     "published": "2026-10-23T07:24:55Z"
+     "published": "2026-10-23T07:42:29Z"
     },
     {
      "source": "Daily Mail",
      "title": "Pensioners face £300 tax raid on state pension, Treasury figures show",
      "url": "https://example.org/demo/dailymail/65",
-     "published": "2026-10-23T09:24:55Z"
+     "published": "2026-10-23T09:42:29Z"
     },
     {
      "source": "GB News",
      "title": "Pensioners face £300 tax raid on state pension, Treasury figures show",
      "url": "https://example.org/demo/gbnews/66",
-     "published": "2026-10-23T12:24:55Z"
+     "published": "2026-10-23T12:42:29Z"
     },
     {
      "source": "The Independent",
      "title": "Pensioners face £300 tax raid on state pension, Treasury figures show",
      "url": "https://example.org/demo/theindependent/67",
-     "published": "2026-10-23T13:24:55Z"
+     "published": "2026-10-23T13:42:29Z"
     },
     {
      "source": "Sky News",
      "title": "Pensioners face £300 tax raid on state pension, Treasury figures show",
      "url": "https://example.org/demo/skynews/68",
-     "published": "2026-10-23T18:24:55Z"
+     "published": "2026-10-23T18:42:29Z"
     }
    ],
    "reddit": {
@@ -880,6 +982,7 @@
    "tg_views": 0,
    "tg_channels": [],
    "tags": {
+    "ideas": [],
     "hype": [
      "Система бросает своих"
     ],
@@ -887,6 +990,7 @@
     "xsearch": []
    },
    "fold": {
+    "ideas": false,
     "hype": false,
     "cis": false,
     "xsearch": false
@@ -903,15 +1007,28 @@
    "score": 22,
    "in_ru_tg": false,
    "rising": false,
-   "first": true
+   "first": true,
+   "idea": {
+    "fat": false,
+    "potential": 46,
+    "segment": "Система бросает своих",
+    "segment_why": "Пособия 336к, Пенсионеры 321к, NHS 148к — сегмент недоразвит, потенциал большой",
+    "etalon": {
+     "ep": "День 19 · Пенсионеры",
+     "views": "321к",
+     "subs": "5.09",
+     "angle": "Личный свидетель («+14 в доме у Англичанки») + «отменили 200 фунтов пенсионерам, выделяя миллиарды мигрантам»"
+    },
+    "cooled": false
+   }
   },
   {
    "id": "dfce709b7f037ba9",
    "title": "Thousands of prisoners released early to ease overcrowding",
    "title_ru": "Тысячи заключённых выпускают досрочно из-за переполненных тюрем",
    "lang": "en",
-   "first_published": "2026-10-23T01:24:55Z",
-   "last_published": "2026-10-23T10:24:55Z",
+   "first_published": "2026-10-23T01:42:29Z",
+   "last_published": "2026-10-23T10:42:29Z",
    "outlets_24h": 4,
    "outlets_3h": 0,
    "outlets_total": 4,
@@ -928,25 +1045,25 @@
      "source": "BBC News",
      "title": "Thousands of prisoners released early to ease overcrowding",
      "url": "https://example.org/demo/bbcnews/69",
-     "published": "2026-10-23T01:24:55Z"
+     "published": "2026-10-23T01:42:29Z"
     },
     {
      "source": "Sky News",
      "title": "Thousands of prisoners released early to ease overcrowding",
      "url": "https://example.org/demo/skynews/70",
-     "published": "2026-10-23T04:24:55Z"
+     "published": "2026-10-23T04:42:29Z"
     },
     {
      "source": "The Telegraph",
      "title": "Thousands of prisoners released early to ease overcrowding",
      "url": "https://example.org/demo/thetelegraph/71",
-     "published": "2026-10-23T06:24:55Z"
+     "published": "2026-10-23T06:42:29Z"
     },
     {
      "source": "GB News",
      "title": "Thousands of prisoners released early to ease overcrowding",
      "url": "https://example.org/demo/gbnews/72",
-     "published": "2026-10-23T10:24:55Z"
+     "published": "2026-10-23T10:42:29Z"
     }
    ],
    "reddit": {
@@ -961,6 +1078,7 @@
    "tg_views": 0,
    "tg_channels": [],
    "tags": {
+    "ideas": [],
     "hype": [
      "Безопасность"
     ],
@@ -968,6 +1086,7 @@
     "xsearch": []
    },
    "fold": {
+    "ideas": false,
     "hype": false,
     "cis": false,
     "xsearch": false
@@ -984,15 +1103,23 @@
    "score": 20,
    "in_ru_tg": false,
    "rising": false,
-   "first": true
+   "first": true,
+   "idea": {
+    "fat": false,
+    "potential": 40,
+    "segment": "Безопасность",
+    "segment_why": "Асват 632к, Безопасность Лондона 330к, Испания 225к, Автоугоны 144к (3.85 подп/1k)",
+    "etalon": null,
+    "cooled": false
+   }
   },
   {
    "id": "84ea9e06e105248e",
    "title": "Patients pulling out own teeth as NHS dentist waiting lists hit record",
    "title_ru": "Пациенты сами вырывают себе зубы: очереди к стоматологам NHS — рекордные",
    "lang": "en",
-   "first_published": "2026-10-23T03:24:55Z",
-   "last_published": "2026-10-23T11:24:55Z",
+   "first_published": "2026-10-23T03:42:29Z",
+   "last_published": "2026-10-23T11:42:29Z",
    "outlets_24h": 4,
    "outlets_3h": 0,
    "outlets_total": 4,
@@ -1009,25 +1136,25 @@
      "source": "BBC News",
      "title": "Patients pulling out own teeth as NHS dentist waiting lists hit record",
      "url": "https://example.org/demo/bbcnews/60",
-     "published": "2026-10-23T03:24:55Z"
+     "published": "2026-10-23T03:42:29Z"
     },
     {
      "source": "The Guardian",
      "title": "Patients pulling out own teeth as NHS dentist waiting lists hit record",
      "url": "https://example.org/demo/theguardian/61",
-     "published": "2026-10-23T06:24:55Z"
+     "published": "2026-10-23T06:42:29Z"
     },
     {
      "source": "Daily Mail",
      "title": "Patients pulling out own teeth as NHS dentist waiting lists hit record",
      "url": "https://example.org/demo/dailymail/62",
-     "published": "2026-10-23T08:24:55Z"
+     "published": "2026-10-23T08:42:29Z"
     },
     {
      "source": "The Independent",
      "title": "Patients pulling out own teeth as NHS dentist waiting lists hit record",
      "url": "https://example.org/demo/theindependent/63",
-     "published": "2026-10-23T11:24:55Z"
+     "published": "2026-10-23T11:42:29Z"
     }
    ],
    "reddit": {
@@ -1042,6 +1169,7 @@
    "tg_views": 0,
    "tg_channels": [],
    "tags": {
+    "ideas": [],
     "hype": [
      "Быт третьего мира",
      "Система бросает своих"
@@ -1050,6 +1178,7 @@
     "xsearch": []
    },
    "fold": {
+    "ideas": false,
     "hype": false,
     "cis": false,
     "xsearch": false
@@ -1066,15 +1195,28 @@
    "score": 20,
    "in_ru_tg": false,
    "rising": false,
-   "first": true
+   "first": true,
+   "idea": {
+    "fat": false,
+    "potential": 49,
+    "segment": "Быт третьего мира",
+    "segment_why": "5 миллионников: Гигиена 2,02М, Еда 1,09М, Зубы 683к, Третий мир 452к, Жара 377к",
+    "etalon": {
+     "ep": "День 11 · Стоматология",
+     "views": "683к",
+     "subs": "7.42",
+     "angle": "Личная драма → системное разоблачение («набор юного дантиста»)"
+    },
+    "cooled": false
+   }
   },
   {
    "id": "44dbb9c9057a7f58",
    "title": "Russian-backed saboteurs behind warehouse fire in east London, prosecutors say",
    "title_ru": "Прокуратура: за пожаром на складе в Лондоне стоят диверсанты, работавшие на Россию",
    "lang": "en",
-   "first_published": "2026-10-23T04:24:55Z",
-   "last_published": "2026-10-23T08:24:55Z",
+   "first_published": "2026-10-23T04:42:29Z",
+   "last_published": "2026-10-23T08:42:29Z",
    "outlets_24h": 4,
    "outlets_3h": 0,
    "outlets_total": 4,
@@ -1091,25 +1233,25 @@
      "source": "Sky News",
      "title": "Russian-backed saboteurs behind warehouse fire in east London, prosecutors say",
      "url": "https://example.org/demo/skynews/34",
-     "published": "2026-10-23T04:24:55Z"
+     "published": "2026-10-23T04:42:29Z"
     },
     {
      "source": "BBC News",
      "title": "Russian-backed saboteurs behind warehouse fire in east London, prosecutors say",
      "url": "https://example.org/demo/bbcnews/35",
-     "published": "2026-10-23T05:24:55Z"
+     "published": "2026-10-23T05:42:29Z"
     },
     {
      "source": "The Telegraph",
      "title": "Russian-backed saboteurs behind warehouse fire in east London, prosecutors say",
      "url": "https://example.org/demo/thetelegraph/36",
-     "published": "2026-10-23T07:24:55Z"
+     "published": "2026-10-23T07:42:29Z"
     },
     {
      "source": "Daily Mail",
      "title": "Russian-backed saboteurs behind warehouse fire in east London, prosecutors say",
      "url": "https://example.org/demo/dailymail/37",
-     "published": "2026-10-23T08:24:55Z"
+     "published": "2026-10-23T08:42:29Z"
     }
    ],
    "reddit": {
@@ -1124,6 +1266,7 @@
    "tg_views": 0,
    "tg_channels": [],
    "tags": {
+    "ideas": [],
     "hype": [],
     "cis": [
      "Россия глазами Запада"
@@ -1131,6 +1274,7 @@
     "xsearch": []
    },
    "fold": {
+    "ideas": false,
     "hype": true,
     "cis": false,
     "xsearch": false
@@ -1147,15 +1291,23 @@
    "score": 20,
    "in_ru_tg": false,
    "rising": false,
-   "first": true
+   "first": true,
+   "idea": {
+    "fat": false,
+    "potential": 2,
+    "segment": null,
+    "segment_why": null,
+    "etalon": null,
+    "cooled": false
+   }
   },
   {
    "id": "f4bef381776a740c",
    "title": "Councils issued 2 million parking fines in a year, raking in £180m",
    "title_ru": "Советы выписали 2 млн штрафов за парковку за год и заработали £180 млн",
    "lang": "en",
-   "first_published": "2026-10-22T23:24:55Z",
-   "last_published": "2026-10-23T04:24:55Z",
+   "first_published": "2026-10-22T23:42:29Z",
+   "last_published": "2026-10-23T04:42:29Z",
    "outlets_24h": 3,
    "outlets_3h": 0,
    "outlets_total": 3,
@@ -1171,19 +1323,19 @@
      "source": "Daily Mail",
      "title": "Councils issued 2 million parking fines in a year, raking in £180m",
      "url": "https://example.org/demo/dailymail/73",
-     "published": "2026-10-22T23:24:55Z"
+     "published": "2026-10-22T23:42:29Z"
     },
     {
      "source": "The Telegraph",
      "title": "Councils issued 2 million parking fines in a year, raking in £180m",
      "url": "https://example.org/demo/thetelegraph/74",
-     "published": "2026-10-23T02:24:55Z"
+     "published": "2026-10-23T02:42:29Z"
     },
     {
      "source": "GB News",
      "title": "Councils issued 2 million parking fines in a year, raking in £180m",
      "url": "https://example.org/demo/gbnews/75",
-     "published": "2026-10-23T04:24:55Z"
+     "published": "2026-10-23T04:42:29Z"
     }
    ],
    "reddit": {
@@ -1198,6 +1350,7 @@
    "tg_views": 0,
    "tg_channels": [],
    "tags": {
+    "ideas": [],
     "hype": [
      "Система бросает своих"
     ],
@@ -1205,6 +1358,7 @@
     "xsearch": []
    },
    "fold": {
+    "ideas": false,
     "hype": false,
     "cis": false,
     "xsearch": false
@@ -1221,15 +1375,23 @@
    "score": 17,
    "in_ru_tg": false,
    "rising": false,
-   "first": true
+   "first": true,
+   "idea": {
+    "fat": false,
+    "potential": 37,
+    "segment": "Система бросает своих",
+    "segment_why": "Пособия 336к, Пенсионеры 321к, NHS 148к — сегмент недоразвит, потенциал большой",
+    "etalon": null,
+    "cooled": false
+   }
   },
   {
    "id": "a87ab7d8ab1f7af6",
    "title": "EU suspends visa-free travel for Georgian officials after protest crackdown",
    "title_ru": "ЕС отменил безвиз для грузинских чиновников после разгона протестов",
    "lang": "en",
-   "first_published": "2026-10-23T06:24:55Z",
-   "last_published": "2026-10-23T09:24:55Z",
+   "first_published": "2026-10-23T06:42:29Z",
+   "last_published": "2026-10-23T09:42:29Z",
    "outlets_24h": 3,
    "outlets_3h": 0,
    "outlets_total": 3,
@@ -1245,19 +1407,19 @@
      "source": "Politico Europe",
      "title": "EU suspends visa-free travel for Georgian officials after protest crackdown",
      "url": "https://example.org/demo/politicoeurope/31",
-     "published": "2026-10-23T06:24:55Z"
+     "published": "2026-10-23T06:42:29Z"
     },
     {
      "source": "Reuters",
      "title": "EU suspends visa-free travel for Georgian officials after protest crackdown",
      "url": "https://example.org/demo/reuters/32",
-     "published": "2026-10-23T08:24:55Z"
+     "published": "2026-10-23T08:42:29Z"
     },
     {
      "source": "The Guardian",
      "title": "EU suspends visa-free travel for Georgian officials after protest crackdown",
      "url": "https://example.org/demo/theguardian/33",
-     "published": "2026-10-23T09:24:55Z"
+     "published": "2026-10-23T09:42:29Z"
     }
    ],
    "reddit": {
@@ -1272,6 +1434,7 @@
    "tg_views": 0,
    "tg_channels": [],
    "tags": {
+    "ideas": [],
     "hype": [
      "Беспорядки в Европе"
     ],
@@ -1282,6 +1445,7 @@
     "xsearch": []
    },
    "fold": {
+    "ideas": false,
     "hype": false,
     "cis": false,
     "xsearch": false
@@ -1298,15 +1462,23 @@
    "score": 17,
    "in_ru_tg": false,
    "rising": false,
-   "first": true
+   "first": true,
+   "idea": {
+    "fat": false,
+    "potential": 29,
+    "segment": "Беспорядки в Европе",
+    "segment_why": "Испания 225к сработала, но «новость без личного» (Германия+Литва 34к) — провал",
+    "etalon": null,
+    "cooled": false
+   }
   },
   {
    "id": "3131ae275be8aa32",
    "title": "Homes for Ukraine sponsors warn of homelessness as visa extension rules change",
    "title_ru": "Спонсоры Homes for Ukraine предупреждают о бездомности из-за новых правил продления виз",
    "lang": "en",
-   "first_published": "2026-10-23T11:24:55Z",
-   "last_published": "2026-10-23T16:24:55Z",
+   "first_published": "2026-10-23T11:42:29Z",
+   "last_published": "2026-10-23T16:42:29Z",
    "outlets_24h": 3,
    "outlets_3h": 0,
    "outlets_total": 3,
@@ -1322,19 +1494,19 @@
      "source": "The Guardian",
      "title": "Homes for Ukraine sponsors warn of homelessness as visa extension rules change",
      "url": "https://example.org/demo/theguardian/28",
-     "published": "2026-10-23T11:24:55Z"
+     "published": "2026-10-23T11:42:29Z"
     },
     {
      "source": "BBC News",
      "title": "Homes for Ukraine sponsors warn of homelessness as visa extension rules change",
      "url": "https://example.org/demo/bbcnews/29",
-     "published": "2026-10-23T13:24:55Z"
+     "published": "2026-10-23T13:42:29Z"
     },
     {
      "source": "The Independent",
      "title": "Homes for Ukraine sponsors warn of homelessness as visa extension rules change",
      "url": "https://example.org/demo/theindependent/30",
-     "published": "2026-10-23T16:24:55Z"
+     "published": "2026-10-23T16:42:29Z"
     }
    ],
    "reddit": {
@@ -1349,6 +1521,7 @@
    "tg_views": 0,
    "tg_channels": [],
    "tags": {
+    "ideas": [],
     "hype": [
      "Быт третьего мира"
     ],
@@ -1359,6 +1532,7 @@
     "xsearch": []
    },
    "fold": {
+    "ideas": false,
     "hype": true,
     "cis": false,
     "xsearch": false
@@ -1377,15 +1551,23 @@
    "score": 17,
    "in_ru_tg": false,
    "rising": false,
-   "first": true
+   "first": true,
+   "idea": {
+    "fat": false,
+    "potential": 0,
+    "segment": "Быт третьего мира",
+    "segment_why": "5 миллионников: Гигиена 2,02М, Еда 1,09М, Зубы 683к, Третий мир 452к, Жара 377к",
+    "etalon": null,
+    "cooled": true
+   }
   },
   {
    "id": "5ba8aa22857b6d41",
    "title": "Train fares to rise 5% from March, rail operators confirm",
    "title_ru": "Билеты на поезда подорожают на 5% с марта",
    "lang": "en",
-   "first_published": "2026-10-20T12:24:55Z",
-   "last_published": "2026-10-20T18:24:55Z",
+   "first_published": "2026-10-20T12:42:29Z",
+   "last_published": "2026-10-20T18:42:29Z",
    "outlets_24h": 0,
    "outlets_3h": 0,
    "outlets_total": 6,
@@ -1404,31 +1586,31 @@
      "source": "BBC News",
      "title": "Train fares to rise 5% from March, rail operators confirm",
      "url": "https://example.org/demo/bbcnews/81",
-     "published": "2026-10-20T12:24:55Z"
+     "published": "2026-10-20T12:42:29Z"
     },
     {
      "source": "The Guardian",
      "title": "Train fares to rise 5% from March, rail operators confirm",
      "url": "https://example.org/demo/theguardian/82",
-     "published": "2026-10-20T13:24:55Z"
+     "published": "2026-10-20T13:42:29Z"
     },
     {
      "source": "Sky News",
      "title": "Train fares to rise 5% from March, rail operators confirm",
      "url": "https://example.org/demo/skynews/83",
-     "published": "2026-10-20T14:24:55Z"
+     "published": "2026-10-20T14:42:29Z"
     },
     {
      "source": "The Independent",
      "title": "Train fares to rise 5% from March, rail operators confirm",
      "url": "https://example.org/demo/theindependent/84",
-     "published": "2026-10-20T15:24:55Z"
+     "published": "2026-10-20T15:42:29Z"
     },
     {
      "source": "Daily Mail",
      "title": "Train fares to rise 5% from March, rail operators confirm",
      "url": "https://example.org/demo/dailymail/85",
-     "published": "2026-10-20T17:24:55Z"
+     "published": "2026-10-20T17:42:29Z"
     }
    ],
    "reddit": {
@@ -1443,6 +1625,7 @@
    "tg_views": 0,
    "tg_channels": [],
    "tags": {
+    "ideas": [],
     "hype": [
      "Быт третьего мира"
     ],
@@ -1450,6 +1633,7 @@
     "xsearch": []
    },
    "fold": {
+    "ideas": false,
     "hype": false,
     "cis": false,
     "xsearch": false
@@ -1466,7 +1650,15 @@
    "score": 0,
    "in_ru_tg": false,
    "rising": false,
-   "first": false
+   "first": false,
+   "idea": {
+    "fat": false,
+    "potential": 25,
+    "segment": "Быт третьего мира",
+    "segment_why": "5 миллионников: Гигиена 2,02М, Еда 1,09М, Зубы 683к, Третий мир 452к, Жара 377к",
+    "etalon": null,
+    "cooled": false
+   }
   }
  ]
 }
