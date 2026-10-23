@@ -98,3 +98,19 @@ def test_same_outlet_with_different_names_counted_once():
             news("MI5 chief says Russian threats cost more than Cold War", "The Guardian", 1)]
     st = build_stories(arts, CFG, NOW)[0]
     assert st["outlets_24h"] == 2
+
+
+def test_translation_falls_back_to_second_translator():
+    from collector.translate import translate_stories
+
+    class Broken:
+        def translate(self, t):
+            raise RuntimeError("too many requests")
+
+    class Ok:
+        def translate(self, t):
+            return "перевод: " + t
+
+    stories = [{"title": "A"}, {"title": "B"}]
+    new, err = translate_stories(stories, {}, translators=[Broken(), Ok()])
+    assert new == 2 and err is None and stories[1]["title_ru"] == "перевод: B"
