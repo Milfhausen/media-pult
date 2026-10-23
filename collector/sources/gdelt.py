@@ -12,7 +12,13 @@ def query_for(title, norm):
 
 def count_domains(q, ctx):
     url = f"{API}?query={quote(q)}%20sourcelang:english&mode=ArtList&maxrecords=250&timespan=24h&format=json"
-    r = ctx.get(url)
+    try:
+        r = ctx.get(url)
+    except Exception as e:  # 429 «слишком часто» — GDELT просит паузу, пробуем ещё раз
+        if "429" not in str(e):
+            raise
+        time.sleep(15)
+        r = ctx.get(url)
     if not r.text.strip().startswith("{"):
         raise RuntimeError(r.text.strip()[:120] or "пустой ответ")
     return len({a.get("domain") for a in r.json().get("articles", []) if a.get("domain")})
