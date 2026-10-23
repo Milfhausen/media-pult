@@ -96,6 +96,12 @@ categories:
     - bureaucracy
     - red tape
     - taxpayer
+    - taxpayers' money
+    - cost to taxpayer
+    - wasted
+    - restoration bill
+    - legal aid
+    - compensation
     - expenses
     - spending
     - налог
@@ -104,6 +110,118 @@ categories:
     - штраф
     - бюрократ
     - чиновник
+
+  "Миграция и нелегалы":
+    - small boats
+    - Channel crossing
+    - illegal migrant
+    - illegal immigra
+    - migrant
+    - asylum
+    - asylum hotel
+    - asylum seeker
+    - refugee
+    - Home Office
+    - Clearsprings
+    - Shabana Mahmood
+    - deportation
+    - remigration
+    - mass migration
+    - net migration
+    - Ceuta
+    - Lampedusa
+    - border tunnel
+    - мигрант
+    - нелегал
+    - беженц
+    - убежищ
+    - ремиграц
+    - Ла-Манш
+
+  "Двойные стандарты и цензура":
+    - decolonis
+    - decoloniz
+    - woke
+    - diversity
+    - DEI
+    - racism
+    - racist
+    - anti-racis
+    - white privilege
+    - pay gap
+    - Prevent
+    - free speech
+    - jailed for post
+    - online post
+    - hate speech
+    - Lucy Connolly
+    - Sadiq Khan
+    - statue
+    - Oxfam
+    - disinformation
+    - деколониз
+    - расизм
+    - свобод слова
+    - цензур
+    - Садик Хан
+
+  "Преступность и банды":
+    - grooming gang
+    - grooming
+    - gang
+    - rape
+    - paedophile
+    - pedophile
+    - child abuse
+    - phone theft
+    - phone snatch
+    - watch theft
+    - Rolex
+    - robbery
+    - mugging
+    - shoplifting
+    - looting
+    - shooting
+    - hitman
+    - bail
+    - released on bail
+    - Abu Hamza
+    - груминг
+    - банд
+    - изнасил
+    - педофил
+    - грабеж
+    - мародер
+
+  "Беспорядки в Европе":
+    - riot
+    - unrest
+    - violent protest
+    - car burning
+    - cars torched
+    - gang violence
+    - no-go zone
+    - protest
+    - looting
+    - погром
+    - беспоряд
+    - протест
+
+  "Курьёзы и абсурд":
+    - bedbug
+    - bed bug
+    - rats
+    - princess
+    - royal
+    - bizarre
+    - Big Ben
+    - Westminster restoration
+    - Palace of Westminster
+    - £40bn
+    - COVID
+    - клоп
+    - принцесс
+    - Биг Бен
 
 # Сюжеты про войну и Россию–Украину сворачиваются в серый блок внизу
 fold:

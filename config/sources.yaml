@@ -31,6 +31,21 @@ google_news:
     - "Russia sabotage Europe"
     - "EU sanctions Russia"
     - "Belarus OR Kazakhstan OR Georgia OR Moldova Europe"
+    - "asylum hotels Home Office"
+    - "grooming gangs"
+    - "phone theft London"
+    - "watch theft London Rolex"
+    - "free speech arrest UK"
+    - "Sadiq Khan"
+    - "Shabana Mahmood migrants"
+    - "France riots"
+    - "Sweden gang shooting"
+    - "Netherlands asylum housing"
+    - "Ceuta OR Lampedusa migrants"
+    - "Belarus migrants tunnel Lithuania Latvia"
+    - "Kaliningrad NATO"
+    - "taxpayers money wasted UK"
+    - "bedbugs UK"
 
 # 5. RSS крупных изданий. fallback_site — если RSS не ответил, берём из Google News по сайту.
 rss:
@@ -49,6 +64,11 @@ rss:
     - {name: Reuters, url: "", fallback_site: reuters.com}   # у Reuters нет открытого RSS — только через Google News
     - {name: Euronews, url: "https://www.euronews.com/rss?level=theme&name=news", fallback_site: euronews.com}
     - {name: DW, url: "https://rss.dw.com/rdf/rss-en-eu", fallback_site: dw.com}
+    - {name: The Sun, url: "https://www.thesun.co.uk/news/feed/", fallback_site: thesun.co.uk}
+    - {name: Daily Express, url: "https://www.express.co.uk/posts/rss/1/uk", fallback_site: express.co.uk}
+    - {name: Evening Standard, url: "https://www.standard.co.uk/news/rss", fallback_site: standard.co.uk}
+    - {name: Remix News, url: "https://rmx.news/feed/", fallback_site: rmx.news}
+    - {name: Brussels Signal, url: "https://brusselssignal.eu/feed/", fallback_site: brusselssignal.eu}
     - {name: France 24, url: "https://www.france24.com/en/europe/rss", fallback_site: france24.com}
 
 # 3. Reddit — сколько людей лайкают и спорят
