@@ -13,7 +13,7 @@ from .scoring import apply_score
 from .sources import Ctx, gdelt, google_news, reddit, rss, telegram, trends
 from .text import Normalizer
 from .translate import translate_stories
-from .util import DATA, iso, load_json, now_utc, save_json
+from .util import DATA, iso, load_json, load_yaml, now_utc, save_json
 
 SOURCES = [
     ("Google News", "google_news", google_news.fetch),
@@ -105,6 +105,7 @@ def main():
 
     save_json(DATA / "articles.json", articles)
     save_json(DATA / "channels.json", channels, indent=1)
+    save_json(DATA / "x_searches.json", load_yaml("config/x_searches.yaml"))  # запасная копия для вкладки X
     save_json(DATA / "status.json", {"generated_at": iso(now), "sources": ctx.status}, indent=1)
     save_json(DATA / "stories.json", {
         "generated_at": iso(now), "demo": False,

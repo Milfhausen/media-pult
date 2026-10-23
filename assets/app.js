@@ -246,8 +246,9 @@
       view.innerHTML = `<div class="empty">Модуль вкладки не загрузился (${esc(tab ? tab.module : "?")}). Проверь config/tabs.yaml.</div>`;
       return;
     }
+    document.body.classList.toggle("own-page", !!mod.ownPage); // вкладка-приложение: без фильтров новостей
     try {
-      mod.render({ el: view, tab, stories: filtered(tab.id), all: state.data.stories, data: state.data, section, collapsible, card, switchTab, esc });
+      mod.render({ el: view, tab, stories: filtered(tab.id), all: state.data.stories, data: state.data, section, collapsible, card, switchTab, esc, toast, copyText });
     } catch (e) {
       console.error(e);
       view.innerHTML = `<div class="empty">Ошибка во вкладке: ${esc(e.message)}</div>`;

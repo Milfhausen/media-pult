@@ -55,7 +55,7 @@ jobs:
         run: |
           git config user.name "media-pult-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/stories.json data/status.json data/channels.json
+          git add data/stories.json data/status.json data/channels.json data/x_searches.json
           if git diff --cached --quiet; then echo "Нет изменений"; exit 0; fi
           git commit -m "Данные: $(date -u +'%Y-%m-%d %H:%M') UTC"
           for i in 1 2 3; do git pull --rebase -X theirs origin main && git push && exit 0; sleep 5; done

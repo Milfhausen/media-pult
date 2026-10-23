@@ -117,3 +117,20 @@ h2.sec small { color: var(--muted); font-weight: 400; }
   .score { width: 44px; height: 44px; font-size: 18px; }
   .ttl { font-size: 15px; }
 }
+
+/* Вкладки-приложения (например, X-поиск): свои настройки вместо фильтров новостей */
+.own-page #filters, .own-page .foot { display: none; }
+.xs-intro { color: var(--muted); font-size: 14px; margin: 8px 0 4px; }
+.xs-panel { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 10px 12px; margin: 10px 0; font-size: 14px; }
+.xs-panel select { background: var(--panel2); color: var(--text); border: 1px solid var(--line); border-radius: 8px; padding: 6px 8px; font: inherit; }
+.xs-group { margin: 18px 0 6px; }
+.xs-group h2 { font-size: 16px; margin: 0 0 8px; }
+.xs-group h2 small { color: var(--muted); font-weight: 400; }
+.xs-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 8px; }
+.xs-item { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 10px; display: flex; flex-direction: column; gap: 8px; }
+.xs-item .t { font-weight: 700; }
+.xs-item .q { color: var(--muted); font-size: 12px; overflow-wrap: anywhere; }
+.xs-btns { display: flex; gap: 6px; flex-wrap: wrap; }
+.xs-btns a { flex: 1; text-align: center; background: var(--panel2); border: 1px solid var(--line); color: var(--text); border-radius: 8px; padding: 7px 8px; font-weight: 700; font-size: 13px; text-decoration: none; white-space: nowrap; }
+.xs-btns a.top { background: var(--accent); border-color: var(--accent); color: #111; }
+.xs-search { width: 100%; background: var(--panel2); color: var(--text); border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; font: inherit; }
