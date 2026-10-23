@@ -26,7 +26,11 @@ categories:
     - heatwave
     - extreme heat
     - hosepipe
-    - prices
+    - food prices
+    - energy prices
+    - house prices
+    - price rise
+    - price hike
     - cost of living
     - energy bills
     - inflation
@@ -37,7 +41,11 @@ categories:
     - buses
     - bus fares
     - potholes
-    - strike
+    - rail strike
+    - bin strike
+    - doctors strike
+    - strike action
+    - walkout
     - гигиен
     - еда
     - зуб
@@ -54,7 +62,12 @@ categories:
     - knife
     - stabbing
     - stabbed
-    - attack
+    - knife attack
+    - terror attack
+    - acid attack
+    - sex attack
+    - violent attack
+    - attacked
     - assault
     - terror
     - murder
@@ -71,7 +84,6 @@ categories:
     - prisoner
     - violence against women
     - child abuse
-    - police
     - нож
     - нападен
     - террор
@@ -149,7 +161,9 @@ categories:
     - anti-racis
     - white privilege
     - pay gap
-    - Prevent
+    - Prevent programme
+    - Prevent scheme
+    - Prevent referral
     - free speech
     - jailed for post
     - online post
@@ -212,7 +226,6 @@ categories:
     - bed bug
     - rats
     - princess
-    - royal
     - bizarre
     - Big Ben
     - Westminster restoration
@@ -228,7 +241,17 @@ fold:
   label: "Война и Россия–Украина"
   link_tab: cis
   keywords:
-    - war
+    - the war
+    - a war
+    - at war
+    - war in
+    - war with
+    - war on russia
+    - world war
+    - warfare
+    - wartime
+    - warplane
+    - warship
     - Ukraine
     - Ukrainian
     - Russia
@@ -239,6 +262,11 @@ fold:
     - Kyiv
     - Moscow
     - NATO
+    - ceasefire
+    - Kherson
+    - Oleshky
+    - Houthi
+    - nuclear exercise
     - войн
     - Украин
     - Росси
