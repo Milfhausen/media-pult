@@ -46,10 +46,10 @@ rss:
     - {name: GB News, url: "https://www.gbnews.com/feeds/news.rss", fallback_site: gbnews.com}
     - {name: The Independent, url: "https://www.independent.co.uk/news/uk/rss", fallback_site: independent.co.uk}
     - {name: Politico Europe, url: "https://www.politico.eu/feed/", fallback_site: politico.eu}
-    - {name: Reuters, url: "", fallback_site: reuters.com}
+    - {name: Reuters, url: "", fallback_site: reuters.com}   # у Reuters нет открытого RSS — только через Google News
     - {name: Euronews, url: "https://www.euronews.com/rss?level=theme&name=news", fallback_site: euronews.com}
     - {name: DW, url: "https://rss.dw.com/rdf/rss-en-eu", fallback_site: dw.com}
-    - {name: France 24, url: "https://www.france24.com/en/europe/rss", fallback_site: france24.com}   # у Reuters нет открытого RSS — только через Google News
+    - {name: France 24, url: "https://www.france24.com/en/europe/rss", fallback_site: france24.com}
 
 # 3. Reddit — сколько людей лайкают и спорят
 reddit:
