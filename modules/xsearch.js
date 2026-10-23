@@ -3,7 +3,7 @@
    свежесть, минимум лайков, без ответов. Поиски — в config/x_searches.yaml. */
 (function () {
   const MODES = {
-    rising: { label: "🚀 Набирает: 6 ч, от 100 ♥", hours: 6, likes: 100 },
+    rising: { label: "🚀 Набирает: со вчера, от 100 ♥", hours: 24, likes: 100 },
     day: { label: "🔥 Залетело за сутки: от 1000 ♥", hours: 24, likes: 1000 },
     days3: { label: "🏆 За 3 дня: от 3000 ♥", hours: 72, likes: 3000 },
     week: { label: "📅 За неделю: от 5000 ♥", hours: 168, likes: 5000 },
@@ -26,8 +26,9 @@
   function buildUrl(q, lang, sort) {
     const m = MODES[opts.mode] || MODES.day;
     const likes = +opts.likes || m.likes;
-    const since = Math.floor(Date.now() / 1000) - m.hours * 3600;
-    let full = `(${q}) min_faves:${likes} since_time:${since} -filter:replies -filter:nativeretweets`;
+    // только простые операторы, которые X точно понимает: since:ГГГГ-ММ-ДД, min_faves, -filter:replies
+    const since = new Date(Date.now() - m.hours * 3600 * 1000).toISOString().slice(0, 10);
+    let full = `${q} min_faves:${likes} since:${since} -filter:replies`;
     if (lang && !opts.anyLang) full += ` lang:${lang}`;
     if (opts.video) full += " filter:videos";
     return `https://x.com/search?q=${encodeURIComponent(full)}&src=typed_query&f=${sort}`;
