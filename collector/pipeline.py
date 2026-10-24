@@ -140,6 +140,7 @@ def make_story(c, now, tab_rx, speakers, mechs=()):
         "last_published": iso(max(times)),
         "outlets_24h": len(o24),
         "outlets_3h": len(o3),
+        "outlets_3h_names": sorted({a["source"] for a in news if ago[a["id"]] <= 3}),
         "outlets_total": len({outlet_key(a["source"]) for a in news}),
         "outlets": sorted({outlet_key(a["source"]): a["source"] for a in news}.values()),
         "growth_ratio": growth_ratio(len(o3), len(oprev)),

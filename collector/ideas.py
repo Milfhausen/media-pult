@@ -9,12 +9,10 @@ def prepare(cfg):
 
 def is_early(st, gate):
     """🆕 Ранний сигнал: свежак от крупного издания в твоих темах — берём, пока о нём не пишут все."""
-    if st.get("age_hours") is None or st["age_hours"] > gate.get("early_hours", 3):
-        return False
     from .pipeline import outlet_key  # «BBC» и «BBC News» — одно издание
 
     big = {outlet_key(o) for o in gate.get("early_outlets", [])}
-    from_big = any(outlet_key(src) in big for src in st.get("outlets", []))
+    from_big = any(outlet_key(src) in big for src in st.get("outlets_3h_names", []))  # написали за последние 3 ч
     mine = bool(st["tags"].get("hype") or st.get("mechanics") or st.get("fold", {}).get("hype"))
     return from_big and mine
 
