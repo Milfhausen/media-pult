@@ -46,6 +46,9 @@
 
 ---
 
+## Если сбор не идёт сам раз в час
+Проверь: **Settings → Actions → General → Allow all actions** и **Workflow permissions → Read and write**. Расписание GitHub подхватывает после следующего изменения в репозитории.
+
 ## Как обновить вручную (в любой момент)
 **Actions** → **«Сбор новостей»** → **Run workflow** → **Run workflow**. Через 3–5 минут обнови страницу.
 
