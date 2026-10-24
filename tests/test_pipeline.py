@@ -123,3 +123,12 @@ def test_mechanics_hints():
     assert "aswat" in st["mechanics"]
     arts = [news("Tank barrel production returns to Telford", "BBC", 1)]
     assert "grooming" not in build_stories(arts, CFG, NOW)[0]["mechanics"]
+
+
+def test_early_signal_from_big_outlet():
+    arts = [news("Government urges Londoners to stockpile three days of food and water amid cyberattack fears", "BBC News", 0.5)]
+    st = build_stories(arts, CFG, NOW)[0]
+    assert "homeprep" in st["mechanics"]
+    assert st["idea"]["fat"] and st["idea"]["early"]
+    small = build_stories([news("Local fete cancelled due to rain", "Somerset Live", 0.5)], CFG, NOW)[0]
+    assert not small["idea"]["fat"]

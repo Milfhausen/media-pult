@@ -136,6 +136,7 @@ def make_story(c, now, tab_rx, speakers, mechs=()):
         "title_ru": rep["title"] if rep.get("lang") == "ru" else None,
         "lang": rep.get("lang", "en"),
         "first_published": iso(min(times)),
+        "age_hours": round(hours_ago(min(times), now), 1),
         "last_published": iso(max(times)),
         "outlets_24h": len(o24),
         "outlets_3h": len(o3),

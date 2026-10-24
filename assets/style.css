@@ -156,3 +156,4 @@ h2.sec small { color: var(--muted); font-weight: 400; }
 .etalon { margin-top: 8px; font-size: 13px; background: #102418; border: 1px solid #1f5130; border-radius: 8px; padding: 6px 8px; }
 .etalon span { color: var(--muted); }
 .why { margin-top: 4px; font-size: 12px; color: var(--muted); }
+.b.early { border-color: #ff4d6d; color: #ff8fa3; font-weight: 700; }

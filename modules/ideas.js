@@ -16,6 +16,7 @@
     const meta = (ctx.data.mechanics || {});
     const mechs = (s.mechanics || []).map((m) => meta[m]).filter(Boolean);
     const badges = [];
+    if (i.early) badges.push('<span class="b early">🆕 РАННИЙ СИГНАЛ — только что вышло</span>');
     if (s.rising) badges.push('<span class="b rise">🚀 РАСТЁТ</span>');
     if (s.first) badges.push('<span class="b first">🥇 ЕЩЁ НИКТО</span>');
     if (s.in_ru_tg) badges.push(`<span class="b tg">📢 УЖЕ В РУ-ТЕЛЕГЕ (${s.tg_channels.length})</span>`);
@@ -77,7 +78,9 @@
           .map(([k, t]) => `<button data-v="${k}"${view === k ? ' class="on"' : ""}>${t}</button>`).join("")}</div>
         <div class="seg" id="iw">${Object.entries(WINS).map(([k, t]) => `<button data-w="${k}"${+k === win ? ' class="on"' : ""}>${t}</button>`).join("")}</div>
       </div>`;
-    if (view === "top") el.appendChild(section(ctx, "🏆 Самые жирные под тебя", `${mine.length} идей`, mine.slice(0, 15)));
+    const early = all.filter((s) => s.idea.early).sort((a, b) => new Date(b.first_published) - new Date(a.first_published));
+    if (view === "top" && early.length) el.appendChild(section(ctx, "🆕 Только что вышло — успей первым", "свежак от крупных изданий в твоих темах", early.slice(0, 6)));
+    if (view === "top") el.appendChild(section(ctx, "🏆 Самые жирные под тебя", `${mine.length} идей`, mine.filter((s) => !s.idea.early).slice(0, 15)));
     if (view === "rub") cats.forEach((c) => {
       const list = mine.filter((s) => (s.tags.hype || []).includes(c)).slice(0, 5);
       el.appendChild(section(ctx, "#" + c, list.length ? "" : "", list, "Сейчас в этой рубрике ничего жирного."));

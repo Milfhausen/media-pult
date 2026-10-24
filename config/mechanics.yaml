@@ -49,6 +49,11 @@ mechanics:
     hint: "По библии эти персонажи ещё не раскрыты: механика «конкретный персонаж-абсурд» — имя, должность, 2–3 абсурдных решения, цитата."
     any: [Shabana Mahmood, Sadiq Khan, Humza Yousaf, Abu Hamza, Shamima Begum, Lucy Connolly, Lucy Letby]
 
+  - id: homeprep
+    label: "⚠️ Готовят к ЧП дома"
+    hint: "Новый угол войны — через быт: правительство велит запасать еду и воду, блэкауты, кибератаки. Личная виньетка: что лежит у тебя дома, что сказала жена. Цифры — плашкой, голосом — эмоция."
+    any: [stockpile, stock up, emergency kit, grab bag, go bag, three days of food, 72 hours, blackout, power cuts, cyberattack, cyber attack, civil defence, civil defense, bunker, shelters, emergency alert, запас]
+
   - id: cooled
     label: "❄️ Тема остыла"
     hint: "По атласу эту тему недавно снимали и она затухла (война 91к → 71к → 34к; жара 377к → 55к; BBC-лицензия дважды; украинцы 3 раза подряд). Брать только с совсем новым углом и личной привязкой."

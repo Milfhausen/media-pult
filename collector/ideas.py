@@ -7,10 +7,22 @@ def prepare(cfg):
     return {"cfg": cfg, "etalons": etalons}
 
 
+def is_early(st, gate):
+    """🆕 Ранний сигнал: свежак от крупного издания в твоих темах — берём, пока о нём не пишут все."""
+    if st.get("age_hours") is None or st["age_hours"] > gate.get("early_hours", 3):
+        return False
+    from .pipeline import outlet_key  # «BBC» и «BBC News» — одно издание
+
+    big = {outlet_key(o) for o in gate.get("early_outlets", [])}
+    from_big = any(outlet_key(src) in big for src in st.get("outlets", []))
+    mine = bool(st["tags"].get("hype") or st.get("mechanics") or st.get("fold", {}).get("hype"))
+    return from_big and mine
+
+
 def is_fat(st, gate):
     """«Только жирное»: мелочь, где «кто-то пукнул», в идеи не попадает."""
     o = st["outlets_24h"]
-    return (o >= gate.get("min_outlets_24h", 6)
+    return (o >= gate.get("min_outlets_24h", 6) or is_early(st, gate)
             or (st["rising"] and o >= gate.get("rising_min_outlets", 4))
             or (st["trends"] and o >= gate.get("trends_min_outlets", 3))
             or st["score"] >= gate.get("min_hype", 45))
@@ -39,6 +51,7 @@ def annotate(st, prep, text=None):
            + (w.get("war", -15) if st.get("fold", {}).get("hype") else 0))
     st["idea"] = {
         "fat": is_fat(st, cfg.get("gate", {})),
+        "early": is_early(st, cfg.get("gate", {})) and st["outlets_24h"] < cfg.get("gate", {}).get("min_outlets_24h", 6),
         "potential": int(round(max(0, min(100, pot)))),
         "segment": best_seg[0],
         "segment_why": segs.get(best_seg[0], {}).get("why") if best_seg[0] else None,
