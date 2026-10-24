@@ -6,6 +6,29 @@
 
   const modules = {};
   const state = { data: null, status: null, tabs: [], tabId: null, tag: "", rising: false, first: false, win: 24, mine: true, showDone: false };
+  // «🆕 НОВОЕ»: сюжеты, которых не было в прошлом сборе, который ты видел. Метки держатся до следующего сбора.
+  const SEEN_KEY = "pult-seen";
+  let newIds = new Set();
+  function markNew(data) {
+    if (data.demo) return;
+    const ids = data.stories.map((s) => s.id);
+    let seen = {};
+    try { seen = JSON.parse(localStorage.getItem(SEEN_KEY) || "{}") || {}; } catch (e) { seen = {}; }
+    if (seen.gen !== data.generated_at) {
+      seen = { gen: data.generated_at, prev: seen.cur || null, cur: ids };
+      try { localStorage.setItem(SEEN_KEY, JSON.stringify(seen)); } catch (e) { /* без памяти — без меток */ }
+    }
+    const prev = new Set(seen.prev || ids); // первый заход: всё «старое»
+    newIds = new Set(ids.filter((id) => !prev.has(id)));
+  }
+  const isNew = (s) => newIds.has(s.id);
+  function newCount(tabId) {
+    const list = ((state.data && state.data.stories) || []).filter(isNew);
+    if (tabId === "ideas") return list.filter((s) => s.idea && s.idea.fat).length;
+    if (tabId === "hype") return list.filter((s) => ((s.tags && s.tags.hype) || []).length && !(s.fold && s.fold.hype)).length;
+    if (tabId === "cis") return list.filter((s) => ((s.tags && s.tags.cis) || []).length).length;
+    return 0;
+  }
   const DONE_KEY = "pult-taken";
   let taken = {};
   try { taken = JSON.parse(localStorage.getItem(DONE_KEY) || "{}") || {}; } catch (e) { taken = {}; }
@@ -125,6 +148,7 @@
     const tabId = opts.tabId || state.tabId;
     const cls = s.score >= 60 ? "hot" : s.score >= 35 ? "warm" : "";
     const badges = [];
+    if (isNew(s)) badges.push('<span class="b new">🆕 НОВОЕ</span>');
     if (s.rising) badges.push('<span class="b rise">🚀 РАСТЁТ</span>');
     if (s.first) badges.push('<span class="b first">🥇 ЕЩЁ НИКТО НЕ НАПИСАЛ</span>');
     if (s.in_ru_tg) badges.push('<span class="b tg">📢 УЖЕ В РУ-ТЕЛЕГЕ</span>');
@@ -234,7 +258,8 @@
     nav.innerHTML = "";
     state.tabs.forEach((t) => {
       const b = document.createElement("button");
-      b.textContent = t.title;
+      const n = newCount(t.id);
+      b.innerHTML = esc(t.title) + (n ? ` <span class="tabnew">+${n}</span>` : "");
       b.className = t.id === state.tabId ? "on" : "";
       b.setAttribute("role", "tab");
       b.addEventListener("click", () => switchTab(t.id));
@@ -282,6 +307,7 @@
         .map((s) => `<li><b>${esc(s.name)}</b>: ${esc(s.error || "нет ответа")}</li>`)
         .join("")}</ul><div class="muted">Остальные источники работают — данные показаны без этих.</div></details></div>`);
     }
+    if (newIds.size) banners.unshift(`<div class="banner newb">🆕 С прошлого обновления пришло <b>${newIds.size}</b> новых сюжетов — они помечены «НОВОЕ».</div>`);
     $("#banners").innerHTML = banners.join("");
   }
 
@@ -338,6 +364,7 @@
     }
     state.data = data;
     state.status = status;
+    markNew(data);
     state.tabs = await loadTabsConfig(data.tabs);
     await Promise.all(state.tabs.filter((t) => t.module).map((t) => loadScript(t.module).catch((e) => console.warn(e.message))));
     const want = (location.hash || "").slice(1);
@@ -348,9 +375,28 @@
     fillTags();
     renderTabs();
     render();
+    watchUpdates(data.generated_at);
   }
 
-  window.Pult = { registerTab: (def) => (modules[def.id] = def), scriptText };
+  // Если пульт открыт долго — раз в 5 минут проверяем, не пришёл ли новый сбор
+  function watchUpdates(gen) {
+    if (state.data.demo) return;
+    setInterval(async () => {
+      try {
+        const d = await getJSON("data/stories.json");
+        if (d.generated_at && d.generated_at !== gen && !document.getElementById("upd-banner")) {
+          const b = document.createElement("div");
+          b.id = "upd-banner";
+          b.className = "banner newb";
+          b.innerHTML = '🔄 Пришли свежие новости. <button class="linkbtn" type="button">Обновить пульт</button>';
+          b.querySelector("button").onclick = () => location.reload();
+          $("#banners").prepend(b);
+        }
+      } catch (e) { /* сеть пропала — попробуем позже */ }
+    }, 5 * 60 * 1000);
+  }
+
+  window.Pult = { registerTab: (def) => (modules[def.id] = def), scriptText, isNew };
   document.addEventListener("DOMContentLoaded", () =>
     init().catch((e) => {
       console.error(e);

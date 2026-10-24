@@ -17,6 +17,7 @@
     const mechs = (s.mechanics || []).map((m) => meta[m]).filter(Boolean);
     const badges = [];
     if (i.early) badges.push('<span class="b early">🆕 РАННИЙ СИГНАЛ — только что вышло</span>');
+    if (Pult.isNew && Pult.isNew(s)) badges.push('<span class="b new">🆕 НОВОЕ</span>');
     if (s.rising) badges.push('<span class="b rise">🚀 РАСТЁТ</span>');
     if (s.first) badges.push('<span class="b first">🥇 ЕЩЁ НИКТО</span>');
     if (s.in_ru_tg) badges.push(`<span class="b tg">📢 УЖЕ В РУ-ТЕЛЕГЕ (${s.tg_channels.length})</span>`);
