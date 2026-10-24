@@ -20,7 +20,7 @@ def is_early(st, gate):
 def is_fat(st, gate):
     """«Только жирное»: мелочь, где «кто-то пукнул», в идеи не попадает."""
     o = st["outlets_24h"]
-    return (o >= gate.get("min_outlets_24h", 6) or is_early(st, gate)
+    return (o >= gate.get("min_outlets_24h", 6)
             or (st["rising"] and o >= gate.get("rising_min_outlets", 4))
             or (st["trends"] and o >= gate.get("trends_min_outlets", 3))
             or st["score"] >= gate.get("min_hype", 45))
@@ -47,10 +47,14 @@ def annotate(st, prep, text=None):
            + (w.get("rising", 5) if st["rising"] else 0) + (w.get("etalon", 7) if etalon else 0)
            + (w.get("cooled", -30) if cooled else 0)
            + (w.get("war", -15) if st.get("fold", {}).get("hype") else 0))
+    gate = cfg.get("gate", {})
+    potential = int(round(max(0, min(100, pot))))
+    early = (is_early(st, gate) and not cooled and potential >= gate.get("early_min_potential", 40)
+             and st["outlets_24h"] < gate.get("min_outlets_24h", 6))
     st["idea"] = {
-        "fat": is_fat(st, cfg.get("gate", {})),
-        "early": is_early(st, cfg.get("gate", {})) and st["outlets_24h"] < cfg.get("gate", {}).get("min_outlets_24h", 6),
-        "potential": int(round(max(0, min(100, pot)))),
+        "fat": is_fat(st, gate) or early,
+        "early": early,
+        "potential": potential,
         "segment": best_seg[0],
         "segment_why": segs.get(best_seg[0], {}).get("why") if best_seg[0] else None,
         "etalon": {k: etalon[k] for k in ("ep", "views", "subs", "angle")} if etalon else None,

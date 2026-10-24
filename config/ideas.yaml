@@ -10,6 +10,7 @@ gate:
   # 🆕 РАННИЙ СИГНАЛ: чтобы быть первым, свежак берём сразу — даже если пишет одно крупное издание,
   # но только если он в твоих темах (рубрика, механика или война/Россия)
   early_hours: 3
+  early_min_potential: 40   # и потенциал для тебя от 40 — чтобы не было мусора
   early_outlets: [BBC, Sky News, The Guardian, The Telegraph, The Times, Daily Mail, GB News, Reuters, The Sun, The Independent, Evening Standard]
 
 # 2. ПОТЕНЦИАЛ ДЛЯ ТЕБЯ (0–100) = хайп × hype + лучшая рубрика × segment + лучшая механика × mechanic

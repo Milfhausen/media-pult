@@ -52,7 +52,8 @@ mechanics:
   - id: homeprep
     label: "⚠️ Готовят к ЧП дома"
     hint: "Новый угол войны — через быт: правительство велит запасать еду и воду, блэкауты, кибератаки. Личная виньетка: что лежит у тебя дома, что сказала жена. Цифры — плашкой, голосом — эмоция."
-    any: [stockpile, stock up, emergency kit, grab bag, go bag, three days of food, 72 hours, blackout, power cuts, cyberattack, cyber attack, civil defence, civil defense, bunker, shelters, emergency alert, запас]
+    any: [stockpile, stock up, emergency kit, grab bag, go bag, three days of food, 72 hours, blackout, cyberattack, cyber attack, civil defence, civil defense, bunker, shelters, emergency alert, запас]
+    also_any: [cyber, war, Russia, Russian, attack, conflict, NATO, invasion, hostile, threat, defence, military, government urges, households urged, Londoners urged, кибер, войн, Росси]
 
   - id: cooled
     label: "❄️ Тема остыла"
