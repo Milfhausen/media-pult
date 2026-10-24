@@ -13,7 +13,8 @@ def is_early(st, gate):
 
     big = {outlet_key(o) for o in gate.get("early_outlets", [])}
     from_big = any(outlet_key(src) in big for src in st.get("outlets_3h_names", []))  # написали за последние 3 ч
-    mine = bool(st["tags"].get("hype") or st.get("mechanics") or st.get("fold", {}).get("hype"))
+    # «взрывной» признак: твоя механика (кроме «остыло») или война/Россия
+    mine = bool([m for m in st.get("mechanics", []) if m != "cooled"] or st.get("fold", {}).get("hype"))
     return from_big and mine
 
 
@@ -46,7 +47,7 @@ def annotate(st, prep, text=None):
            + w.get("mechanic", 15) * best_mech + (w.get("first", 8) if st["first"] else 0)
            + (w.get("rising", 5) if st["rising"] else 0) + (w.get("etalon", 7) if etalon else 0)
            + (w.get("cooled", -30) if cooled else 0)
-           + (w.get("war", -15) if st.get("fold", {}).get("hype") else 0))
+           + (w.get("war", -15) if st.get("fold", {}).get("hype") and "homeprep" not in st.get("mechanics", []) else 0))
     gate = cfg.get("gate", {})
     potential = int(round(max(0, min(100, pot))))
     early = (is_early(st, gate) and not cooled and potential >= gate.get("early_min_potential", 40)

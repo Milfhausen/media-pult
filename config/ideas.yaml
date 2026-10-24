@@ -39,7 +39,7 @@ segments:
 # Сила механик (id из config/mechanics.yaml)
 mechanics:
   aswat: 1.0
-  homeprep: 0.85
+  homeprep: 1.0
   grooming: 1.0
   women: 0.9
   betrayal: 0.9
