@@ -2,6 +2,19 @@
 # Сюжет попадает во вкладку, если совпала хотя бы одна подтема.
 # Слово срабатывает по НАЧАЛУ слова (Ukrain → Ukraine, Ukrainian).
 
+# ЯКОРЬ: во вкладку попадает только сюжет, который реально про Россию, Украину, СНГ или подготовку к войне.
+# Такое слово должно быть в главном заголовке сюжета или хотя бы в 30% его заголовков.
+require:
+  share: 0.3
+  keywords:
+    [Russia, Russian, Kremlin, Putin, Moscow, Soviet, Ukrain, Kyiv, Kiev, Zelensky, Belarus, Lukashenko, Minsk,
+     Kazakh, Uzbek, Tajik, Kyrgyz, Tbilisi, Georgian, Georgia's, protests in Georgia, Court of Georgia, opposition in Georgia, Kobakhidze, Ivanishvili, Kavelashvili, Zourabichvili, Moldova, Armenia, Azerbaijan,
+     Baltic, Estonia, Latvia, Lithuania, Kaliningrad, Suwalki, Chechen, Dagestan, post-Soviet, Eastern Europe,
+     MI5, MI6, conscription, national service, mobilisation, mobilization, prepare for war, ready for war,
+     British Army chief, head of the British Army, UK army chief, defence spending, NATO spending, NATO target, Black Sea, war with Russia, Farage Ukraine, Homes for Ukraine,
+     Росси, русск, Кремл, Путин, Москв, Украин, Киев, Зеленск, Белорус, Беларус, Лукашенк, Казах, Узбек,
+     Таджик, Киргиз, Грузи, Молдов, Армени, Азербайдж, Прибалт, Эстони, Латви, Литв, Калининград, СНГ, МИ-5, МИ-6]
+
 categories:
   "Касается нас напрямую":
     - Homes for Ukraine

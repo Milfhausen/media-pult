@@ -19,6 +19,7 @@ def load_config():
             "module": t.get("module"),
             "categories": kw.get("categories") or {},
             "fold": fold,
+            "require": kw.get("require") or None,
         })
     return {
         "scoring": load_yaml("config/scoring.yaml"),
@@ -65,7 +66,9 @@ def build_stories(articles, cfg, now):
     for t in cfg["tabs"]:
         cats = [(name, keyword_regex(words or [])) for name, words in t["categories"].items()]
         fold_rx = keyword_regex(t["fold"].get("keywords") or []) if t["fold"] else None
-        tab_rx.append((t["id"], cats, fold_rx))
+        req = t.get("require")
+        req_rx = (keyword_regex(req.get("keywords") or []), req.get("share", 0.3)) if req else None
+        tab_rx.append((t["id"], cats, fold_rx, req_rx))
     speakers = [(s["label"], [m.lower() for m in s.get("match", [])]) for s in cfg["dictionary"].get("speakers", [])]
     idea_prep = ideas.prepare(cfg.get("ideas", {}))
     mechs = [(m["id"], keyword_regex(m.get("any") or []), keyword_regex(m.get("also_any") or []))
@@ -122,7 +125,16 @@ def make_story(c, now, tab_rx, speakers, mechs=()):
 
     text = " \n ".join(a["title"] for a in c.members).lower().replace("ё", "е")
     tags, fold = {}, {}
-    for tab_id, cats, fold_rx in tab_rx:
+    titles = [a["title"].lower().replace("ё", "е") for a in c.members]
+    rep_title = rep["title"].lower().replace("ё", "е")
+    for tab_id, cats, fold_rx, req_rx in tab_rx:
+        # «якорь» вкладки: сюжет должен быть реально про её тему — в главном заголовке
+        # или в заметной доле заголовков сюжета, а не в одном случайно приклеенном
+        if req_rx and req_rx[0]:
+            hits = sum(1 for t in titles if req_rx[0].search(t))
+            if not (req_rx[0].search(rep_title) or hits / max(len(titles), 1) >= req_rx[1]):
+                tags[tab_id], fold[tab_id] = [], False
+                continue
         tags[tab_id] = [name for name, rx in cats if rx and rx.search(text)]
         fold[tab_id] = bool(fold_rx and fold_rx.search(text))
     mechanics = [mid for mid, rx_any, rx_also in mechs
