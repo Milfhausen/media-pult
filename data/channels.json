@@ -1,133 +1,143 @@
 [
  {
   "title": "@yurasumy",
-  "avg_views": 463000,
-  "posts": 19
+  "avg_views": 464000,
+  "posts": 22
  },
  {
   "title": "@truexanewsua",
-  "avg_views": 438000,
-  "posts": 72
+  "avg_views": 444000,
+  "posts": 73
  },
  {
   "title": "@mash",
-  "avg_views": 352000,
-  "posts": 32
+  "avg_views": 353000,
+  "posts": 33
  },
  {
   "title": "@readovkanews",
-  "avg_views": 340500,
-  "posts": 38
+  "avg_views": 346000,
+  "posts": 39
  },
  {
   "title": "@insiderUKR",
-  "avg_views": 299500,
-  "posts": 54
+  "avg_views": 311000,
+  "posts": 55
  },
  {
   "title": "Топор Live",
-  "avg_views": 268000,
-  "posts": 131
+  "avg_views": 278000,
+  "posts": 136
  },
  {
   "title": "@ecotopor",
-  "avg_views": 213500,
+  "avg_views": 220000,
   "posts": 12
  },
  {
   "title": "@bazabazon",
-  "avg_views": 207500,
-  "posts": 24
+  "avg_views": 214000,
+  "posts": 26
  },
  {
   "title": "@bbbreaking",
-  "avg_views": 194000,
-  "posts": 95
+  "avg_views": 201500,
+  "posts": 96
  },
  {
   "title": "@ostorozhno_novosti",
-  "avg_views": 167000,
+  "avg_views": 178000,
   "posts": 33
  },
  {
   "title": "@yurydud",
-  "avg_views": 166000,
+  "avg_views": 174000,
   "posts": 1
  },
  {
   "title": "Ateo Breaking",
-  "avg_views": 153000,
+  "avg_views": 158000,
   "posts": 147
  },
  {
   "title": "@meduzalive",
-  "avg_views": 140500,
-  "posts": 46
- },
- {
-  "title": "@uniannet",
-  "avg_views": 116500,
-  "posts": 92
+  "avg_views": 144000,
+  "posts": 52
  },
  {
   "title": "@shot_shot",
-  "avg_views": 115000,
+  "avg_views": 119000,
   "posts": 29
  },
  {
+  "title": "@uniannet",
+  "avg_views": 118000,
+  "posts": 101
+ },
+ {
   "title": "@ru2ch",
-  "avg_views": 110000,
-  "posts": 85
+  "avg_views": 113000,
+  "posts": 87
  },
  {
   "title": "@RVvoenkor",
   "avg_views": 109500,
-  "posts": 86
- },
- {
-  "title": "@rhymestg",
-  "avg_views": 107000,
-  "posts": 57
+  "posts": 90
  },
  {
   "title": "@dvachannel",
-  "avg_views": 107000,
+  "avg_views": 108000,
   "posts": 68
  },
  {
+  "title": "@rhymestg",
+  "avg_views": 105000,
+  "posts": 61
+ },
+ {
   "title": "@topor",
-  "avg_views": 92800,
-  "posts": 25
+  "avg_views": 94500,
+  "posts": 26
  },
  {
   "title": "@rybar",
-  "avg_views": 77750,
-  "posts": 36
+  "avg_views": 86300,
+  "posts": 37
  },
  {
   "title": "@live_piter (спб)",
-  "avg_views": 77500,
-  "posts": 19
- },
- {
-  "title": "@ostorozhno_moskva",
-  "avg_views": 68200,
+  "avg_views": 78200,
   "posts": 20
  },
  {
+  "title": "@ostorozhno_moskva",
+  "avg_views": 68100,
+  "posts": 21
+ },
+ {
   "title": "@ekaterina_mizulina",
-  "avg_views": 58800,
+  "avg_views": 60800,
   "posts": 1
  },
  {
   "title": "@veronikastepanova20011",
-  "avg_views": 53800,
+  "avg_views": 56600,
   "posts": 5
  },
  {
   "title": "@mig41",
-  "avg_views": 50500,
-  "posts": 39
+  "avg_views": 53250,
+  "posts": 42
+ },
+ {
+  "title": "@newsmoscow",
+  "avg_views": 51300,
+  "posts": 15
+ },
+ {
+  "title": "@Lepragram",
+  "avg_views": 50700,
+  "posts": 29
  },
  {
   "title": "@zhidkovskiy_talk",
@@ -135,64 +145,59 @@
   "posts": 5
  },
  {
-  "title": "@Lepragram",
-  "avg_views": 49150,
-  "posts": 28
- },
- {
-  "title": "@newsmoscow",
-  "avg_views": 48850,
-  "posts": 16
+  "title": "@chtddd",
+  "avg_views": 48400,
+  "posts": 21
  },
  {
   "title": "@novosti_russia360",
-  "avg_views": 45850,
-  "posts": 32
- },
- {
-  "title": "@rbc_news",
-  "avg_views": 43700,
-  "posts": 64
+  "avg_views": 47600,
+  "posts": 29
  },
  {
   "title": "@bbcrussian",
-  "avg_views": 42450,
-  "posts": 38
+  "avg_views": 45300,
+  "posts": 39
  },
  {
-  "title": "@chtddd",
-  "avg_views": 42150,
-  "posts": 20
+  "title": "@rbc_news",
+  "avg_views": 45000,
+  "posts": 64
  },
  {
   "title": "@fontankaspb (спб)",
-  "avg_views": 40800,
-  "posts": 38
+  "avg_views": 40700,
+  "posts": 41
  },
  {
   "title": "@DeCenter",
-  "avg_views": 40700,
-  "posts": 4
- },
- {
-  "title": "@rlz_the_kraken",
-  "avg_views": 35300,
-  "posts": 36
- },
- {
-  "title": "@russicaRU",
-  "avg_views": 30800,
-  "posts": 23
- },
- {
-  "title": "@Sladkov_plus",
-  "avg_views": 28000,
+  "avg_views": 38700,
   "posts": 7
  },
  {
+  "title": "@rlz_the_kraken",
+  "avg_views": 37500,
+  "posts": 35
+ },
+ {
+  "title": "@russicaRU",
+  "avg_views": 32700,
+  "posts": 22
+ },
+ {
+  "title": "@Sladkov_plus",
+  "avg_views": 30300,
+  "posts": 7
+ },
+ {
+  "title": "@rostov0 (ростов)",
+  "avg_views": 26200,
+  "posts": 4
+ },
+ {
   "title": "@ejdailyru",
-  "avg_views": 27800,
-  "posts": 140
+  "avg_views": 25900,
+  "posts": 156
  },
  {
   "title": "@staraya",
@@ -200,79 +205,84 @@
   "posts": 7
  },
  {
+  "title": "@MariaVladimirovnaZakharova",
+  "avg_views": 25650,
+  "posts": 6
+ },
+ {
   "title": "@PlushevChannel",
-  "avg_views": 25500,
+  "avg_views": 25600,
   "posts": 11
  },
  {
   "title": "@AteoGo",
-  "avg_views": 24850,
+  "avg_views": 25550,
   "posts": 2
  },
  {
-  "title": "@MariaVladimirovnaZakharova",
-  "avg_views": 24700,
-  "posts": 6
- },
- {
-  "title": "@rostov0 (ростов)",
-  "avg_views": 23900,
-  "posts": 4
- },
- {
   "title": "@ttepllota",
-  "avg_views": 23500,
+  "avg_views": 23800,
   "posts": 1
  },
  {
   "title": "@sashakots",
-  "avg_views": 20300,
+  "avg_views": 21300,
   "posts": 23
  },
  {
-  "title": "@infomoscow24",
-  "avg_views": 20200,
-  "posts": 93
+  "title": "@LIVfashionmag",
+  "avg_views": 21250,
+  "posts": 36
  },
  {
   "title": "@opersvodki",
-  "avg_views": 19800,
+  "avg_views": 20700,
   "posts": 12
  },
  {
-  "title": "@mod_russia",
-  "avg_views": 19800,
-  "posts": 44
+  "title": "@infomoscow24",
+  "avg_views": 20700,
+  "posts": 101
  },
  {
-  "title": "@infantmilitario",
-  "avg_views": 18200,
-  "posts": 115
+  "title": "@mod_russia",
+  "avg_views": 19700,
+  "posts": 41
  },
  {
   "title": "@evaelfie_life",
-  "avg_views": 18100,
+  "avg_views": 19500,
   "posts": 1
  },
  {
-  "title": "@LIVfashionmag",
-  "avg_views": 18000,
-  "posts": 35
+  "title": "@infantmilitario",
+  "avg_views": 19150,
+  "posts": 122
  },
  {
   "title": "@tb_invest_official",
-  "avg_views": 17850,
-  "posts": 2
+  "avg_views": 18900,
+  "posts": 3
  },
  {
   "title": "@minskinter",
-  "avg_views": 17600,
-  "posts": 11
+  "avg_views": 17650,
+  "posts": 12
+ },
+ {
+  "title": "@iron_feliks",
+  "avg_views": 17350,
+  "posts": 8
  },
  {
   "title": "@neuesausrussland",
-  "avg_views": 17000,
+  "avg_views": 17300,
   "posts": 5
+ },
+ {
+  "title": "@pikabu",
+  "avg_views": 16850,
+  "posts": 34
  },
  {
   "title": "@belgorod_life (белгород)",
@@ -280,9 +290,14 @@
   "posts": 1
  },
  {
-  "title": "@pikabu",
-  "avg_views": 16650,
-  "posts": 34
+  "title": "SVTV NEWS",
+  "avg_views": 16600,
+  "posts": 67
+ },
+ {
+  "title": "@moscow360new (мск)",
+  "avg_views": 16300,
+  "posts": 27
  },
  {
   "title": "@Kursk_tut (курск)",
@@ -290,69 +305,54 @@
   "posts": 1
  },
  {
-  "title": "SVTV NEWS",
-  "avg_views": 16000,
-  "posts": 66
- },
- {
-  "title": "@iron_feliks",
-  "avg_views": 15900,
-  "posts": 8
- },
- {
-  "title": "@moscow360new (мск)",
-  "avg_views": 15700,
-  "posts": 27
- },
- {
   "title": "@ru4chan",
-  "avg_views": 15200,
-  "posts": 29
- },
- {
-  "title": "@istories_media",
-  "avg_views": 15000,
-  "posts": 8
- },
- {
-  "title": "@tass_agency",
-  "avg_views": 14800,
-  "posts": 171
+  "avg_views": 15550,
+  "posts": 30
  },
  {
   "title": "@thebell_io",
-  "avg_views": 14800,
+  "avg_views": 15500,
   "posts": 8
  },
  {
+  "title": "@istories_media",
+  "avg_views": 15300,
+  "posts": 9
+ },
+ {
   "title": "@meduza_news",
-  "avg_views": 14650,
-  "posts": 34
+  "avg_views": 14750,
+  "posts": 38
  },
  {
   "title": "@theinsider",
-  "avg_views": 13850,
-  "posts": 36
+  "avg_views": 14500,
+  "posts": 37
  },
  {
-  "title": "@novaya_pishet",
-  "avg_views": 13850,
-  "posts": 12
+  "title": "@tass_agency",
+  "avg_views": 14500,
+  "posts": 191
+ },
+ {
+  "title": "@generalsvr",
+  "avg_views": 14500,
+  "posts": 1
  },
  {
   "title": "@news_sirena",
-  "avg_views": 13600,
+  "avg_views": 14400,
   "posts": 15
  },
  {
-  "title": "@alfa_investments",
-  "avg_views": 13550,
-  "posts": 2
+  "title": "@operdrain",
+  "avg_views": 14150,
+  "posts": 4
  },
  {
-  "title": "@operdrain",
-  "avg_views": 13300,
-  "posts": 4
+  "title": "@novaya_pishet",
+  "avg_views": 14050,
+  "posts": 12
  },
  {
   "title": "@Belarust",
@@ -360,69 +360,79 @@
   "posts": 1
  },
  {
-  "title": "@kommersant",
-  "avg_views": 12650,
-  "posts": 86
+  "title": "@alfa_investments",
+  "avg_views": 12800,
+  "posts": 3
  },
  {
   "title": "@commerc",
-  "avg_views": 12100,
+  "avg_views": 12600,
   "posts": 6
  },
  {
   "title": "@topwar_official",
-  "avg_views": 11750,
+  "avg_views": 12050,
   "posts": 8
  },
  {
+  "title": "@kommersant",
+  "avg_views": 11800,
+  "posts": 91
+ },
+ {
   "title": "@wrenjapan",
-  "avg_views": 11600,
-  "posts": 9
+  "avg_views": 11700,
+  "posts": 10
  },
  {
   "title": "@teamnavalny",
-  "avg_views": 11200,
+  "avg_views": 11400,
   "posts": 1
  },
  {
   "title": "@mediazzzona",
-  "avg_views": 10400,
-  "posts": 23
+  "avg_views": 10700,
+  "posts": 26
  },
  {
   "title": "@currenttime",
-  "avg_views": 10100,
+  "avg_views": 10250,
   "posts": 28
  },
  {
   "title": "@ia_panorama",
-  "avg_views": 9375,
+  "avg_views": 9720,
   "posts": 10
  },
  {
   "title": "@dwglavnoe",
-  "avg_views": 8790,
-  "posts": 49
+  "avg_views": 9340,
+  "posts": 50
+ },
+ {
+  "title": "@emigriceps",
+  "avg_views": 8615,
+  "posts": 4
  },
  {
   "title": "@Hinshtein",
-  "avg_views": 7820,
+  "avg_views": 8180,
   "posts": 1
  },
  {
   "title": "@vadresah",
-  "avg_views": 7755,
+  "avg_views": 8075,
+  "posts": 6
+ },
+ {
+  "title": "@ponomarb1",
+  "avg_views": 7860,
   "posts": 4
  },
  {
   "title": "@rianovostiAmerica",
-  "avg_views": 7720,
-  "posts": 24
- },
- {
-  "title": "@Agdchan",
-  "avg_views": 7640,
-  "posts": 6
+  "avg_views": 7650,
+  "posts": 23
  },
  {
   "title": "@belgorod01 (белгород)",
@@ -430,468 +440,463 @@
   "posts": 57
  },
  {
-  "title": "@emigriceps",
-  "avg_views": 7335,
-  "posts": 4
- },
- {
   "title": "@ovdinfo",
-  "avg_views": 7200,
+  "avg_views": 7420,
   "posts": 1
  },
  {
-  "title": "@ponomarb1",
-  "avg_views": 6840,
-  "posts": 4
- },
- {
-  "title": "@minsk3",
-  "avg_views": 6555,
-  "posts": 14
- },
- {
-  "title": "@radiosvoboda",
-  "avg_views": 6470,
-  "posts": 60
- },
- {
-  "title": "@informburo_sfd",
-  "avg_views": 6460,
-  "posts": 59
- },
- {
-  "title": "@SIL0VIKI",
-  "avg_views": 6415,
+  "title": "@Agdchan",
+  "avg_views": 7345,
   "posts": 8
  },
  {
-  "title": "@alinlav",
-  "avg_views": 6075,
+  "title": "@radiosvoboda",
+  "avg_views": 6985,
+  "posts": 60
+ },
+ {
+  "title": "@SIL0VIKI",
+  "avg_views": 6680,
+  "posts": 9
+ },
+ {
+  "title": "@minsk3",
+  "avg_views": 6565,
   "posts": 14
  },
  {
-  "title": "@CITeam",
-  "avg_views": 5970,
-  "posts": 1
+  "title": "@informburo_sfd",
+  "avg_views": 6490,
+  "posts": 59
  },
  {
-  "title": "@rybar_africa",
-  "avg_views": 5880,
-  "posts": 19
+  "title": "@alinlav",
+  "avg_views": 6275,
+  "posts": 14
  },
  {
   "title": "@sotaproject",
-  "avg_views": 5680,
+  "avg_views": 6085,
   "posts": 34
  },
  {
-  "title": "@nefte_baza",
-  "avg_views": 5670,
-  "posts": 1
+  "title": "@rybar_africa",
+  "avg_views": 6000,
+  "posts": 19
  },
  {
   "title": "@government_rus",
-  "avg_views": 5650,
+  "avg_views": 5810,
   "posts": 3
  },
  {
+  "title": "@nefte_baza",
+  "avg_views": 5810,
+  "posts": 1
+ },
+ {
+  "title": "@svobodnieslova",
+  "avg_views": 5720,
+  "posts": 1
+ },
+ {
+  "title": "@Godketing",
+  "avg_views": 5685,
+  "posts": 6
+ },
+ {
+  "title": "@ntvnews",
+  "avg_views": 5680,
+  "posts": 65
+ },
+ {
   "title": "@rybar_pacific",
-  "avg_views": 5600,
+  "avg_views": 5650,
   "posts": 9
  },
  {
   "title": "@evropar",
-  "avg_views": 5570,
+  "avg_views": 5595,
   "posts": 20
  },
  {
-  "title": "@Godketing",
-  "avg_views": 5405,
-  "posts": 6
- },
- {
-  "title": "@mediazona_exclusive",
-  "avg_views": 5305,
-  "posts": 2
- },
- {
-  "title": "@ntvnews",
-  "avg_views": 5290,
-  "posts": 61
+  "title": "@mash_batash (уфа)",
+  "avg_views": 5570,
+  "posts": 5
  },
  {
   "title": "@brussinf",
-  "avg_views": 5230,
+  "avg_views": 5460,
   "posts": 2
  },
  {
   "title": "@kompr",
-  "avg_views": 5135,
-  "posts": 8
+  "avg_views": 5380,
+  "posts": 9
  },
  {
   "title": "@ArkHelps",
-  "avg_views": 5050,
+  "avg_views": 5160,
   "posts": 3
  },
  {
-  "title": "@mscculture (мск)",
-  "avg_views": 4900,
-  "posts": 15
+  "title": "@swodki",
+  "avg_views": 4855,
+  "posts": 132
  },
  {
-  "title": "@swodki",
-  "avg_views": 4820,
-  "posts": 121
+  "title": "@mscculture (мск)",
+  "avg_views": 4810,
+  "posts": 16
  },
  {
   "title": "@rybar_america",
-  "avg_views": 4600,
+  "avg_views": 4650,
   "posts": 13
  },
  {
   "title": "@idemmsk (мск)",
-  "avg_views": 4400,
+  "avg_views": 4600,
   "posts": 5
  },
  {
-  "title": "@mash_batash (уфа)",
-  "avg_views": 4220,
-  "posts": 4
- },
- {
-  "title": "@svobodnieslova",
-  "avg_views": 4220,
-  "posts": 1
- },
- {
-  "title": "@pgo_gov_ua",
-  "avg_views": 3990,
-  "posts": 6
- },
- {
   "title": "@shushannabest",
-  "avg_views": 3970,
+  "avg_views": 4190,
   "posts": 1
  },
  {
   "title": "@balkanar",
-  "avg_views": 3685,
+  "avg_views": 3880,
   "posts": 14
  },
  {
-  "title": "@yanastea",
-  "avg_views": 3600,
-  "posts": 3
+  "title": "@pgo_gov_ua",
+  "avg_views": 3740,
+  "posts": 5
  },
  {
   "title": "@holodmedia",
-  "avg_views": 3524,
+  "avg_views": 3735,
   "posts": 2
  },
  {
-  "title": "@atesh_ua",
-  "avg_views": 3510,
-  "posts": 21
- },
- {
   "title": "@fr_dispatch",
-  "avg_views": 3505,
+  "avg_views": 3730,
   "posts": 36
  },
  {
+  "title": "@atesh_ua",
+  "avg_views": 3690,
+  "posts": 21
+ },
+ {
+  "title": "@yanastea",
+  "avg_views": 3680,
+  "posts": 3
+ },
+ {
   "title": "@DvtAdv",
-  "avg_views": 3430,
-  "posts": 3
- },
- {
-  "title": "@tassovkaru",
-  "avg_views": 3410,
-  "posts": 111
- },
- {
-  "title": "@stepan_alexis",
-  "avg_views": 3260,
-  "posts": 1
- },
- {
-  "title": "@yoba_m",
-  "avg_views": 3210,
-  "posts": 13
- },
- {
-  "title": "@chvk_wagnerr",
-  "avg_views": 3080,
-  "posts": 28
- },
- {
-  "title": "@mos_daily (мск)",
-  "avg_views": 2925,
-  "posts": 8
- },
- {
-  "title": "@deptone",
-  "avg_views": 2810,
-  "posts": 3
- },
- {
-  "title": "@anon_prok",
-  "avg_views": 2560,
+  "avg_views": 3590,
   "posts": 3
  },
  {
   "title": "@balkanossiper",
-  "avg_views": 2490,
+  "avg_views": 3525,
   "posts": 6
  },
  {
+  "title": "@CITeam",
+  "avg_views": 3507,
+  "posts": 2
+ },
+ {
+  "title": "@yoba_m",
+  "avg_views": 3500,
+  "posts": 13
+ },
+ {
+  "title": "@tassovkaru",
+  "avg_views": 3240,
+  "posts": 131
+ },
+ {
+  "title": "@chvk_wagnerr",
+  "avg_views": 3120,
+  "posts": 29
+ },
+ {
+  "title": "@mos_daily (мск)",
+  "avg_views": 3100,
+  "posts": 8
+ },
+ {
+  "title": "@mediazona_exclusive",
+  "avg_views": 3000,
+  "posts": 3
+ },
+ {
+  "title": "@deptone",
+  "avg_views": 2880,
+  "posts": 3
+ },
+ {
+  "title": "@anon_prok",
+  "avg_views": 2680,
+  "posts": 3
+ },
+ {
   "title": "@vottaktv",
-  "avg_views": 2320,
-  "posts": 57
+  "avg_views": 2420,
+  "posts": 61
  },
  {
   "title": "@mod_russia_en",
-  "avg_views": 2265,
+  "avg_views": 2410,
   "posts": 30
  },
  {
   "title": "@granica046 (курск)",
-  "avg_views": 2180,
+  "avg_views": 2160,
   "posts": 10
  },
  {
   "title": "@WarDonbass",
-  "avg_views": 2180,
-  "posts": 40
+  "avg_views": 2100,
+  "posts": 49
  },
  {
   "title": "@tv360",
-  "avg_views": 2070,
-  "posts": 121
+  "avg_views": 2100,
+  "posts": 130
  },
  {
   "title": "@poidem_moscow (мск)",
-  "avg_views": 2050,
-  "posts": 4
+  "avg_views": 2029,
+  "posts": 5
  },
  {
   "title": "@szao_news24 (мск)",
-  "avg_views": 1880,
+  "avg_views": 1890,
   "posts": 19
  },
  {
-  "title": "@horizontal_russia",
-  "avg_views": 1690,
-  "posts": 25
+  "title": "@sledcom_press",
+  "avg_views": 1760,
+  "posts": 20
  },
  {
-  "title": "@sledcom_press",
-  "avg_views": 1600,
-  "posts": 22
+  "title": "@horizontal_russia",
+  "avg_views": 1740,
+  "posts": 26
+ },
+ {
+  "title": "@anon_prok_press",
+  "avg_views": 1525,
+  "posts": 4
  },
  {
   "title": "@ausnews_de",
-  "avg_views": 1430,
+  "avg_views": 1505,
   "posts": 2
  },
  {
   "title": "@MID_Russia",
-  "avg_views": 1340,
-  "posts": 45
- },
- {
-  "title": "@MFARussia",
-  "avg_views": 1225,
-  "posts": 14
- },
- {
-  "title": "@anon_prok_press",
-  "avg_views": 1220,
-  "posts": 3
+  "avg_views": 1380,
+  "posts": 44
  },
  {
   "title": "@antifalivland",
-  "avg_views": 1210,
+  "avg_views": 1230,
   "posts": 14
  },
  {
-  "title": "@lukoilofficial",
-  "avg_views": 1170,
+  "title": "@MFARussia",
+  "avg_views": 1160,
+  "posts": 13
+ },
+ {
+  "title": "@exsled",
+  "avg_views": 1160,
   "posts": 1
  },
  {
+  "title": "@Merkacheva",
+  "avg_views": 1142,
+  "posts": 2
+ },
+ {
   "title": "@italiano365telegram",
-  "avg_views": 1105,
+  "avg_views": 1140,
   "posts": 6
+ },
+ {
+  "title": "@zhest_rostov_161 (ростов)",
+  "avg_views": 1120,
+  "posts": 29
  },
  {
   "title": "@donbassr",
   "avg_views": 1095,
-  "posts": 72
- },
- {
-  "title": "@zhest_rostov_161 (ростов)",
-  "avg_views": 1020,
-  "posts": 29
+  "posts": 78
  },
  {
   "title": "@skmoscowgsu",
-  "avg_views": 1014,
-  "posts": 4
+  "avg_views": 1040,
+  "posts": 5
  },
  {
-  "title": "@Merkacheva",
-  "avg_views": 968,
+  "title": "@lukoilofficial",
+  "avg_views": 963,
   "posts": 2
- },
- {
-  "title": "@DONETSK_ZOV",
-  "avg_views": 944,
-  "posts": 109
- },
- {
-  "title": "@norgerussisk",
-  "avg_views": 943,
-  "posts": 4
- },
- {
-  "title": "@RepublicMag",
-  "avg_views": 934,
-  "posts": 6
  },
  {
   "title": "@PRO_biz_channel",
-  "avg_views": 928,
+  "avg_views": 948,
   "posts": 6
  },
  {
-  "title": "@ovdinfolive",
-  "avg_views": 863,
-  "posts": 16
+  "title": "@DONETSK_ZOV",
+  "avg_views": 943,
+  "posts": 120
  },
  {
-  "title": "@yaponskoe",
-  "avg_views": 838,
+  "title": "@norgerussisk",
+  "avg_views": 936,
   "posts": 3
+ },
+ {
+  "title": "@RepublicMag",
+  "avg_views": 911,
+  "posts": 6
  },
  {
   "title": "@zhest_moscoww (мск)",
-  "avg_views": 813,
+  "avg_views": 895,
   "posts": 19
  },
  {
-  "title": "@sandrasahara",
-  "avg_views": 791,
-  "posts": 3
- },
- {
-  "title": "@procampusfrance",
-  "avg_views": 786,
-  "posts": 1
+  "title": "@ovdinfolive",
+  "avg_views": 879,
+  "posts": 18
  },
  {
   "title": "@operobzoor",
-  "avg_views": 778,
+  "avg_views": 863,
   "posts": 2
  },
  {
+  "title": "@yaponskoe",
+  "avg_views": 843,
+  "posts": 4
+ },
+ {
+  "title": "@procampusfrance",
+  "avg_views": 836,
+  "posts": 1
+ },
+ {
+  "title": "@sandrasahara",
+  "avg_views": 817,
+  "posts": 3
+ },
+ {
   "title": "@surf_noise1",
-  "avg_views": 698,
+  "avg_views": 734,
   "posts": 14
  },
  {
   "title": "@gsuskrf_spb",
-  "avg_views": 696,
+  "avg_views": 713,
   "posts": 6
  },
  {
+  "title": "@KurskAnomalia (курск)",
+  "avg_views": 703,
+  "posts": 4
+ },
+ {
   "title": "@philologovo",
-  "avg_views": 679,
+  "avg_views": 685,
   "posts": 2
  },
  {
-  "title": "@KurskAnomalia (курск)",
-  "avg_views": 649,
-  "posts": 3
+  "title": "@ooooh_love",
+  "avg_views": 659,
+  "posts": 4
  },
  {
   "title": "@chvkmedia",
-  "avg_views": 624,
-  "posts": 8
+  "avg_views": 628,
+  "posts": 10
  },
  {
   "title": "@mariabutina",
-  "avg_views": 603,
+  "avg_views": 621,
   "posts": 7
  },
  {
   "title": "@infocentrskrf",
   "avg_views": 577,
-  "posts": 51
- },
- {
-  "title": "@ooooh_love",
-  "avg_views": 561,
-  "posts": 4
+  "posts": 49
  },
  {
   "title": "@gsuskmosobl",
-  "avg_views": 553,
+  "avg_views": 574,
   "posts": 3
  },
  {
   "title": "@mediazona_by",
-  "avg_views": 459,
+  "avg_views": 477,
   "posts": 2
  },
  {
   "title": "@sergeymiheev",
-  "avg_views": 416,
-  "posts": 34
+  "avg_views": 445,
+  "posts": 35
  },
  {
   "title": "@tass_world",
-  "avg_views": 414,
-  "posts": 159
+  "avg_views": 421,
+  "posts": 169
  },
  {
   "title": "@ViaItaliana",
-  "avg_views": 407,
+  "avg_views": 409,
   "posts": 3
  },
  {
   "title": "@opernn",
-  "avg_views": 386,
+  "avg_views": 401,
   "posts": 1
  },
  {
   "title": "@activatica",
-  "avg_views": 354,
+  "avg_views": 360,
   "posts": 41
  },
  {
   "title": "@TheVoronezhCity (воронеж)",
-  "avg_views": 284,
+  "avg_views": 306,
   "posts": 8
  },
  {
-  "title": "@tenipribaltiki",
-  "avg_views": 245,
-  "posts": 34
+  "title": "@kommersantvrn",
+  "avg_views": 271,
+  "posts": 13
  },
  {
-  "title": "@kommersantvrn",
-  "avg_views": 244,
-  "posts": 12
+  "title": "@tenipribaltiki",
+  "avg_views": 261,
+  "posts": 32
  },
  {
   "title": "@EmbUSA",
-  "avg_views": 223,
+  "avg_views": 236,
   "posts": 1
  },
  {
   "title": "@fifthrepublic",
-  "avg_views": 191,
+  "avg_views": 207,
   "posts": 3
  },
  {
@@ -901,32 +906,52 @@
  },
  {
   "title": "@mediazonalinks",
-  "avg_views": 122,
-  "posts": 7
+  "avg_views": 132,
+  "posts": 8
+ },
+ {
+  "title": "@povorotnapravo",
+  "avg_views": 118,
+  "posts": 1
+ },
+ {
+  "title": "@pl_syrenka",
+  "avg_views": 102,
+  "posts": 1
  },
  {
   "title": "@node_of_time_fr",
   "avg_views": 75,
-  "posts": 37
- },
- {
-  "title": "@kochka_lv",
-  "avg_views": 73,
-  "posts": 92
+  "posts": 35
  },
  {
   "title": "@kurskpressa (курск)",
-  "avg_views": 67,
+  "avg_views": 74,
   "posts": 13
  },
  {
   "title": "@skrkursk",
-  "avg_views": 56,
+  "avg_views": 66,
   "posts": 1
  },
  {
+  "title": "@kochka_lv",
+  "avg_views": 65,
+  "posts": 105
+ },
+ {
   "title": "@boevoyprimer",
-  "avg_views": 29,
+  "avg_views": 34,
   "posts": 16
+ },
+ {
+  "title": "@bobrovighor",
+  "avg_views": 32,
+  "posts": 2
+ },
+ {
+  "title": "@kurskproc",
+  "avg_views": 20,
+  "posts": 3
  }
 ]
