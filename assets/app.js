@@ -376,6 +376,63 @@
     renderTabs();
     render();
     watchUpdates(data.generated_at);
+    bindManualUpdate(data.generated_at);
+  }
+
+  // ---------- «🔄 Обновить сейчас» ----------
+  // Без ключа — открывает страницу сбора на GitHub (там жмёшь Run workflow).
+  // С ключом (хранится ТОЛЬКО в этом браузере) — запускает сбор сам и ждёт свежих данных.
+  const REPO = "Milfhausen/media-pult";
+  const WF_PAGE = `https://github.com/${REPO}/actions/workflows/collect.yml`;
+  const TOKEN_KEY = "pult-gh-token";
+  const getToken = () => { try { return localStorage.getItem(TOKEN_KEY) || ""; } catch (e) { return ""; } };
+
+  function bindManualUpdate(gen) {
+    const btn = $("#upd-now"), setup = $("#upd-setup");
+    if (!btn) return;
+    const label = () => (setup.textContent = getToken() ? "⚙️ ключ сохранён" : "⚙️ одной кнопкой");
+    label();
+    setup.onclick = () => {
+      const cur = getToken();
+      const t = prompt(
+        (cur ? "Ключ уже сохранён. Вставь новый или сотри всё и нажми OK, чтобы удалить.\n\n" : "") +
+          "Вставь GitHub-ключ (github_pat_…) с правом Actions: Read and write только для репозитория media-pult.\nОн сохранится только в этом браузере. Как сделать ключ — в README пульта.",
+        cur
+      );
+      if (t === null) return;
+      try { t.trim() ? localStorage.setItem(TOKEN_KEY, t.trim()) : localStorage.removeItem(TOKEN_KEY); } catch (e) { /* без памяти */ }
+      label();
+      toast(t.trim() ? "Ключ сохранён — теперь кнопка обновляет сама" : "Ключ удалён");
+    };
+    btn.onclick = async () => {
+      const token = getToken();
+      if (!token) { window.open(WF_PAGE, "_blank", "noopener"); toast("Нажми справа зелёную «Run workflow»"); return; }
+      btn.disabled = true;
+      btn.textContent = "⏳ Запускаю…";
+      try {
+        const r = await fetch(`https://api.github.com/repos/${REPO}/actions/workflows/collect.yml/dispatches`, {
+          method: "POST",
+          headers: { Authorization: "Bearer " + token, Accept: "application/vnd.github+json", "Content-Type": "application/json" },
+          body: JSON.stringify({ ref: "main" }),
+        });
+        if (r.status !== 204) throw new Error(r.status === 401 || r.status === 403 ? "ключ не подходит или истёк" : "GitHub ответил " + r.status);
+        btn.textContent = "⏳ Сбор идёт ~5 мин…";
+        toast("Сбор запущен — страница обновится сама");
+        const started = Date.now();
+        const timer = setInterval(async () => {
+          try {
+            const d = await getJSON("data/stories.json");
+            if (d.generated_at && d.generated_at !== gen) { clearInterval(timer); location.reload(); }
+          } catch (e) { /* подождём */ }
+          if (Date.now() - started > 20 * 60 * 1000) { clearInterval(timer); btn.disabled = false; btn.textContent = "🔄 Обновить сейчас"; }
+        }, 30 * 1000);
+      } catch (e) {
+        btn.disabled = false;
+        btn.textContent = "🔄 Обновить сейчас";
+        toast("Не получилось: " + e.message + ". Открываю GitHub");
+        window.open(WF_PAGE, "_blank", "noopener");
+      }
+    };
   }
 
   // Если пульт открыт долго — раз в 5 минут проверяем, не пришёл ли новый сбор

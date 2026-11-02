@@ -162,3 +162,8 @@ h2.sec small { color: var(--muted); font-weight: 400; }
 .b.new { background: #ff3b5c; border-color: #ff3b5c; color: #fff; font-weight: 800; }
 .tabnew { background: #ff3b5c; color: #fff; border-radius: 999px; padding: 0 7px; font-size: 12px; margin-left: 4px; }
 .banner.newb { border-color: #ff3b5c; background: #2a0f16; }
+
+.upd-btns { display: flex; gap: 8px; align-items: center; justify-content: flex-end; margin: 6px 0 4px; flex-wrap: wrap; }
+.upd-btns .copy { padding: 6px 12px; font-size: 14px; }
+.upd-btns .copy:disabled { opacity: .7; cursor: default; }
+@media (max-width: 560px) { .upd-btns { justify-content: flex-start; } }

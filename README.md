@@ -46,6 +46,10 @@
 
 ---
 
+## Кнопка «🔄 Обновить сейчас» в пульте
+- Просто нажми — откроется страница сбора на GitHub, там справа зелёная **Run workflow**.
+- **Одной кнопкой без GitHub:** сделай ключ https://github.com/settings/personal-access-tokens/new → Only select repositories → **media-pult** → Repository permissions → **Actions: Read and write** → Generate. В пульте нажми «⚙️ одной кнопкой» и вставь ключ. Он хранится только в твоём браузере (на каждом устройстве — свой раз).
+
 ## Если сбор не идёт сам раз в час
 Проверь: **Settings → Actions → General → Allow all actions** и **Workflow permissions → Read and write**. Расписание GitHub подхватывает после следующего изменения в репозитории.
 
