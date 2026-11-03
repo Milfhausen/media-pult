@@ -167,3 +167,15 @@ h2.sec small { color: var(--muted); font-weight: 400; }
 .upd-btns .copy { padding: 6px 12px; font-size: 14px; }
 .upd-btns .copy:disabled { opacity: .7; cursor: default; }
 @media (max-width: 560px) { .upd-btns { justify-content: flex-start; } }
+
+/* Идеи для видео */
+.ttl.big { font-size: 19px; }
+.hook { margin: 4px 0 6px; font-size: 15px; color: var(--accent); font-weight: 600; }
+.b.povod { background: #ff7a3d; border-color: #ff7a3d; color: #111; font-weight: 800; }
+.b.st-new { border-color: var(--green); color: var(--green); }
+.b.st-return { border-color: var(--gold); color: var(--gold); }
+.b.st-cooled { border-color: var(--grey); color: var(--muted); }
+.card.idea2.cooled { opacity: .7; }
+.card.idea2.saved { border-color: var(--gold); }
+.povodbox { margin-top: 8px; font-size: 13px; background: #2a1a0f; border: 1px solid #6b3a17; border-radius: 8px; padding: 6px 8px; }
+.mech ul { margin: 2px 0 4px; padding-left: 18px; }

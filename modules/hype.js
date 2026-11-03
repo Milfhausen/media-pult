@@ -7,6 +7,9 @@ Pult.registerTab({
     const main = ctx.stories.filter((s) => !(s.fold && s.fold[id]));
     const folded = ctx.stories.filter((s) => s.fold && s.fold[id]);
 
+    // 🆕 ранний сигнал: крупное издание за последние 3 ч + твоя механика — успей первым
+    const early = ctx.all.filter((s) => s.idea && s.idea.early).sort((a, b) => new Date(b.last_published) - new Date(a.last_published));
+    if (early.length) ctx.el.appendChild(ctx.section("🆕 Только что вышло — успей первым", early.slice(0, 5), { note: "крупное издание за 3 ч + твоя механика" }));
     ctx.el.appendChild(ctx.section("ТОП-10 прямо сейчас", main.slice(0, 10), { ranked: true }));
     if (main.length > 10) {
       ctx.el.appendChild(ctx.collapsible(`Ещё сюжеты (${Math.min(main.length - 10, 40)})`, main.slice(10, 50)));
