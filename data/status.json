@@ -1,1748 +1,1748 @@
 {
- "generated_at": "2026-11-05T10:53:57Z",
+ "generated_at": "2026-11-05T18:44:55Z",
  "sources": [
   {
    "name": "Google News",
    "ok": true,
-   "count": 483,
+   "count": 523,
    "error": null,
-   "at": "2026-11-05T10:54:07Z"
+   "at": "2026-11-05T18:45:06Z"
   },
   {
    "name": "RSS: BBC News",
    "ok": true,
    "count": 22,
    "error": null,
-   "at": "2026-11-05T10:54:07Z"
+   "at": "2026-11-05T18:45:06Z"
   },
   {
    "name": "RSS: BBC News",
    "ok": true,
-   "count": 23,
+   "count": 21,
    "error": null,
-   "at": "2026-11-05T10:54:07Z"
+   "at": "2026-11-05T18:45:06Z"
   },
   {
    "name": "RSS: The Guardian",
    "ok": true,
    "count": 45,
    "error": null,
-   "at": "2026-11-05T10:54:07Z"
+   "at": "2026-11-05T18:45:06Z"
   },
   {
    "name": "RSS: The Guardian",
    "ok": true,
-   "count": 20,
+   "count": 19,
    "error": null,
-   "at": "2026-11-05T10:54:07Z"
+   "at": "2026-11-05T18:45:07Z"
   },
   {
    "name": "RSS: Sky News",
    "ok": true,
-   "count": 10,
+   "count": 9,
    "error": null,
-   "at": "2026-11-05T10:54:07Z"
+   "at": "2026-11-05T18:45:07Z"
   },
   {
    "name": "RSS: Daily Mail",
    "ok": true,
    "count": 150,
    "error": null,
-   "at": "2026-11-05T10:54:13Z"
+   "at": "2026-11-05T18:45:09Z"
   },
   {
    "name": "RSS: The Telegraph",
    "ok": true,
    "count": 120,
    "error": null,
-   "at": "2026-11-05T10:54:13Z"
+   "at": "2026-11-05T18:45:09Z"
   },
   {
    "name": "RSS: GB News",
    "ok": true,
    "count": 30,
    "error": null,
-   "at": "2026-11-05T10:54:14Z"
+   "at": "2026-11-05T18:45:09Z"
   },
   {
    "name": "RSS: The Independent",
    "ok": true,
-   "count": 63,
+   "count": 61,
    "error": null,
-   "at": "2026-11-05T10:54:14Z"
+   "at": "2026-11-05T18:45:09Z"
   },
   {
    "name": "RSS: Politico Europe",
    "ok": true,
    "count": 10,
    "error": null,
-   "at": "2026-11-05T10:54:14Z"
+   "at": "2026-11-05T18:45:10Z"
   },
   {
    "name": "RSS: Reuters",
    "ok": true,
    "count": 100,
    "error": null,
-   "at": "2026-11-05T10:54:15Z"
+   "at": "2026-11-05T18:45:10Z"
   },
   {
    "name": "RSS: Euronews",
    "ok": true,
    "count": 50,
    "error": null,
-   "at": "2026-11-05T10:54:15Z"
+   "at": "2026-11-05T18:45:10Z"
   },
   {
    "name": "RSS: DW",
    "ok": true,
    "count": 20,
    "error": null,
-   "at": "2026-11-05T10:54:15Z"
+   "at": "2026-11-05T18:45:11Z"
   },
   {
    "name": "RSS: The Sun",
    "ok": true,
    "count": 30,
    "error": null,
-   "at": "2026-11-05T10:54:16Z"
+   "at": "2026-11-05T18:45:11Z"
   },
   {
    "name": "RSS: Daily Express",
    "ok": true,
    "count": 10,
    "error": null,
-   "at": "2026-11-05T10:54:16Z"
+   "at": "2026-11-05T18:45:11Z"
   },
   {
    "name": "RSS: Evening Standard",
    "ok": true,
-   "count": 67,
+   "count": 68,
    "error": null,
-   "at": "2026-11-05T10:54:17Z"
+   "at": "2026-11-05T18:45:11Z"
   },
   {
    "name": "RSS: Remix News",
    "ok": true,
    "count": 10,
    "error": null,
-   "at": "2026-11-05T10:54:17Z"
+   "at": "2026-11-05T18:45:12Z"
   },
   {
    "name": "RSS: Brussels Signal",
    "ok": true,
    "count": 12,
    "error": null,
-   "at": "2026-11-05T10:54:18Z"
+   "at": "2026-11-05T18:45:12Z"
   },
   {
    "name": "RSS: France 24",
    "ok": true,
    "count": 30,
    "error": null,
-   "at": "2026-11-05T10:54:18Z"
+   "at": "2026-11-05T18:45:12Z"
   },
   {
    "name": "RSS изданий",
    "ok": true,
-   "count": 822,
+   "count": 817,
    "error": null,
-   "at": "2026-11-05T10:54:18Z"
+   "at": "2026-11-05T18:45:12Z"
   },
   {
    "name": "Reddit r/unitedkingdom (RSS, без лайков)",
    "ok": true,
    "count": 25,
    "error": null,
-   "at": "2026-11-05T10:54:19Z"
+   "at": "2026-11-05T18:45:13Z"
   },
   {
    "name": "Reddit r/ukpolitics",
    "ok": false,
    "count": 0,
    "error": "403 Client Error: Blocked for url: https://www.reddit.com/r/ukpolitics/top.json?t=day&limit=25&raw_json=1 / RSS: 429 Client Error: Too Many Requests for url: https://www.reddit.com/r/ukpolitics/top/.r",
-   "at": "2026-11-05T10:54:19Z"
+   "at": "2026-11-05T18:45:13Z"
   },
   {
    "name": "Reddit r/london",
    "ok": false,
    "count": 0,
    "error": "403 Client Error: Blocked for url: https://www.reddit.com/r/london/top.json?t=day&limit=25&raw_json=1 / RSS: 429 Client Error: Too Many Requests for url: https://www.reddit.com/r/london/top/.rss?t=day",
-   "at": "2026-11-05T10:54:19Z"
+   "at": "2026-11-05T18:45:13Z"
   },
   {
    "name": "Reddit r/europe",
    "ok": false,
    "count": 0,
    "error": "403 Client Error: Blocked for url: https://www.reddit.com/r/europe/top.json?t=day&limit=25&raw_json=1 / RSS: 429 Client Error: Too Many Requests for url: https://www.reddit.com/r/europe/top/.rss?t=day",
-   "at": "2026-11-05T10:54:19Z"
+   "at": "2026-11-05T18:45:13Z"
   },
   {
    "name": "Reddit r/CasualUK",
    "ok": false,
    "count": 0,
    "error": "403 Client Error: Blocked for url: https://www.reddit.com/r/CasualUK/top.json?t=day&limit=25&raw_json=1 / RSS: 429 Client Error: Too Many Requests for url: https://www.reddit.com/r/CasualUK/top/.rss?t",
-   "at": "2026-11-05T10:54:19Z"
+   "at": "2026-11-05T18:45:13Z"
   },
   {
    "name": "Reddit r/ukraine",
    "ok": false,
    "count": 0,
    "error": "403 Client Error: Blocked for url: https://www.reddit.com/r/ukraine/top.json?t=day&limit=25&raw_json=1 / RSS: 429 Client Error: Too Many Requests for url: https://www.reddit.com/r/ukraine/top/.rss?t=d",
-   "at": "2026-11-05T10:54:20Z"
+   "at": "2026-11-05T18:45:13Z"
   },
   {
    "name": "Reddit r/europeanunion",
    "ok": false,
    "count": 0,
    "error": "403 Client Error: Blocked for url: https://www.reddit.com/r/europeanunion/top.json?t=day&limit=25&raw_json=1 / RSS: 429 Client Error: Too Many Requests for url: https://www.reddit.com/r/europeanunion/",
-   "at": "2026-11-05T10:54:20Z"
+   "at": "2026-11-05T18:45:13Z"
   },
   {
    "name": "Reddit",
    "ok": true,
    "count": 25,
    "error": null,
-   "at": "2026-11-05T10:54:20Z"
+   "at": "2026-11-05T18:45:13Z"
   },
   {
    "name": "Google Trends",
    "ok": true,
    "count": 10,
    "error": null,
-   "at": "2026-11-05T10:54:20Z"
+   "at": "2026-11-05T18:45:13Z"
   },
   {
    "name": "Telegram: Ateo Breaking",
    "ok": true,
-   "count": 10,
+   "count": 18,
    "error": null,
-   "at": "2026-11-05T10:54:21Z"
+   "at": "2026-11-05T18:45:14Z"
   },
   {
    "name": "Telegram: @tass_world",
    "ok": true,
    "count": 20,
    "error": null,
-   "at": "2026-11-05T10:54:22Z"
+   "at": "2026-11-05T18:45:15Z"
   },
   {
    "name": "Telegram: @ostorozhno_novosti",
    "ok": true,
-   "count": 14,
+   "count": 9,
    "error": null,
-   "at": "2026-11-05T10:54:23Z"
+   "at": "2026-11-05T18:45:16Z"
   },
   {
    "name": "Telegram: SVTV NEWS",
    "ok": true,
-   "count": 16,
+   "count": 19,
    "error": null,
-   "at": "2026-11-05T10:54:24Z"
+   "at": "2026-11-05T18:45:17Z"
   },
   {
    "name": "Telegram: @meduza_news",
    "ok": true,
    "count": 20,
    "error": null,
-   "at": "2026-11-05T10:54:25Z"
+   "at": "2026-11-05T18:45:18Z"
   },
   {
    "name": "Telegram: @rbc_news",
    "ok": true,
-   "count": 20,
+   "count": 11,
    "error": null,
-   "at": "2026-11-05T10:54:26Z"
+   "at": "2026-11-05T18:45:19Z"
   },
   {
    "name": "Telegram: @MID_Russia",
    "ok": true,
-   "count": 7,
+   "count": 16,
    "error": null,
-   "at": "2026-11-05T10:54:27Z"
+   "at": "2026-11-05T18:45:20Z"
   },
   {
    "name": "Telegram: @tassovkaru",
    "ok": true,
-   "count": 19,
+   "count": 20,
    "error": null,
-   "at": "2026-11-05T10:54:28Z"
+   "at": "2026-11-05T18:45:20Z"
   },
   {
    "name": "Telegram: @radiosvoboda",
    "ok": true,
-   "count": 18,
+   "count": 20,
    "error": null,
-   "at": "2026-11-05T10:54:29Z"
+   "at": "2026-11-05T18:45:21Z"
   },
   {
    "name": "Telegram: @bbbreaking",
    "ok": true,
    "count": 20,
    "error": null,
-   "at": "2026-11-05T10:54:29Z"
+   "at": "2026-11-05T18:45:22Z"
   },
   {
    "name": "Telegram: @svidkultobmen",
    "ok": true,
    "count": 14,
    "error": null,
-   "at": "2026-11-05T10:54:31Z"
+   "at": "2026-11-05T18:45:23Z"
   },
   {
    "name": "Telegram: @bazabazon",
    "ok": true,
-   "count": 9,
+   "count": 15,
    "error": null,
-   "at": "2026-11-05T10:54:32Z"
+   "at": "2026-11-05T18:45:24Z"
   },
   {
    "name": "Telegram: @topor",
    "ok": true,
    "count": 20,
    "error": null,
-   "at": "2026-11-05T10:54:32Z"
+   "at": "2026-11-05T18:45:25Z"
   },
   {
    "name": "Telegram: @MariaVladimirovnaZakharova",
    "ok": true,
-   "count": 14,
+   "count": 20,
    "error": null,
-   "at": "2026-11-05T10:54:33Z"
+   "at": "2026-11-05T18:45:26Z"
   },
   {
    "name": "Telegram: @shot_shot",
    "ok": true,
-   "count": 8,
+   "count": 13,
    "error": null,
-   "at": "2026-11-05T10:54:34Z"
+   "at": "2026-11-05T18:45:27Z"
   },
   {
    "name": "Telegram: @mod_russia_en",
    "ok": true,
    "count": 18,
    "error": null,
-   "at": "2026-11-05T10:54:36Z"
+   "at": "2026-11-05T18:45:28Z"
   },
   {
    "name": "Telegram: Топор Live",
    "ok": true,
-   "count": 16,
+   "count": 18,
    "error": null,
-   "at": "2026-11-05T10:54:37Z"
+   "at": "2026-11-05T18:45:29Z"
   },
   {
    "name": "Telegram: @bbcrussian",
    "ok": true,
-   "count": 20,
+   "count": 15,
    "error": null,
-   "at": "2026-11-05T10:54:38Z"
+   "at": "2026-11-05T18:45:30Z"
   },
   {
    "name": "Telegram: @dwglavnoe",
    "ok": true,
-   "count": 16,
+   "count": 19,
    "error": null,
-   "at": "2026-11-05T10:54:39Z"
+   "at": "2026-11-05T18:45:31Z"
   },
   {
    "name": "Telegram: @kommersant",
    "ok": true,
-   "count": 19,
+   "count": 12,
    "error": null,
-   "at": "2026-11-05T10:54:40Z"
+   "at": "2026-11-05T18:45:32Z"
   },
   {
    "name": "Telegram: @theinsider",
    "ok": true,
-   "count": 19,
+   "count": 17,
    "error": null,
-   "at": "2026-11-05T10:54:41Z"
+   "at": "2026-11-05T18:45:33Z"
   },
   {
    "name": "Telegram: @ntvnews",
    "ok": true,
    "count": 19,
    "error": null,
-   "at": "2026-11-05T10:54:41Z"
+   "at": "2026-11-05T18:45:34Z"
   },
   {
    "name": "Telegram: @chtddd",
    "ok": true,
-   "count": 12,
+   "count": 16,
    "error": null,
-   "at": "2026-11-05T10:54:42Z"
+   "at": "2026-11-05T18:45:35Z"
   },
   {
    "name": "Telegram: RT на русском",
    "ok": false,
    "count": 0,
    "error": "пусто",
-   "at": "2026-11-05T10:54:43Z"
+   "at": "2026-11-05T18:45:35Z"
   },
   {
    "name": "Telegram: @readovkanews",
    "ok": true,
-   "count": 13,
+   "count": 15,
    "error": null,
-   "at": "2026-11-05T10:54:44Z"
+   "at": "2026-11-05T18:45:36Z"
   },
   {
    "name": "Telegram: @ru4chan",
    "ok": true,
-   "count": 15,
+   "count": 19,
    "error": null,
-   "at": "2026-11-05T10:54:45Z"
+   "at": "2026-11-05T18:45:37Z"
   },
   {
    "name": "Telegram: @MFARussia",
    "ok": true,
    "count": 14,
    "error": null,
-   "at": "2026-11-05T10:54:46Z"
+   "at": "2026-11-05T18:45:38Z"
   },
   {
    "name": "Telegram: @ArkHelps",
    "ok": true,
-   "count": 11,
+   "count": 14,
    "error": null,
-   "at": "2026-11-05T10:54:48Z"
+   "at": "2026-11-05T18:45:39Z"
   },
   {
    "name": "Telegram: @mash",
    "ok": true,
-   "count": 15,
+   "count": 18,
    "error": null,
-   "at": "2026-11-05T10:54:49Z"
+   "at": "2026-11-05T18:45:40Z"
   },
   {
    "name": "Telegram: @emigriceps",
    "ok": true,
    "count": 20,
    "error": null,
-   "at": "2026-11-05T10:54:50Z"
+   "at": "2026-11-05T18:45:41Z"
   },
   {
    "name": "Telegram: @special_authors",
    "ok": false,
    "count": 0,
    "error": "пусто",
-   "at": "2026-11-05T10:54:51Z"
+   "at": "2026-11-05T18:45:42Z"
   },
   {
    "name": "Telegram: @ViaItaliana",
    "ok": true,
-   "count": 8,
+   "count": 7,
    "error": null,
-   "at": "2026-11-05T10:54:52Z"
+   "at": "2026-11-05T18:45:43Z"
   },
   {
    "name": "Telegram: @italiano365telegram",
    "ok": true,
    "count": 20,
    "error": null,
-   "at": "2026-11-05T10:54:53Z"
+   "at": "2026-11-05T18:45:44Z"
   },
   {
    "name": "Telegram: @node_of_time_fr",
    "ok": true,
-   "count": 11,
+   "count": 17,
    "error": null,
-   "at": "2026-11-05T10:54:54Z"
+   "at": "2026-11-05T18:45:45Z"
   },
   {
    "name": "Telegram: @francediplomatie",
    "ok": true,
    "count": 12,
    "error": null,
-   "at": "2026-11-05T10:54:55Z"
+   "at": "2026-11-05T18:45:46Z"
   },
   {
    "name": "Telegram: @philologovo",
    "ok": true,
    "count": 20,
    "error": null,
-   "at": "2026-11-05T10:54:56Z"
+   "at": "2026-11-05T18:45:47Z"
   },
   {
    "name": "Telegram: @fifthrepublic",
    "ok": true,
    "count": 5,
    "error": null,
-   "at": "2026-11-05T10:54:57Z"
+   "at": "2026-11-05T18:45:48Z"
   },
   {
    "name": "Telegram: @fr_dispatch",
    "ok": true,
-   "count": 18,
+   "count": 13,
    "error": null,
-   "at": "2026-11-05T10:54:58Z"
+   "at": "2026-11-05T18:45:49Z"
   },
   {
    "name": "Telegram: @procampusfrance",
    "ok": true,
    "count": 20,
    "error": null,
-   "at": "2026-11-05T10:54:59Z"
+   "at": "2026-11-05T18:45:50Z"
   },
   {
    "name": "Telegram: @yanastea",
    "ok": true,
    "count": 6,
    "error": null,
-   "at": "2026-11-05T10:55:00Z"
+   "at": "2026-11-05T18:45:51Z"
   },
   {
    "name": "Telegram: @wrenjapan",
    "ok": true,
    "count": 5,
    "error": null,
-   "at": "2026-11-05T10:55:01Z"
+   "at": "2026-11-05T18:45:52Z"
   },
   {
    "name": "Telegram: @yaponskoe",
    "ok": true,
    "count": 10,
    "error": null,
-   "at": "2026-11-05T10:55:02Z"
+   "at": "2026-11-05T18:45:53Z"
   },
   {
    "name": "Telegram: @antifalivland",
    "ok": true,
-   "count": 12,
+   "count": 11,
    "error": null,
-   "at": "2026-11-05T10:55:03Z"
+   "at": "2026-11-05T18:45:54Z"
   },
   {
    "name": "Telegram: @tenipribaltiki",
    "ok": true,
-   "count": 19,
+   "count": 18,
    "error": null,
-   "at": "2026-11-05T10:55:04Z"
+   "at": "2026-11-05T18:45:55Z"
   },
   {
    "name": "Telegram: @pl_syrenka",
    "ok": true,
    "count": 16,
    "error": null,
-   "at": "2026-11-05T10:55:05Z"
+   "at": "2026-11-05T18:45:56Z"
   },
   {
    "name": "Telegram: @USEmbRussia",
    "ok": true,
    "count": 15,
    "error": null,
-   "at": "2026-11-05T10:55:06Z"
+   "at": "2026-11-05T18:45:57Z"
   },
   {
    "name": "Telegram: @EmbUSA",
    "ok": true,
    "count": 14,
    "error": null,
-   "at": "2026-11-05T10:55:07Z"
+   "at": "2026-11-05T18:45:58Z"
   },
   {
    "name": "Telegram: @rianovostiAmerica",
    "ok": true,
-   "count": 20,
+   "count": 18,
    "error": null,
-   "at": "2026-11-05T10:55:08Z"
+   "at": "2026-11-05T18:45:59Z"
   },
   {
    "name": "Telegram: @insiderUKR",
    "ok": true,
-   "count": 14,
+   "count": 17,
    "error": null,
-   "at": "2026-11-05T10:55:09Z"
+   "at": "2026-11-05T18:46:00Z"
   },
   {
    "name": "Telegram: @pgo_gov_ua",
    "ok": true,
-   "count": 9,
+   "count": 6,
    "error": null,
-   "at": "2026-11-05T10:55:10Z"
+   "at": "2026-11-05T18:46:00Z"
   },
   {
    "name": "Telegram: @uniannet",
    "ok": true,
-   "count": 13,
+   "count": 19,
    "error": null,
-   "at": "2026-11-05T10:55:11Z"
+   "at": "2026-11-05T18:46:01Z"
   },
   {
    "name": "Telegram: @truexanewsua",
    "ok": true,
    "count": 18,
    "error": null,
-   "at": "2026-11-05T10:55:12Z"
+   "at": "2026-11-05T18:46:02Z"
   },
   {
    "name": "Telegram: @balkanossiper",
    "ok": true,
    "count": 17,
    "error": null,
-   "at": "2026-11-05T10:55:13Z"
+   "at": "2026-11-05T18:46:03Z"
   },
   {
    "name": "Telegram: @balkanar",
    "ok": true,
    "count": 20,
    "error": null,
-   "at": "2026-11-05T10:55:14Z"
+   "at": "2026-11-05T18:46:04Z"
   },
   {
    "name": "Telegram: @kochka_lv",
    "ok": true,
-   "count": 20,
+   "count": 18,
    "error": null,
-   "at": "2026-11-05T10:55:15Z"
+   "at": "2026-11-05T18:46:05Z"
   },
   {
    "name": "Telegram: @norgerussisk",
    "ok": true,
    "count": 20,
    "error": null,
-   "at": "2026-11-05T10:55:16Z"
+   "at": "2026-11-05T18:46:06Z"
   },
   {
    "name": "Telegram: @Belarust",
    "ok": true,
    "count": 20,
    "error": null,
-   "at": "2026-11-05T10:55:17Z"
+   "at": "2026-11-05T18:46:07Z"
   },
   {
    "name": "Telegram: @mediazona_by",
    "ok": true,
-   "count": 18,
+   "count": 19,
    "error": null,
-   "at": "2026-11-05T10:55:18Z"
+   "at": "2026-11-05T18:46:08Z"
   },
   {
    "name": "Telegram: @minsk3",
    "ok": true,
    "count": 20,
    "error": null,
-   "at": "2026-11-05T10:55:19Z"
+   "at": "2026-11-05T18:46:09Z"
   },
   {
    "name": "Telegram: @minskinter",
    "ok": true,
-   "count": 13,
+   "count": 16,
    "error": null,
-   "at": "2026-11-05T10:55:20Z"
+   "at": "2026-11-05T18:46:10Z"
   },
   {
    "name": "Telegram: @moscow360new (мск)",
    "ok": true,
    "count": 16,
    "error": null,
-   "at": "2026-11-05T10:55:21Z"
+   "at": "2026-11-05T18:46:11Z"
   },
   {
    "name": "Telegram: @msk_live (мск)",
    "ok": true,
    "count": 2,
    "error": null,
-   "at": "2026-11-05T10:55:21Z"
+   "at": "2026-11-05T18:46:12Z"
   },
   {
    "name": "Telegram: @live_piter (спб)",
    "ok": true,
-   "count": 15,
+   "count": 13,
    "error": null,
-   "at": "2026-11-05T10:55:22Z"
+   "at": "2026-11-05T18:46:12Z"
   },
   {
    "name": "Telegram: @government_rus",
    "ok": true,
-   "count": 8,
+   "count": 13,
    "error": null,
-   "at": "2026-11-05T10:55:23Z"
+   "at": "2026-11-05T18:46:13Z"
   },
   {
    "name": "Telegram: @belgorod_life (белгород)",
    "ok": true,
    "count": 20,
    "error": null,
-   "at": "2026-11-05T10:55:24Z"
+   "at": "2026-11-05T18:46:14Z"
   },
   {
    "name": "Telegram: @Kursk_tut (курск)",
    "ok": true,
    "count": 20,
    "error": null,
-   "at": "2026-11-05T10:55:25Z"
+   "at": "2026-11-05T18:46:15Z"
   },
   {
    "name": "Telegram: @mash_batash (уфа)",
    "ok": true,
    "count": 18,
    "error": null,
-   "at": "2026-11-05T10:55:26Z"
+   "at": "2026-11-05T18:46:16Z"
   },
   {
    "name": "Telegram: @granica046 (курск)",
    "ok": true,
    "count": 20,
    "error": null,
-   "at": "2026-11-05T10:55:27Z"
+   "at": "2026-11-05T18:46:17Z"
   },
   {
    "name": "Telegram: @belgorod01 (белгород)",
    "ok": true,
    "count": 8,
    "error": null,
-   "at": "2026-11-05T10:55:28Z"
+   "at": "2026-11-05T18:46:18Z"
   },
   {
    "name": "Telegram: @poidem_moscow (мск)",
    "ok": true,
-   "count": 5,
+   "count": 4,
    "error": null,
-   "at": "2026-11-05T10:55:29Z"
+   "at": "2026-11-05T18:46:19Z"
   },
   {
    "name": "Telegram: @russicaRU",
    "ok": true,
-   "count": 18,
+   "count": 19,
    "error": null,
-   "at": "2026-11-05T10:55:30Z"
+   "at": "2026-11-05T18:46:20Z"
   },
   {
    "name": "Telegram: @theEKBcity (екб)",
    "ok": true,
-   "count": 8,
+   "count": 9,
    "error": null,
-   "at": "2026-11-05T10:55:31Z"
+   "at": "2026-11-05T18:46:21Z"
   },
   {
    "name": "Telegram: @zhest_moscoww (мск)",
    "ok": true,
-   "count": 11,
+   "count": 14,
    "error": null,
-   "at": "2026-11-05T10:55:32Z"
+   "at": "2026-11-05T18:46:22Z"
   },
   {
    "name": "Telegram: @kurskpressa (курск)",
    "ok": true,
    "count": 7,
    "error": null,
-   "at": "2026-11-05T10:55:33Z"
+   "at": "2026-11-05T18:46:23Z"
   },
   {
    "name": "Telegram: @TheVoronezhCity (воронеж)",
    "ok": true,
-   "count": 6,
+   "count": 7,
    "error": null,
-   "at": "2026-11-05T10:55:34Z"
+   "at": "2026-11-05T18:46:23Z"
   },
   {
    "name": "Telegram: @rostov0 (ростов)",
    "ok": true,
    "count": 20,
    "error": null,
-   "at": "2026-11-05T10:55:35Z"
+   "at": "2026-11-05T18:46:24Z"
   },
   {
    "name": "Telegram: @idemmsk (мск)",
    "ok": true,
-   "count": 6,
+   "count": 7,
    "error": null,
-   "at": "2026-11-05T10:55:36Z"
+   "at": "2026-11-05T18:46:25Z"
   },
   {
    "name": "Telegram: @ostorozhno_moskva",
    "ok": true,
-   "count": 12,
+   "count": 9,
    "error": null,
-   "at": "2026-11-05T10:55:37Z"
+   "at": "2026-11-05T18:46:26Z"
   },
   {
    "name": "Telegram: @infocentrskrf",
    "ok": true,
-   "count": 16,
+   "count": 7,
    "error": null,
-   "at": "2026-11-05T10:55:38Z"
+   "at": "2026-11-05T18:46:27Z"
   },
   {
    "name": "Telegram: @mscculture (мск)",
    "ok": true,
-   "count": 12,
+   "count": 11,
    "error": null,
-   "at": "2026-11-05T10:55:39Z"
+   "at": "2026-11-05T18:46:28Z"
   },
   {
    "name": "Telegram: @fontankaspb (спб)",
    "ok": true,
    "count": 14,
    "error": null,
-   "at": "2026-11-05T10:55:40Z"
+   "at": "2026-11-05T18:46:29Z"
   },
   {
    "name": "Telegram: @zhest_rostov_161 (ростов)",
    "ok": true,
-   "count": 12,
+   "count": 17,
    "error": null,
-   "at": "2026-11-05T10:55:41Z"
+   "at": "2026-11-05T18:46:30Z"
   },
   {
    "name": "Telegram: @mos_daily (мск)",
    "ok": true,
-   "count": 11,
+   "count": 9,
    "error": null,
-   "at": "2026-11-05T10:55:42Z"
+   "at": "2026-11-05T18:46:31Z"
   },
   {
    "name": "Telegram: @szao_news24 (мск)",
    "ok": true,
-   "count": 15,
+   "count": 17,
    "error": null,
-   "at": "2026-11-05T10:55:43Z"
+   "at": "2026-11-05T18:46:32Z"
   },
   {
    "name": "Telegram: @KurskAnomalia (курск)",
    "ok": true,
-   "count": 7,
+   "count": 10,
    "error": null,
-   "at": "2026-11-05T10:55:44Z"
+   "at": "2026-11-05T18:46:33Z"
   },
   {
    "name": "Telegram: @ausnews_de",
    "ok": true,
    "count": 20,
    "error": null,
-   "at": "2026-11-05T10:55:45Z"
+   "at": "2026-11-05T18:46:34Z"
   },
   {
    "name": "Telegram: @neuesausrussland",
    "ok": true,
    "count": 12,
    "error": null,
-   "at": "2026-11-05T10:55:46Z"
+   "at": "2026-11-05T18:46:35Z"
   },
   {
    "name": "Telegram: @CITeam",
    "ok": true,
    "count": 15,
    "error": null,
-   "at": "2026-11-05T10:55:47Z"
+   "at": "2026-11-05T18:46:36Z"
   },
   {
    "name": "Telegram: @rhymestg",
    "ok": true,
-   "count": 8,
+   "count": 12,
    "error": null,
-   "at": "2026-11-05T10:55:48Z"
+   "at": "2026-11-05T18:46:37Z"
   },
   {
    "name": "Telegram: @tass_agency",
    "ok": true,
    "count": 20,
    "error": null,
-   "at": "2026-11-05T10:55:48Z"
+   "at": "2026-11-05T18:46:38Z"
   },
   {
    "name": "Telegram: @ejdailyru",
    "ok": true,
    "count": 20,
    "error": null,
-   "at": "2026-11-05T10:55:49Z"
+   "at": "2026-11-05T18:46:38Z"
   },
   {
    "name": "Telegram: @holodmedia",
    "ok": true,
    "count": 11,
    "error": null,
-   "at": "2026-11-05T10:55:50Z"
+   "at": "2026-11-05T18:46:39Z"
   },
   {
    "name": "Telegram: @meduzalive",
    "ok": true,
-   "count": 19,
+   "count": 20,
    "error": null,
-   "at": "2026-11-05T10:55:51Z"
+   "at": "2026-11-05T18:46:40Z"
   },
   {
    "name": "Telegram: @povorotnapravo",
    "ok": true,
    "count": 20,
    "error": null,
-   "at": "2026-11-05T10:55:52Z"
+   "at": "2026-11-05T18:46:41Z"
   },
   {
    "name": "Telegram: @Lepragram",
    "ok": true,
-   "count": 19,
+   "count": 18,
    "error": null,
-   "at": "2026-11-05T10:55:53Z"
+   "at": "2026-11-05T18:46:42Z"
   },
   {
    "name": "Telegram: @LIVfashionmag",
    "ok": true,
    "count": 6,
    "error": null,
-   "at": "2026-11-05T10:55:54Z"
+   "at": "2026-11-05T18:46:43Z"
   },
   {
    "name": "Telegram: @dvachannel",
    "ok": true,
-   "count": 10,
+   "count": 6,
    "error": null,
-   "at": "2026-11-05T10:55:55Z"
+   "at": "2026-11-05T18:46:44Z"
   },
   {
    "name": "Telegram: @sledcom_press",
    "ok": true,
    "count": 20,
    "error": null,
-   "at": "2026-11-05T10:55:56Z"
+   "at": "2026-11-05T18:46:45Z"
   },
   {
    "name": "Telegram: @opersvodki",
    "ok": true,
-   "count": 13,
+   "count": 14,
    "error": null,
-   "at": "2026-11-05T10:55:57Z"
+   "at": "2026-11-05T18:46:46Z"
   },
   {
    "name": "Telegram: @chvk_wagnerr",
    "ok": true,
-   "count": 8,
+   "count": 14,
    "error": null,
-   "at": "2026-11-05T10:55:58Z"
+   "at": "2026-11-05T18:46:47Z"
   },
   {
    "name": "Telegram: @DONETSK_ZOV",
    "ok": true,
-   "count": 13,
+   "count": 16,
    "error": null,
-   "at": "2026-11-05T10:55:59Z"
+   "at": "2026-11-05T18:46:48Z"
   },
   {
    "name": "Telegram: @rybar",
    "ok": true,
-   "count": 9,
+   "count": 14,
    "error": null,
-   "at": "2026-11-05T10:56:00Z"
+   "at": "2026-11-05T18:46:49Z"
   },
   {
    "name": "Telegram: @mod_russia",
    "ok": true,
-   "count": 20,
+   "count": 19,
    "error": null,
-   "at": "2026-11-05T10:56:01Z"
+   "at": "2026-11-05T18:46:50Z"
   },
   {
    "name": "Telegram: @mediazzzona",
    "ok": true,
-   "count": 18,
+   "count": 17,
    "error": null,
-   "at": "2026-11-05T10:56:02Z"
+   "at": "2026-11-05T18:46:51Z"
   },
   {
    "name": "Telegram: @ilyaraevskiyalive",
    "ok": true,
    "count": 20,
    "error": null,
-   "at": "2026-11-05T10:56:03Z"
+   "at": "2026-11-05T18:46:52Z"
   },
   {
    "name": "Telegram: @thebell_io",
    "ok": true,
-   "count": 13,
+   "count": 14,
    "error": null,
-   "at": "2026-11-05T10:56:04Z"
+   "at": "2026-11-05T18:46:53Z"
   },
   {
    "name": "Telegram: @mediazona_exclusive",
    "ok": true,
    "count": 20,
    "error": null,
-   "at": "2026-11-05T10:56:05Z"
+   "at": "2026-11-05T18:46:54Z"
   },
   {
    "name": "Telegram: @sotaproject",
    "ok": true,
-   "count": 16,
+   "count": 18,
    "error": null,
-   "at": "2026-11-05T10:56:06Z"
+   "at": "2026-11-05T18:46:55Z"
   },
   {
    "name": "Telegram: @deptone",
    "ok": true,
    "count": 16,
    "error": null,
-   "at": "2026-11-05T10:56:07Z"
+   "at": "2026-11-05T18:46:56Z"
   },
   {
    "name": "Telegram: @novosti_russia360",
    "ok": true,
-   "count": 17,
+   "count": 18,
    "error": null,
-   "at": "2026-11-05T10:56:08Z"
+   "at": "2026-11-05T18:46:57Z"
   },
   {
    "name": "Telegram: @swodki",
    "ok": true,
-   "count": 13,
+   "count": 9,
    "error": null,
-   "at": "2026-11-05T10:56:09Z"
+   "at": "2026-11-05T18:46:58Z"
   },
   {
    "name": "Telegram: @yoba_m",
    "ok": true,
-   "count": 19,
+   "count": 14,
    "error": null,
-   "at": "2026-11-05T10:56:10Z"
+   "at": "2026-11-05T18:46:59Z"
   },
   {
    "name": "Telegram: @rusledcom",
    "ok": true,
    "count": 20,
    "error": null,
-   "at": "2026-11-05T10:56:11Z"
+   "at": "2026-11-05T18:47:00Z"
   },
   {
    "name": "Telegram: @kompr",
    "ok": true,
    "count": 20,
    "error": null,
-   "at": "2026-11-05T10:56:12Z"
+   "at": "2026-11-05T18:47:01Z"
   },
   {
    "name": "Telegram: @WarDonbass",
    "ok": true,
-   "count": 9,
+   "count": 15,
    "error": null,
-   "at": "2026-11-05T10:56:13Z"
+   "at": "2026-11-05T18:47:01Z"
   },
   {
    "name": "Telegram: @atesh_ua",
    "ok": true,
    "count": 17,
    "error": null,
-   "at": "2026-11-05T10:56:14Z"
+   "at": "2026-11-05T18:47:02Z"
   },
   {
    "name": "Telegram: @operobzoor",
    "ok": true,
    "count": 20,
    "error": null,
-   "at": "2026-11-05T10:56:15Z"
+   "at": "2026-11-05T18:47:03Z"
   },
   {
    "name": "Telegram: @staraya",
    "ok": true,
-   "count": 17,
+   "count": 18,
    "error": null,
-   "at": "2026-11-05T10:56:16Z"
+   "at": "2026-11-05T18:47:04Z"
   },
   {
    "name": "Telegram: @PlushevChannel",
    "ok": true,
    "count": 19,
    "error": null,
-   "at": "2026-11-05T10:56:17Z"
+   "at": "2026-11-05T18:47:05Z"
   },
   {
    "name": "Telegram: @SIL0VIKI",
    "ok": true,
    "count": 12,
    "error": null,
-   "at": "2026-11-05T10:56:18Z"
+   "at": "2026-11-05T18:47:06Z"
   },
   {
    "name": "Telegram: @infantmilitario",
    "ok": true,
    "count": 18,
    "error": null,
-   "at": "2026-11-05T10:56:19Z"
+   "at": "2026-11-05T18:47:07Z"
   },
   {
    "name": "Telegram: @ovdinfolive",
    "ok": true,
    "count": 20,
    "error": null,
-   "at": "2026-11-05T10:56:20Z"
+   "at": "2026-11-05T18:47:08Z"
   },
   {
    "name": "Telegram: @ru2ch",
    "ok": true,
-   "count": 13,
+   "count": 15,
    "error": null,
-   "at": "2026-11-05T10:56:21Z"
+   "at": "2026-11-05T18:47:09Z"
   },
   {
    "name": "Telegram: @tv360",
    "ok": true,
    "count": 19,
    "error": null,
-   "at": "2026-11-05T10:56:22Z"
+   "at": "2026-11-05T18:47:10Z"
   },
   {
    "name": "Telegram: Ateo Breaking",
    "ok": true,
    "count": 20,
    "error": null,
-   "at": "2026-11-05T10:56:23Z"
+   "at": "2026-11-05T18:47:11Z"
   },
   {
    "name": "Telegram: @Sladkov_plus",
    "ok": true,
    "count": 19,
    "error": null,
-   "at": "2026-11-05T10:56:24Z"
+   "at": "2026-11-05T18:47:12Z"
   },
   {
    "name": "Telegram: @rybar_africa",
    "ok": true,
-   "count": 11,
+   "count": 13,
    "error": null,
-   "at": "2026-11-05T10:56:25Z"
+   "at": "2026-11-05T18:47:13Z"
   },
   {
    "name": "Telegram: @vottaktv",
    "ok": true,
    "count": 20,
    "error": null,
-   "at": "2026-11-05T10:56:26Z"
+   "at": "2026-11-05T18:47:14Z"
   },
   {
    "name": "Telegram: @ekaterina_mizulina",
    "ok": true,
-   "count": 6,
+   "count": 9,
    "error": null,
-   "at": "2026-11-05T10:56:27Z"
+   "at": "2026-11-05T18:47:14Z"
   },
   {
    "name": "Telegram: @pikabu",
    "ok": true,
    "count": 20,
    "error": null,
-   "at": "2026-11-05T10:56:28Z"
+   "at": "2026-11-05T18:47:15Z"
   },
   {
    "name": "Telegram: @chvkmedia",
    "ok": true,
-   "count": 10,
+   "count": 11,
    "error": null,
-   "at": "2026-11-05T10:56:29Z"
+   "at": "2026-11-05T18:47:16Z"
   },
   {
    "name": "Telegram: @currenttime",
    "ok": true,
-   "count": 15,
+   "count": 11,
    "error": null,
-   "at": "2026-11-05T10:56:30Z"
+   "at": "2026-11-05T18:47:17Z"
   },
   {
    "name": "Telegram: @glavpolit",
    "ok": true,
    "count": 16,
    "error": null,
-   "at": "2026-11-05T10:56:31Z"
+   "at": "2026-11-05T18:47:18Z"
   },
   {
    "name": "Telegram: @bobrovighor",
    "ok": true,
    "count": 17,
    "error": null,
-   "at": "2026-11-05T10:56:32Z"
+   "at": "2026-11-05T18:47:19Z"
   },
   {
    "name": "Telegram: @horizontal_russia",
    "ok": true,
-   "count": 17,
+   "count": 14,
    "error": null,
-   "at": "2026-11-05T10:56:33Z"
+   "at": "2026-11-05T18:47:20Z"
   },
   {
    "name": "Telegram: @iron_feliks",
    "ok": true,
-   "count": 19,
+   "count": 14,
    "error": null,
-   "at": "2026-11-05T10:56:34Z"
+   "at": "2026-11-05T18:47:21Z"
   },
   {
    "name": "Telegram: @infomoscow24",
    "ok": true,
-   "count": 14,
+   "count": 19,
    "error": null,
-   "at": "2026-11-05T10:56:35Z"
+   "at": "2026-11-05T18:47:22Z"
   },
   {
    "name": "Telegram: @rlz_the_kraken",
    "ok": true,
-   "count": 18,
+   "count": 17,
    "error": null,
-   "at": "2026-11-05T10:56:36Z"
+   "at": "2026-11-05T18:47:23Z"
   },
   {
    "name": "Telegram: @mig41",
    "ok": true,
-   "count": 14,
+   "count": 20,
    "error": null,
-   "at": "2026-11-05T10:56:37Z"
+   "at": "2026-11-05T18:47:24Z"
   },
   {
    "name": "Telegram: @activatica",
    "ok": true,
    "count": 20,
    "error": null,
-   "at": "2026-11-05T10:56:38Z"
+   "at": "2026-11-05T18:47:25Z"
   },
   {
    "name": "Telegram: @Hinshtein",
    "ok": true,
    "count": 6,
    "error": null,
-   "at": "2026-11-05T10:56:39Z"
+   "at": "2026-11-05T18:47:26Z"
   },
   {
    "name": "Telegram: @yurydud",
    "ok": true,
-   "count": 8,
+   "count": 5,
    "error": null,
-   "at": "2026-11-05T10:56:40Z"
+   "at": "2026-11-05T18:47:27Z"
   },
   {
    "name": "Telegram: @newsmoscow",
    "ok": true,
    "count": 19,
    "error": null,
-   "at": "2026-11-05T10:56:40Z"
+   "at": "2026-11-05T18:47:28Z"
   },
   {
    "name": "Telegram: @itsreallynot",
    "ok": true,
    "count": 20,
    "error": null,
-   "at": "2026-11-05T10:56:42Z"
+   "at": "2026-11-05T18:47:29Z"
   },
   {
    "name": "Telegram: @RVvoenkor",
    "ok": true,
-   "count": 17,
+   "count": 16,
    "error": null,
-   "at": "2026-11-05T10:56:43Z"
+   "at": "2026-11-05T18:47:30Z"
   },
   {
    "name": "Telegram: @vadresah",
    "ok": true,
    "count": 20,
    "error": null,
-   "at": "2026-11-05T10:56:44Z"
+   "at": "2026-11-05T18:47:31Z"
   },
   {
    "name": "Telegram: @informburo_sfd",
    "ok": true,
    "count": 19,
    "error": null,
-   "at": "2026-11-05T10:56:44Z"
+   "at": "2026-11-05T18:47:32Z"
   },
   {
    "name": "Telegram: @donbassr",
    "ok": true,
    "count": 18,
    "error": null,
-   "at": "2026-11-05T10:56:45Z"
+   "at": "2026-11-05T18:47:32Z"
   },
   {
    "name": "Telegram: @ovdinfo",
    "ok": true,
-   "count": 7,
+   "count": 10,
    "error": null,
-   "at": "2026-11-05T10:56:46Z"
+   "at": "2026-11-05T18:47:33Z"
   },
   {
    "name": "Telegram: @teamnavalny",
    "ok": true,
    "count": 15,
    "error": null,
-   "at": "2026-11-05T10:56:47Z"
+   "at": "2026-11-05T18:47:34Z"
   },
   {
    "name": "Telegram: @mariabutina",
    "ok": true,
    "count": 19,
    "error": null,
-   "at": "2026-11-05T10:56:48Z"
+   "at": "2026-11-05T18:47:35Z"
   },
   {
    "name": "Telegram: @generalsvr",
    "ok": true,
    "count": 20,
    "error": null,
-   "at": "2026-11-05T10:56:49Z"
+   "at": "2026-11-05T18:47:36Z"
   },
   {
    "name": "Telegram: @anon_prok",
    "ok": true,
    "count": 19,
    "error": null,
-   "at": "2026-11-05T10:56:50Z"
+   "at": "2026-11-05T18:47:37Z"
   },
   {
    "name": "Telegram: @ia_panorama",
    "ok": true,
-   "count": 20,
+   "count": 19,
    "error": null,
-   "at": "2026-11-05T10:56:51Z"
+   "at": "2026-11-05T18:47:38Z"
   },
   {
    "name": "Telegram: @mediazonalinks",
    "ok": true,
    "count": 20,
    "error": null,
-   "at": "2026-11-05T10:56:52Z"
+   "at": "2026-11-05T18:47:39Z"
   },
   {
    "name": "Telegram: @ponomarb1",
    "ok": true,
-   "count": 18,
+   "count": 17,
    "error": null,
-   "at": "2026-11-05T10:56:53Z"
+   "at": "2026-11-05T18:47:40Z"
   },
   {
    "name": "Telegram: @istories_media",
    "ok": true,
    "count": 18,
    "error": null,
-   "at": "2026-11-05T10:56:54Z"
+   "at": "2026-11-05T18:47:41Z"
   },
   {
    "name": "Telegram: @rybar_america",
    "ok": true,
    "count": 19,
    "error": null,
-   "at": "2026-11-05T10:56:55Z"
+   "at": "2026-11-05T18:47:42Z"
   },
   {
    "name": "Telegram: @operdrain",
    "ok": true,
    "count": 20,
    "error": null,
-   "at": "2026-11-05T10:56:56Z"
+   "at": "2026-11-05T18:47:43Z"
   },
   {
    "name": "Telegram: @exsled",
    "ok": true,
-   "count": 5,
+   "count": 4,
    "error": null,
-   "at": "2026-11-05T10:56:57Z"
+   "at": "2026-11-05T18:47:44Z"
   },
   {
    "name": "Telegram: @sashakots",
    "ok": true,
-   "count": 11,
+   "count": 16,
    "error": null,
-   "at": "2026-11-05T10:56:58Z"
+   "at": "2026-11-05T18:47:45Z"
   },
   {
    "name": "Telegram: @gsuskmosobl",
    "ok": true,
    "count": 19,
    "error": null,
-   "at": "2026-11-05T10:56:59Z"
+   "at": "2026-11-05T18:47:46Z"
   },
   {
    "name": "Telegram: @news_kremlin",
    "ok": true,
-   "count": 20,
+   "count": 19,
    "error": null,
-   "at": "2026-11-05T10:57:00Z"
+   "at": "2026-11-05T18:47:47Z"
   },
   {
    "name": "Telegram: @rybar_pacific",
    "ok": true,
    "count": 20,
    "error": null,
-   "at": "2026-11-05T10:57:01Z"
+   "at": "2026-11-05T18:47:48Z"
   },
   {
    "name": "Telegram: @AteoGo",
    "ok": true,
-   "count": 11,
+   "count": 12,
    "error": null,
-   "at": "2026-11-05T10:57:02Z"
+   "at": "2026-11-05T18:47:49Z"
   },
   {
    "name": "Telegram: @misha_anufrienko",
    "ok": true,
-   "count": 17,
+   "count": 13,
    "error": null,
-   "at": "2026-11-05T10:57:03Z"
+   "at": "2026-11-05T18:47:50Z"
   },
   {
    "name": "Telegram: @novaya_pishet",
    "ok": true,
-   "count": 19,
+   "count": 20,
    "error": null,
-   "at": "2026-11-05T10:57:04Z"
+   "at": "2026-11-05T18:47:51Z"
   },
   {
    "name": "Telegram: @gsuskrf_spb",
    "ok": true,
    "count": 15,
    "error": null,
-   "at": "2026-11-05T10:57:05Z"
+   "at": "2026-11-05T18:47:52Z"
   },
   {
    "name": "Telegram: @svobodnieslova",
    "ok": true,
-   "count": 14,
+   "count": 15,
    "error": null,
-   "at": "2026-11-05T10:57:06Z"
+   "at": "2026-11-05T18:47:53Z"
   },
   {
    "name": "Telegram: @kommersantvrn",
    "ok": true,
-   "count": 14,
+   "count": 15,
    "error": null,
-   "at": "2026-11-05T10:57:07Z"
+   "at": "2026-11-05T18:47:54Z"
   },
   {
    "name": "Telegram: @navalnylivechannel",
    "ok": true,
    "count": 14,
    "error": null,
-   "at": "2026-11-05T10:57:08Z"
+   "at": "2026-11-05T18:47:54Z"
   },
   {
    "name": "Telegram: @sergeymiheev",
    "ok": true,
-   "count": 17,
+   "count": 18,
    "error": null,
-   "at": "2026-11-05T10:57:09Z"
+   "at": "2026-11-05T18:47:55Z"
   },
   {
    "name": "Telegram: @polkovnikt",
    "ok": true,
    "count": 16,
    "error": null,
-   "at": "2026-11-05T10:57:10Z"
+   "at": "2026-11-05T18:47:56Z"
   },
   {
    "name": "Telegram: @faridaily24",
    "ok": true,
    "count": 15,
    "error": null,
-   "at": "2026-11-05T10:57:11Z"
+   "at": "2026-11-05T18:47:57Z"
   },
   {
    "name": "Telegram: @fsbach",
    "ok": true,
    "count": 18,
    "error": null,
-   "at": "2026-11-05T10:57:12Z"
+   "at": "2026-11-05T18:47:58Z"
   },
   {
    "name": "Telegram: @RepublicMag",
    "ok": true,
    "count": 20,
    "error": null,
-   "at": "2026-11-05T10:57:13Z"
+   "at": "2026-11-05T18:47:59Z"
   },
   {
    "name": "Telegram: @anon_prok_press",
    "ok": true,
-   "count": 18,
+   "count": 19,
    "error": null,
-   "at": "2026-11-05T10:57:14Z"
+   "at": "2026-11-05T18:48:00Z"
   },
   {
    "name": "Telegram: @pezdicide",
    "ok": true,
    "count": 19,
    "error": null,
-   "at": "2026-11-05T10:57:15Z"
+   "at": "2026-11-05T18:48:01Z"
   },
   {
    "name": "Telegram: @veronikastepanova20011",
    "ok": true,
    "count": 17,
    "error": null,
-   "at": "2026-11-05T10:57:16Z"
+   "at": "2026-11-05T18:48:02Z"
   },
   {
    "name": "Telegram: @news_sirena",
    "ok": true,
-   "count": 14,
+   "count": 15,
    "error": null,
-   "at": "2026-11-05T10:57:17Z"
+   "at": "2026-11-05T18:48:03Z"
   },
   {
    "name": "Telegram: @evropar",
    "ok": true,
-   "count": 18,
+   "count": 17,
    "error": null,
-   "at": "2026-11-05T10:57:18Z"
+   "at": "2026-11-05T18:48:04Z"
   },
   {
    "name": "Telegram: @nefte_baza",
    "ok": true,
-   "count": 20,
+   "count": 19,
    "error": null,
-   "at": "2026-11-05T10:57:19Z"
+   "at": "2026-11-05T18:48:05Z"
   },
   {
    "name": "Telegram: @Merkacheva",
    "ok": true,
    "count": 13,
    "error": null,
-   "at": "2026-11-05T10:57:20Z"
+   "at": "2026-11-05T18:48:06Z"
   },
   {
    "name": "Telegram: @skmoscowgsu",
    "ok": true,
    "count": 16,
    "error": null,
-   "at": "2026-11-05T10:57:21Z"
+   "at": "2026-11-05T18:48:07Z"
   },
   {
    "name": "Telegram: @kurskproc",
    "ok": true,
-   "count": 12,
+   "count": 14,
    "error": null,
-   "at": "2026-11-05T10:57:22Z"
+   "at": "2026-11-05T18:48:08Z"
   },
   {
    "name": "Telegram: @topwar_official",
    "ok": true,
-   "count": 10,
+   "count": 11,
    "error": null,
-   "at": "2026-11-05T10:57:23Z"
+   "at": "2026-11-05T18:48:09Z"
   },
   {
    "name": "Telegram: @boevoyprimer",
    "ok": true,
    "count": 15,
    "error": null,
-   "at": "2026-11-05T10:57:24Z"
+   "at": "2026-11-05T18:48:10Z"
   },
   {
    "name": "Telegram: @patriot_za_granitsey",
    "ok": true,
    "count": 6,
    "error": null,
-   "at": "2026-11-05T10:57:25Z"
+   "at": "2026-11-05T18:48:11Z"
   },
   {
    "name": "Telegram: @opernn",
    "ok": true,
-   "count": 14,
+   "count": 8,
    "error": null,
-   "at": "2026-11-05T10:57:26Z"
+   "at": "2026-11-05T18:48:12Z"
   },
   {
    "name": "Telegram: @skrkursk",
    "ok": true,
-   "count": 13,
+   "count": 14,
    "error": null,
-   "at": "2026-11-05T10:57:27Z"
+   "at": "2026-11-05T18:48:13Z"
   },
   {
    "name": "Telegram: @brussinf",
    "ok": true,
    "count": 7,
    "error": null,
-   "at": "2026-11-05T10:57:28Z"
+   "at": "2026-11-05T18:48:14Z"
   },
   {
    "name": "Telegram: @yurasumy",
    "ok": true,
    "count": 11,
    "error": null,
-   "at": "2026-11-05T10:57:29Z"
+   "at": "2026-11-05T18:48:15Z"
   },
   {
    "name": "Telegram: @levada_center",
    "ok": true,
    "count": 3,
    "error": null,
-   "at": "2026-11-05T10:57:30Z"
+   "at": "2026-11-05T18:48:16Z"
   },
   {
    "name": "Telegram: @DvtAdv",
    "ok": true,
    "count": 12,
    "error": null,
-   "at": "2026-11-05T10:57:31Z"
+   "at": "2026-11-05T18:48:17Z"
   },
   {
    "name": "Telegram: @Agdchan",
    "ok": true,
-   "count": 20,
+   "count": 18,
    "error": null,
-   "at": "2026-11-05T10:57:32Z"
+   "at": "2026-11-05T18:48:18Z"
   },
   {
    "name": "Telegram: @surf_noise1",
    "ok": true,
    "count": 8,
    "error": null,
-   "at": "2026-11-05T10:57:33Z"
+   "at": "2026-11-05T18:48:19Z"
   },
   {
    "name": "Telegram: @ttepllota",
    "ok": true,
    "count": 5,
    "error": null,
-   "at": "2026-11-05T10:57:34Z"
+   "at": "2026-11-05T18:48:20Z"
   },
   {
    "name": "Telegram: @ooooh_love",
    "ok": true,
    "count": 6,
    "error": null,
-   "at": "2026-11-05T10:57:35Z"
+   "at": "2026-11-05T18:48:21Z"
   },
   {
    "name": "Telegram: @sablezubiiytug",
    "ok": true,
    "count": 17,
    "error": null,
-   "at": "2026-11-05T10:57:36Z"
+   "at": "2026-11-05T18:48:22Z"
   },
   {
    "name": "Telegram: @chernyx_di",
    "ok": true,
    "count": 2,
    "error": null,
-   "at": "2026-11-05T10:57:37Z"
+   "at": "2026-11-05T18:48:23Z"
   },
   {
    "name": "Telegram: @nfedkoo",
    "ok": true,
    "count": 6,
    "error": null,
-   "at": "2026-11-05T10:57:38Z"
+   "at": "2026-11-05T18:48:23Z"
   },
   {
    "name": "Telegram: @alinlav",
    "ok": true,
-   "count": 8,
+   "count": 11,
    "error": null,
-   "at": "2026-11-05T10:57:39Z"
+   "at": "2026-11-05T18:48:24Z"
   },
   {
    "name": "Telegram: @shushannabest",
    "ok": true,
    "count": 11,
    "error": null,
-   "at": "2026-11-05T10:57:40Z"
+   "at": "2026-11-05T18:48:25Z"
   },
   {
    "name": "Telegram: @stepan_alexis",
    "ok": true,
-   "count": 4,
+   "count": 7,
    "error": null,
-   "at": "2026-11-05T10:57:41Z"
+   "at": "2026-11-05T18:48:26Z"
   },
   {
    "name": "Telegram: @evaelfie_life",
    "ok": true,
    "count": 7,
    "error": null,
-   "at": "2026-11-05T10:57:42Z"
+   "at": "2026-11-05T18:48:27Z"
   },
   {
    "name": "Telegram: @sandrasahara",
    "ok": true,
    "count": 6,
    "error": null,
-   "at": "2026-11-05T10:57:43Z"
+   "at": "2026-11-05T18:48:28Z"
   },
   {
    "name": "Telegram: @zhidkovskiy_talk",
    "ok": true,
-   "count": 11,
+   "count": 12,
    "error": null,
-   "at": "2026-11-05T10:57:44Z"
+   "at": "2026-11-05T18:48:29Z"
   },
   {
    "name": "Telegram: @MoscowExchangeOfficial",
    "ok": true,
    "count": 10,
    "error": null,
-   "at": "2026-11-05T10:57:45Z"
+   "at": "2026-11-05T18:48:30Z"
   },
   {
    "name": "Telegram: @alfa_investments",
    "ok": true,
    "count": 18,
    "error": null,
-   "at": "2026-11-05T10:57:46Z"
+   "at": "2026-11-05T18:48:31Z"
   },
   {
    "name": "Telegram: @commerc",
    "ok": true,
-   "count": 11,
+   "count": 14,
    "error": null,
-   "at": "2026-11-05T10:57:47Z"
+   "at": "2026-11-05T18:48:32Z"
   },
   {
    "name": "Telegram: @tb_invest_official",
    "ok": true,
-   "count": 14,
+   "count": 15,
    "error": null,
-   "at": "2026-11-05T10:57:48Z"
+   "at": "2026-11-05T18:48:33Z"
   },
   {
    "name": "Telegram: @Godketing",
    "ok": true,
-   "count": 13,
+   "count": 14,
    "error": null,
-   "at": "2026-11-05T10:57:49Z"
+   "at": "2026-11-05T18:48:34Z"
   },
   {
    "name": "Telegram: @ecotopor",
    "ok": true,
    "count": 17,
    "error": null,
-   "at": "2026-11-05T10:57:50Z"
+   "at": "2026-11-05T18:48:35Z"
   },
   {
    "name": "Telegram: @lukoilofficial",
    "ok": true,
-   "count": 9,
+   "count": 8,
    "error": null,
-   "at": "2026-11-05T10:57:51Z"
+   "at": "2026-11-05T18:48:36Z"
   },
   {
    "name": "Telegram: @DeCenter",
    "ok": true,
-   "count": 18,
+   "count": 19,
    "error": null,
-   "at": "2026-11-05T10:57:52Z"
+   "at": "2026-11-05T18:48:37Z"
   },
   {
    "name": "Telegram: @PRO_biz_channel",
    "ok": true,
-   "count": 9,
+   "count": 11,
    "error": null,
-   "at": "2026-11-05T10:57:53Z"
+   "at": "2026-11-05T18:48:38Z"
   },
   {
    "name": "Telegram",
    "ok": true,
-   "count": 3126,
+   "count": 3199,
    "error": null,
-   "at": "2026-11-05T10:57:53Z"
+   "at": "2026-11-05T18:48:38Z"
   },
   {
    "name": "GDELT",
    "ok": false,
    "count": 0,
-   "error": "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=seven%20aircraft%20grounded%20europe%20bomb%20sourcelang:english&mode=ArtList&maxrecords=250&timespan=24h",
-   "at": "2026-11-05T10:58:36Z"
+   "error": "429 Client Error: Too Many Requests for url: https://api.gdeltproject.org/api/v2/doc/doc?query=russell%20brand%20some%20kind%20psychopath%20sourcelang:english&mode=ArtList&maxrecords=250&timespan=24h&",
+   "at": "2026-11-05T18:50:55Z"
   },
   {
    "name": "Перевод (Google Translate)",
    "ok": true,
    "count": 80,
    "error": null,
-   "at": "2026-11-05T11:00:04Z"
+   "at": "2026-11-05T18:52:09Z"
   }
  ]
 }
